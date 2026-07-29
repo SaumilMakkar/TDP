@@ -1,0 +1,52 @@
+<div class="view" id="view-results">
+  <div class="results-stepper" aria-hidden="true">
+    <div class="results-stepper-track">
+      <div class="results-step">
+        <div class="results-step-dot results-step-dot--done">✓</div>
+        <span class="results-step-label">Prescriber</span>
+      </div>
+      <div class="results-step-connector results-step-connector--done"></div>
+      <div class="results-step">
+        <div class="results-step-dot results-step-dot--done">✓</div>
+        <span class="results-step-label">Pharmacist</span>
+      </div>
+      <div class="results-step-connector results-step-connector--done"></div>
+      <div class="results-step">
+        <div class="results-step-dot results-step-dot--done">✓</div>
+        <span class="results-step-label">AI Processing</span>
+      </div>
+      <div class="results-step-connector results-step-connector--done"></div>
+      <div class="results-step">
+        <div class="results-step-dot results-step-dot--done">✓</div>
+        <span class="results-step-label">Overview</span>
+      </div>
+      <div class="results-step-connector results-step-connector--done"></div>
+      <div class="results-step">
+        <div class="results-step-dot results-step-dot--current">5</div>
+        <span class="results-step-label results-step-label--current">Review</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-header page-header-actions">
+    <div>
+      <h2>Final Decision</h2>
+      <p>View AI analysis results and review final portal decision</p>
+    </div>
+  </div>
+  <div class="search-bar">
+    <label class="results-search-wrap" for="results-search">
+      <span class="results-search-icon" aria-hidden="true">&#128269;</span>
+      <input type="text" id="results-search" placeholder="Enter RX Number to view results">
+    </label>
+    <div class="results-actions">
+      <button class="btn btn-primary" id="results-btn">View Results</button>
+      <button class="btn results-download-btn" id="results-download-btn" style="display:none;">Download PDF</button>
+    </div>
+  </div>
+  <div id="results-content">
+    <div class="empty-state">
+      <p>Enter a prescription RX number to view PBM results</p>
+    </div>
+  </div>
+</div>

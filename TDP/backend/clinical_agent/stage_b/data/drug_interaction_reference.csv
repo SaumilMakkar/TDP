@@ -1,0 +1,21 @@
+ingredient_a,ingredient_b,severity,reason,evidence_level
+warfarin,aspirin,MAJOR,Bleeding risk,High
+warfarin,naproxen,MAJOR,Bleeding risk,High
+warfarin,azithromycin,MODERATE,INR increase,Medium
+apixaban,aspirin,MAJOR,Bleeding risk,High
+apixaban,naproxen,MAJOR,Bleeding risk,High
+rivaroxaban,aspirin,MAJOR,Bleeding risk,High
+lithium carbonate,lisinopril,MAJOR,Lithium toxicity,High
+lithium carbonate,hydrochlorothiazide,CONTRAINDICATED,Lithium toxicity,High
+sertraline,aspirin,MODERATE,Bleeding risk,Medium
+escitalopram,azithromycin,MAJOR,QT prolongation,High
+clopidogrel,omeprazole,MAJOR,Reduced efficacy,High
+spironolactone,lisinopril,MAJOR,Hyperkalemia,High
+metformin,contrast_media,MAJOR,Lactic acidosis,High
+colchicine,atorvastatin,MODERATE,Myopathy,Medium
+rosuvastatin,warfarin,MODERATE,INR increase,Medium
+amlodipine,lisinopril,MINOR,Enhanced hypotensive effect,High
+amlodipine,metoprolol,MODERATE,Hypotension risk,High
+metoprolol,verapamil,MAJOR,AV block risk,High
+hydrochlorothiazide,lisinopril,MINOR,Enhanced hypotensive effect,High
+hydrochlorothiazide,metoprolol,MINOR,Enhanced hypotensive effect,High

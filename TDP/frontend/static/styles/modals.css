@@ -1,0 +1,674 @@
+/* ============================================
+   MODAL STYLES - Dialogs, Auth Modal, Toast
+   ============================================ */
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(61, 60, 56, 0.45);
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  z-index: 50;
+}
+
+.modal-overlay.show {
+  display: flex;
+}
+
+.modal {
+  background: var(--white);
+  width: min(92vw, 430px);
+  margin: 0;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  animation: fadeIn 0.2s ease;
+}
+
+.auth-modal {
+  position: relative;
+  width: min(94vw, 560px);
+  padding: 28px 26px 24px;
+}
+
+#auth-modal {
+  align-items: center;
+  justify-content: center;
+}
+
+#auth-modal .auth-modal {
+  width: min(96vw, 680px);
+  padding: 34px 32px 28px;
+  border-radius: 16px;
+}
+
+#auth-modal .auth-pane .form-group {
+  margin-bottom: 14px;
+}
+
+#auth-modal .auth-pane input,
+#auth-modal .auth-pane select,
+#auth-modal .auth-pane button {
+  min-height: 46px;
+  font-size: 1rem;
+}
+
+#modal-login-btn,
+#modal-register-btn {
+  display: block;
+  width: auto;
+  margin: 18px auto 0;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.auth-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  background: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  transition: all 0.2s ease;
+}
+
+.auth-close:hover {
+  background: #ffe8e0;
+  color: var(--dark-orange);
+}
+
+.auth-pane {
+  margin-top: 14px;
+  display: none;
+}
+
+.auth-pane.active {
+  display: block;
+}
+
+.auth-pane .form-group {
+  margin-bottom: 10px;
+}
+
+/* Auth pane header */
+.auth-pane-header {
+  margin-bottom: 22px;
+}
+
+.auth-pane-title {
+  margin: 0 0 4px;
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.auth-pane-sub {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+/* Full-width submit button */
+.auth-submit-btn {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+}
+
+/* Switch link row */
+.auth-switch-text {
+  margin: 16px 0 0;
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.auth-switch-link {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: var(--dark-orange);
+  font-weight: 700;
+  font-size: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.auth-switch-link:hover {
+  color: #be3618;
+}
+
+/* Toast Notifications */
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.toast {
+  margin-bottom: 10px;
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--dark-orange);
+  border-radius: 10px;
+  padding: 10px 14px;
+  box-shadow: var(--shadow-sm);
+  animation: fadeIn 0.2s ease;
+  max-width: 340px;
+}
+
+.toast.success {
+  border-left-color: var(--success);
+}
+
+.toast.warning {
+  border-left-color: var(--warning);
+}
+
+.toast.error {
+  border-left-color: var(--danger);
+}
+
+/* Success Modal Specific Styles */
+.success-modal {
+  text-align: center;
+}
+
+.success-modal-title {
+  margin: 0 0 12px;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.success-modal-description {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* Upload Excel Modal */
+.upload-excel-modal {
+  width: min(92vw, 560px);
+  padding: 22px;
+}
+
+.upload-excel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.upload-excel-head h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #12294b;
+}
+
+.upload-excel-help {
+  margin: 10px 0 14px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.upload-excel-body {
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 14px;
+  background: #fcfbf8;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.upload-excel-label {
+  border: 1px solid #d97706;
+  border-radius: 10px;
+  background: var(--dark-orange);
+  color: var(--white);
+  font-weight: 600;
+  padding: 9px 15px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.upload-excel-label:hover {
+  transform: translateY(-1px);
+  background: #be3618;
+}
+
+#upload-excel-file {
+  display: none;
+}
+
+.upload-excel-file-status {
+  font-size: 0.82rem;
+  color: #6b7280;
+}
+
+.upload-excel-actions {
+  margin-top: 14px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.upload-excel-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  height: 30px;
+  padding: 0 14px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Submission Progress Modal */
+.submission-progress-modal {
+  width: min(92vw, 460px);
+  text-align: center;
+}
+
+.submission-progress-modal h3 {
+  margin: 0;
+  color: #12294b;
+}
+
+.submission-progress-modal .spm-stage-toggle {
+  display: none;
+}
+
+.spm-flow-stepper {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin: 12px 0 10px;
+  padding: 10px 10px 8px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.spm-flow-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.spm-flow-dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #d8d5cc;
+  background: transparent;
+  color: #9ca3af;
+  font-size: 0.72rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.spm-flow-label {
+  font-size: 0.62rem;
+  line-height: 1.1;
+  color: #9ca3af;
+  white-space: nowrap;
+}
+
+.spm-flow-step--done .spm-flow-dot {
+  background: #006600;
+  border-color: #006600;
+  color: #ffffff;
+}
+
+.spm-flow-step--done .spm-flow-label {
+  color: #374151;
+  font-weight: 600;
+}
+
+.spm-flow-step--current .spm-flow-dot {
+  background: #b8a000;
+  border-color: #b8a000;
+  color: #ffffff;
+  animation: spmCurrentPulse 1s ease-in-out infinite;
+}
+
+.spm-flow-step--current .spm-flow-label {
+  color: #374151;
+  font-weight: 700;
+}
+
+.spm-flow-connector {
+  flex: 1;
+  height: 2px;
+  background: #d8d5cc;
+  margin: 0 6px 18px;
+}
+
+.spm-flow-connector--done {
+  background: #1a1a1a;
+}
+
+@keyframes spmCurrentPulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.08); opacity: 0.88; }
+}
+
+.submission-progress-description {
+  margin: 10px 0 14px;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.submission-progress-track {
+  width: 100%;
+  height: 12px;
+  border-radius: 999px;
+  background: #e5e7eb;
+  overflow: hidden;
+}
+
+.submission-progress-fill {
+  width: 0%;
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #16a34a 0%, #15803d 100%);
+  transition: width 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.submission-progress-value {
+  margin-top: 10px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #374151;
+}
+
+/* ── Two-stage pipeline layout ── */
+.submission-progress-modal {
+  width: min(96vw, 560px);
+  text-align: left;
+  position: relative;
+}
+
+.submission-progress-close {
+  top: 10px;
+  right: 10px;
+}
+
+.spm-stage {
+  margin-top: 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f9fafb;
+}
+
+.spm-stage--active {
+  border-color: #6ee7b7;
+  background: #f0fdf4;
+}
+
+.spm-stage-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #f3f4f6;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.spm-stage--active .spm-stage-header {
+  background: #dcfce7;
+  border-bottom-color: #6ee7b7;
+}
+
+.spm-stage-badge {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  font-size: 0.75rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.spm-stage-badge--active  { background: #16a34a; color: #fff; }
+.spm-stage-badge--done    { background: #15803d; color: #fff; }
+
+.spm-stage-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.spm-stage-note {
+  font-size: 0.72rem;
+  color: #9ca3af;
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.spm-stage-toggle {
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #374151;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.spm-stage-toggle:hover {
+  background: #f9fafb;
+}
+
+.spm-stage-content {
+  max-height: 600px;
+  overflow: hidden;
+  opacity: 1;
+  transition: max-height 0.25s ease, opacity 0.2s ease;
+}
+
+.spm-stage--collapsed .spm-stage-content {
+  max-height: 0;
+  opacity: 0;
+}
+
+.spm-success-state {
+  text-align: center;
+  padding: 18px 16px 8px;
+  margin-top: 16px;
+  border-top: 1px solid #e5e7eb;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border-radius: 0 0 12px 12px;
+}
+.spm-success-icon {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 12px;
+  border-radius: 50%;
+  background: #dcfce7;
+  color: #15803d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.spm-success-title {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #12294b;
+}
+.spm-success-description {
+  margin: 0 auto 14px;
+  max-width: 420px;
+  color: #6b7280;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+.spm-success-rx-box {
+  margin: 0 auto 14px;
+  max-width: 380px;
+  border: 1px solid #dbe3ef;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.spm-success-rx-box strong {
+  font-size: 0.92rem;
+  color: #12294b;
+  letter-spacing: 0.02em;
+}
+
+.spm-success-copy-btn {
+  min-width: 78px;
+  font-size: 0.82rem;
+  padding: 6px 12px;
+}
+
+.spm-success-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+/* Parallel grid for Stage 2 */
+.spm-parallel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+}
+
+.spm-agent {
+  border-right: 1px solid #e5e7eb;
+  padding: 8px 0 6px;
+}
+
+.spm-agent:last-child { border-right: none; }
+
+.spm-agent-header {
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #6b7280;
+  padding: 0 10px 6px;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 4px;
+  transition: color 0.3s;
+}
+
+.spm-agent-header--active { color: #15803d; }
+.spm-agent-header--done   { color: #374151; }
+
+/* Step items */
+.spm-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.spm-step {
+  padding: 4px 10px 4px 24px;
+  font-size: 0.75rem;
+  line-height: 1.35;
+  color: #9ca3af;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.spm-step::before {
+  content: '○';
+  position: absolute;
+  left: 8px;
+  top: 4px;
+  font-size: 0.6rem;
+  color: #d1d5db;
+}
+
+.spm-step--pending { color: #9ca3af; }
+.spm-step--pending::before { content: '○'; color: #d1d5db; }
+
+.spm-step--active {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+.spm-step--active::before { content: '▶'; color: #16a34a; font-size: 0.55rem; top: 5px; }
+
+.spm-step--done { color: #6b7280; }
+.spm-step--done::before { content: '✓'; color: #16a34a; font-size: 0.7rem; }
+
+@media (max-width: 640px) {
+  .spm-flow-stepper {
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+
+  .spm-stage-header {
+    flex-wrap: wrap;
+  }
+
+  .spm-stage-note {
+    margin-left: 0;
+  }
+
+  .spm-parallel-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .spm-agent {
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .spm-agent:last-child {
+    border-bottom: none;
+  }
+
+  .spm-flow-step,
+  .spm-flow-connector {
+    flex-shrink: 0;
+  }
+
+  .spm-flow-connector {
+    width: 28px;
+    flex: none;
+  }
+}

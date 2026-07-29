@@ -1,0 +1,99 @@
+<section class="landing-page" id="landing-page">
+  <header class="landing-nav">
+    <div class="landing-brand" id="open-auth-brand-btn" role="button" tabindex="0" aria-label="Open login or register">
+      <img src="{{ url_for('static', filename='images/logo.png') }}" alt="PBM System Logo" class="landing-logo">
+    </div>
+    <button class="btn btn-primary landing-login-btn" id="open-system-btn" type="button">Login / Register</button>
+  </header>
+
+  <div class="landing-hero">
+    <div class="landing-copy">
+      <div class="landing-title-row">
+        <div class="landing-title-mark" aria-hidden="true">
+          <span class="landing-title-check">✓</span>
+          <span class="landing-title-star-wrap">
+            <span class="landing-title-star">✦</span>
+          </span>
+        </div>
+        <div class="landing-title-copy">
+          <h1>
+            <span class="wordmark-dark">NextGen</span>
+            <span class="wordmark-accent">PBM</span>
+          </h1>
+          <p class="landing-system-label">AUTOMATION SYSTEM</p>
+        </div>
+      </div>
+      <p class="landing-subtitle">from prescription capture to confident decision</p>
+      <p class="landing-description">
+        Capture prescriptions from pharmacists, route them through AI evaluation agents,
+        and send a clear recommendation to PBM final review. Every case includes
+        confidence scoring, clinical notes, and safer or lower-cost medicine alternatives.
+      </p>
+      <div class="landing-actions">
+        <a class="btn btn-primary landing-secondary-btn" href="https://uhgazure-my.sharepoint.com/personal/abhishek_kumar317_optum_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fabhishek%5Fkumar317%5Foptum%5Fcom%2FDocuments%2FVideo%20Project%205%2Emp4&amp;ct=1784548345286&amp;or=EXCEL%2DWEB%2EBODY%2ENT&amp;ga=1&amp;referrer=StreamWebApp%2EWeb&amp;referrerScenario=AddressBarCopied%2Eview%2Ee82b8754%2Dd8dd%2D413d%2D9b8d%2D5a247fc83974" target="_blank" rel="noopener noreferrer">See How It Works</a>
+      </div>
+    </div>
+    <div class="landing-visual">
+      <img src="{{ url_for('static', filename='images/landing-hero.svg') }}" alt="PBM AI System illustration">
+    </div>
+  </div>
+
+  <section class="landing-story" id="landing-story">
+    <article class="story-card story-detail">
+      <h3>
+        <span class="story-step-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+            <rect x="6" y="3" width="12" height="18" rx="2" ry="2"></rect>
+            <path d="M9 8.5h6"></path>
+            <path d="M9 12h6"></path>
+            <path d="M9 15.5h4"></path>
+          </svg>
+        </span>
+        Capture from Pharmacist
+      </h3>
+      <ul>
+        <li>Patient profile, diagnosis, and relevant clinical history</li>
+        <li>Dosage, dispensing context, and prescription details</li>
+        <li>Current medications, allergies, and treatment considerations</li>
+        <li>Patient-specific factors impacting therapy outcomes</li>
+      </ul>
+    </article>
+    <article class="story-card story-detail">
+      <h3>
+        <span class="story-step-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+            <rect x="4" y="4" width="16" height="16" rx="3" ry="3"></rect>
+            <circle cx="9" cy="9" r="1.2"></circle>
+            <circle cx="15" cy="9" r="1.2"></circle>
+            <path d="M8 14c1 .9 2.3 1.4 4 1.4s3-.5 4-1.4"></path>
+            <path d="M12 4v-2"></path>
+          </svg>
+        </span>
+        Evaluate with AI Agents
+      </h3>
+      <ul>
+        <li>Clinical, cost, and policy agents review the request</li>
+        <li>Analysis of past decisions and treatment patterns</li>
+        <li>Risk assessment, formulary validation, and spend review</li>
+        <li>Evidence-based recommendations with supporting rationale</li>
+      </ul>
+    </article>
+    <article class="story-card story-detail">
+      <h3>
+        <span class="story-step-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M8.8 12.1l2.2 2.2 4.4-4.4"></path>
+          </svg>
+        </span>
+        Decide in One Portal
+      </h3>
+      <ul>
+        <li>Confidence score with recommended alternatives and reasoning</li>
+        <li>Consolidated insights from all AI review agents</li>
+        <li>Faster final decisions backed by clinical evidence</li>
+        <li>Complete visibility for approval, documentation, and audit trail</li>
+      </ul>
+    </article>
+  </section>
+</section>

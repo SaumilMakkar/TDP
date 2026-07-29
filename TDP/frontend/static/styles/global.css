@@ -1,0 +1,81 @@
+/* ============================================
+   GLOBAL STYLES - Colors, Variables, Base Styles
+   ============================================ */
+
+:root {
+  --warm-gray: #3D3C38;
+  --white: #FFFFFF;
+  --warm-white: #FAF8F2;
+  --sky-blue: #D9F6FA;
+  --horizon: #EDE8E0;
+  --sunset-orange: #F9A667;
+  --dawn-orange: #FFD1AB;
+  --dark-orange: #D74120;
+
+  --text-primary: var(--warm-gray);
+  --text-muted: #726f68;
+  --border-color: #ddd7cf;
+  --success: #1a7a4a;
+  --warning: #b06800;
+  --danger: var(--dark-orange);
+
+  --sidebar-width: 280px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --shadow-sm: 0 4px 14px rgba(61, 60, 56, 0.08);
+  --shadow-md: 0 14px 34px rgba(61, 60, 56, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans 3', 'Segoe UI', sans-serif;
+  color: var(--text-primary);
+  background: var(--warm-white);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Utility Classes */
+.hidden {
+  display: none !important;
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-primary {
+  color: var(--text-primary);
+}

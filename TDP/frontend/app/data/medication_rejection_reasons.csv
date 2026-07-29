@@ -1,0 +1,354 @@
+reason_code,reason_chip
+DIAGNOSIS_MISMATCH,Alternative not appropriate for documented diagnosis
+OFF_LABEL_JUSTIFIED,Off-label use clinically justified for diagnosis
+INDICATION_NOT_SUPPORTED,Requested drug lacks indication for condition
+DIAGNOSTIC_UNCERTAINTY,"Diagnosis not yet confirmed, therapy change premature"
+ALTERNATE_DIAGNOSIS_PENDING,"Alternate diagnosis under workup, defer switch"
+SEVERE_DISEASE_STAGE,Disease severity requires current regimen
+DISEASE_PROGRESSION,Disease progression warrants therapy escalation
+EARLY_STAGE_DISEASE,Early-stage disease does not require escalation
+REFRACTORY_DISEASE,Refractory disease requires advanced therapy
+RAPID_DETERIORATION,Rapid clinical deterioration precludes switch
+FLARE_MANAGEMENT,Active disease flare requires current agent
+REMISSION_MAINTENANCE,Remission maintained on current regimen
+TREAT_TO_TARGET_NOT_MET,Treat-to-target goals not yet achieved
+SUPERIOR_EFFICACY,Current agent shows superior clinical efficacy
+SUBOPTIMAL_RESPONSE,Suboptimal response to alternative therapy
+PARTIAL_RESPONSE,"Partial response supports dose optimization, not switch"
+LOSS_OF_EFFICACY,Secondary loss of efficacy noted on alternative
+DEMONSTRATED_RESPONSE,Demonstrated clinical response on current therapy
+BIOMARKER_RESPONSE,Biomarker trend supports continuing current therapy
+SAFETY_SIGNAL,New safety signal identified with alternative
+BLACK_BOX_WARNING,Alternative carries relevant black-box warning
+NARROW_THERAPEUTIC_INDEX,Current drug has narrow therapeutic index requiring stability
+QT_PROLONGATION_RISK,Alternative poses QT prolongation risk
+SEROTONIN_SYNDROME_RISK,Risk of serotonin syndrome with combination
+RESPIRATORY_DEPRESSION_RISK,Risk of respiratory depression with alternative
+HYPOTENSION_RISK,Alternative increases risk of symptomatic hypotension
+ARRHYTHMIA_RISK,Alternative associated with arrhythmia risk
+PRIOR_FAILURE,Previous therapy trial was unsuccessful
+PRIOR_ADVERSE_REACTION,Prior adverse reaction to alternative agent
+PRIOR_INTOLERANCE_GI,Prior GI intolerance to alternative class
+PRIOR_DISCONTINUATION,Alternative previously discontinued for lack of effect
+MULTIPLE_PRIOR_TRIALS,Multiple prior therapy trials already exhausted
+REINTRODUCTION_RISK,Reintroduction of prior agent poses reaction risk
+SPECIALIST_PLAN,Specialist treatment plan supports continuation
+TUMOR_BOARD_DECISION,Tumor board recommendation supports current regimen
+MULTIDISCIPLINARY_CONSENSUS,Multidisciplinary team consensus on current therapy
+TRANSPLANT_TEAM_DIRECTIVE,Transplant team protocol dictates current agent
+PSYCHIATRY_CONSULT_HOLD,Psychiatry consult recommends holding medication change
+RHEUM_SPECIALIST_OVERRIDE,Rheumatology specialist overrides suggested switch
+COMORBIDITY_RISK,Alternative may worsen existing comorbidity
+MULTIMORBIDITY_COMPLEXITY,Multiple comorbidities complicate proposed switch
+DIABETES_DESTABILIZATION,Alternative risks destabilizing glycemic control
+HEART_FAILURE_WORSENING,Alternative may worsen heart failure status
+ASTHMA_COPD_EXACERBATION_RISK,Alternative risks exacerbating asthma or COPD
+SEIZURE_THRESHOLD_LOWERING,Alternative may lower seizure threshold
+MOOD_DESTABILIZATION_RISK,Alternative risks destabilizing mood disorder
+RENAL_IMPAIRMENT_DOSE,Renal impairment limits alternative dosing
+HEPATIC_IMPAIRMENT_DOSE,Hepatic impairment limits alternative dosing
+CKD_STAGE_LIMIT,CKD stage precludes safe use of alternative
+DIALYSIS_CLEARANCE_ISSUE,Alternative not appropriate for dialysis clearance
+CIRRHOSIS_METABOLISM_RISK,Cirrhosis alters metabolism of alternative agent
+EGFR_BELOW_THRESHOLD,eGFR below threshold for alternative use
+LAB_VALUE_CONTRAINDICATION,Recent lab values contraindicate alternative
+LIVER_ENZYME_ELEVATION,Elevated liver enzymes preclude alternative
+CYTOPENIA_RISK,Alternative risks cytopenia given current counts
+ELECTROLYTE_IMBALANCE_RISK,Alternative risks worsening electrolyte imbalance
+THERAPEUTIC_DRUG_LEVEL_STABLE,Stable therapeutic drug level supports continuation
+INR_OUT_OF_RANGE,INR instability precludes anticoagulant switch
+A1C_AT_GOAL,A1C at goal on current regimen
+GUIDELINE_CONCORDANT,Current therapy is guideline-concordant
+FIRST_LINE_PREFERRED,Guidelines recommend first-line agent be continued
+GUIDELINE_UPDATE_SUPPORT,Recent guideline update supports current regimen
+PROTOCOL_DRIVEN_THERAPY,Institutional protocol dictates current therapy
+CLINICAL_PATHWAY_ADHERENCE,Clinical pathway adherence supports current agent
+DRUG_INTERACTION,Clinically significant drug interaction risk
+CYP450_INTERACTION,CYP450-mediated interaction with current regimen
+ANTICOAGULANT_INTERACTION,Interaction risk with anticoagulant therapy
+QT_INTERACTING_COMBINATION,Combination risks additive QT prolongation
+HERBAL_SUPPLEMENT_INTERACTION,Interaction risk with herbal supplement use
+FOOD_DRUG_INTERACTION,Significant food-drug interaction with alternative
+ALLERGY_INTOLERANCE,Documented allergy or prior intolerance
+CROSS_REACTIVITY_RISK,Cross-reactivity risk within drug class
+CONTRAINDICATION,Contraindicated for current clinical profile
+ABSOLUTE_CONTRAINDICATION,Absolute contraindication documented in chart
+RELATIVE_CONTRAINDICATION,Relative contraindication given clinical context
+EXCIPIENT_SENSITIVITY,Sensitivity to excipient in alternative formulation
+ADHERENCE_IMPROVEMENT,Switch expected to improve medication adherence
+SIMPLIFIED_REGIMEN,Simplified regimen improves adherence potential
+REDUCED_DOSING_FREQUENCY,Reduced dosing frequency supports adherence
+PATIENT_MISSED_DOSES,Frequent missed doses on current regimen
+ADHERENCE_HISTORY_POOR,Poor adherence history with current formulation
+REDUCTION_PILL_BURDEN,Switch reduces overall pill burden
+COMBINATION_PRODUCT_PREFERRED,Fixed-dose combination reduces pill count
+ONCE_DAILY_PREFERRED,Once-daily dosing preferred over multiple daily doses
+TITRATION_COMPLEXITY,Current titration schedule too complex to change
+POLYPHARMACY_CONCERN,Polypharmacy concern limits additional agents
+ROUTE_PREFERENCE,Patient prefers current route of administration
+ORAL_PREFERRED_OVER_INJECTABLE,Oral route preferred over injectable alternative
+INJECTABLE_PREFERRED_OVER_ORAL,Injectable preferred due to GI absorption concerns
+DEVICE_FAMILIARITY,Patient familiar and proficient with current device
+INJECTION_TECHNIQUE_BARRIER,Alternative device presents injection technique barrier
+SWALLOWING_DIFFICULTY,Swallowing difficulty limits oral alternative
+TOPICAL_FORMULATION_PREFERRED,Topical formulation preferred for localized therapy
+PATIENT_PREFERENCE,Patient expressed preference for current therapy
+TASTE_PALATABILITY_ISSUE,Palatability issue with alternative formulation
+PILL_SIZE_CONCERN,Pill size of alternative is a barrier for patient
+FORMULATION_PREFERENCE,Patient prefers current dosage formulation
+LIQUID_FORMULATION_NEEDED,"Liquid formulation needed, not available for alternative"
+EXTENDED_RELEASE_PREFERRED,Extended-release formulation preferred for symptom control
+COST_OPTIMIZATION,Current therapy is more cost-effective for patient
+FORMULARY_OPTIMIZATION,Current agent aligns with formulary preference
+NOT_ON_FORMULARY,Alternative not available on patient's formulary
+INSURANCE_COVERAGE_DENIED,Insurance coverage denied for alternative agent
+PRIOR_AUTH_PENDING,Prior authorization for alternative still pending
+PATIENT_ASSISTANCE_PROGRAM,Patient enrolled in assistance program for current drug
+HIGH_OUT_OF_POCKET_COST,Alternative has prohibitive out-of-pocket cost
+STEP_THERAPY_COMPLETED,Step therapy requirement already completed
+STEP_THERAPY_IN_PROGRESS,Step therapy protocol still in progress
+BIOSIMILAR_CONVERSION,Conversion to biosimilar per payer policy
+BIOSIMILAR_NOT_INTERCHANGEABLE,Biosimilar not deemed interchangeable for this indication
+COPAY_ASSISTANCE_UNAVAILABLE,Copay assistance unavailable for alternative
+GENERIC_NOT_AVAILABLE,Generic equivalent not available for alternative
+THERAPEUTIC_SUBSTITUTION_DECLINED,Therapeutic substitution declined by prescriber
+PRECISION_MEDICINE_MATCH,Current therapy matches precision medicine profile
+PHARMACOGENOMIC_VARIANT,Pharmacogenomic variant affects alternative metabolism
+CYP2D6_POOR_METABOLIZER,CYP2D6 poor metabolizer status affects alternative
+CYP2C19_VARIANT,CYP2C19 variant impacts alternative drug efficacy
+HLA_ALLELE_RISK,HLA allele associated with hypersensitivity to alternative
+BIOMARKER_TESTING_PENDING,Biomarker testing pending before considering switch
+MOLECULAR_TARGET_MATCH,Current agent matches tumor molecular target
+PREGNANCY_SAFETY,Current agent has established pregnancy safety data
+PREGNANCY_CONTRAINDICATED_ALT,Alternative contraindicated in pregnancy
+TERATOGENICITY_RISK,Alternative carries teratogenicity risk
+BREASTFEEDING_COMPATIBILITY,Current agent compatible with breastfeeding
+LACTATION_RISK_ALT,Alternative not recommended during lactation
+PRECONCEPTION_PLANNING,Preconception planning favors current regimen
+GERIATRIC_APPROPRIATE,Current agent more appropriate for geriatric patient
+BEERS_CRITERIA_FLAG,Alternative flagged by Beers Criteria for older adults
+PEDIATRIC_DOSING_LIMIT,Pediatric dosing limits alternative use
+AGE_APPROPRIATE_FORMULATION,Age-appropriate formulation not available for alternative
+FRAILTY_CONCERN,Frailty status limits tolerability of alternative
+FALL_RISK_MITIGATION,Current regimen supports fall-risk mitigation
+ANTICHOLINERGIC_BURDEN,Alternative increases anticholinergic burden
+COGNITIVE_SAFETY,Current agent preferred for cognitive safety
+SEDATION_RISK_ELDERLY,Alternative poses sedation risk in elderly patient
+WEIGHT_MANAGEMENT_BENEFIT,Current therapy supports weight-management goals
+WEIGHT_GAIN_RISK_ALT,Alternative associated with unwanted weight gain
+CARDIOVASCULAR_PROTECTION,Current agent provides cardiovascular protective benefit
+RENAL_PROTECTION_BENEFIT,Current agent provides renal protective benefit
+HEPATIC_SAFETY_PROFILE,Current agent has more favorable hepatic safety profile
+REDUCED_HYPOGLYCEMIA_RISK,Current agent carries lower hypoglycemia risk
+REDUCED_BLEEDING_RISK,Current agent carries lower bleeding risk
+IMPROVED_TOLERABILITY,Current agent demonstrates improved tolerability
+REDUCED_MONITORING_BURDEN,Current agent requires less frequent monitoring
+BONE_DENSITY_PROTECTION,Current agent preferred for bone density protection
+LIPID_PROFILE_BENEFIT,Current agent provides favorable lipid profile effect
+DISCHARGE_PLANNING_HOLD,Discharge planning supports continuing inpatient regimen
+TRANSITION_OF_CARE_CONTINUITY,Continuity of care favors current medication
+MEDICATION_RECONCILIATION_HOLD,Medication reconciliation flagged switch for review
+RECENT_HOSPITALIZATION,Recent hospitalization warrants regimen stability
+POST_SURGICAL_REGIMEN,Post-surgical recovery plan requires current regimen
+ICU_STEP_DOWN_PROTOCOL,ICU step-down protocol dictates current therapy
+READMISSION_RISK_REDUCTION,Current regimen supports readmission risk reduction
+IMMUNOCOMPROMISED_STATUS,Immunocompromised status limits alternative options
+NEUTROPENIA_PRECAUTION,Neutropenia precaution limits alternative agent
+ONCOLOGY_PROTOCOL_ADHERENCE,Oncology treatment protocol requires current agent
+CHEMOTHERAPY_REGIMEN_FIXED,Chemotherapy regimen fixed per treatment cycle
+SUPPORTIVE_CARE_REQUIREMENT,Supportive care requirement favors current agent
+TRANSPLANT_REJECTION_RISK,Switch risks graft rejection in transplant patient
+IMMUNOSUPPRESSION_LEVEL_STABLE,Stable immunosuppression level on current regimen
+GRAFT_VERSUS_HOST_MANAGEMENT,Current agent supports graft-versus-host management
+VACCINATION_TIMING_CONFLICT,Vaccination timing conflicts with alternative initiation
+PALLIATIVE_GOALS_OF_CARE,Palliative goals of care support current regimen
+COMFORT_FOCUSED_THERAPY,Comfort-focused therapy plan favors current agent
+HOSPICE_FORMULARY_LIMIT,Hospice formulary limits available alternatives
+SYMPTOM_CONTROL_PRIORITY,Symptom control priority supports current agent
+LIFE_EXPECTANCY_CONSIDERATION,Limited life expectancy makes switch low-value
+DEPRESCRIBING_CANDIDATE,Medication identified as deprescribing candidate
+DRUG_SHORTAGE_ALT,Alternative currently affected by drug shortage
+MANUFACTURER_BACKORDER,Manufacturer backorder limits alternative availability
+PHARMACY_STOCK_UNAVAILABLE,Current pharmacy stock unavailable for alternative
+DISCONTINUED_PRODUCT,Alternative product has been discontinued by manufacturer
+SUPPLY_CHAIN_DISRUPTION,Supply chain disruption affects alternative sourcing
+ADMINISTRATION_CONVENIENCE,Current regimen offers greater administration convenience
+HOME_ADMINISTRATION_FEASIBLE,Current agent feasible for home administration
+INFUSION_CENTER_LOGISTICS,Infusion center logistics favor current regimen
+CAREGIVER_BURDEN_REDUCTION,Current regimen reduces caregiver administration burden
+QUALITY_OF_LIFE_IMPROVEMENT,Current therapy supports quality-of-life goals
+SCHOOL_WORK_SCHEDULE_FIT,Dosing schedule fits patient's school or work routine
+TRAVEL_STORAGE_CONVENIENCE,Current formulation more convenient for travel storage
+REFRIGERATION_NOT_REQUIRED,Current agent does not require refrigeration
+HOSPITALIZATION_RISK_REDUCTION,Current regimen reduces hospitalization risk
+EMERGENCY_VISIT_RISK_REDUCTION,Current regimen reduces emergency visit risk
+EXACERBATION_PREVENTION,Current agent better prevents disease exacerbation
+RELAPSE_PREVENTION,Current regimen supports relapse prevention
+WITHDRAWAL_RISK,Abrupt switch risks withdrawal symptoms
+REBOUND_EFFECT_RISK,Discontinuation risks rebound effect
+EVIDENCE_BASED_UPDATE,Recent evidence supports continuing current therapy
+NEW_CLINICAL_TRIAL_DATA,New clinical trial data supports current agent
+REAL_WORLD_EVIDENCE_SUPPORT,Real-world evidence supports current regimen choice
+META_ANALYSIS_SUPPORT,Meta-analysis findings support current therapy
+POST_MARKETING_SURVEILLANCE,Post-marketing surveillance data favors current agent
+PRESCRIBER_ORDER_ERROR,Original order contained a prescribing error
+DUPLICATE_THERAPY,Alternative would duplicate existing therapy
+MISSING_DOCUMENTATION,Insufficient documentation to support alternative
+ORDER_ENTRY_CLARIFICATION,Order entry requires clarification before switch
+PHARMACY_VERIFICATION_PENDING,Pharmacy verification of alternative still pending
+DOSE_ROUNDING_ADJUSTMENT,Dose rounding adjustment more suited to current agent
+LAB_MONITORING_NOT_DUE,Required lab monitoring for alternative not yet completed
+CONSENT_NOT_OBTAINED,Patient consent for alternative not yet obtained
+PATIENT_DECLINED_SWITCH,Patient declined proposed medication switch
+CAREGIVER_DECLINED_SWITCH,Caregiver declined proposed medication switch
+LANGUAGE_BARRIER_EDUCATION,Language barrier delays patient education on alternative
+HEALTH_LITERACY_CONCERN,Health literacy concern favors familiar regimen
+ADMINISTRATIVE_HOLD,Administrative hold placed on order pending review
+DUPLICATE_ORDER_DETECTED,Duplicate order detected in medication record
+ORDER_EXPIRED,"Original order expired, requires renewal not switch"
+FORMULARY_RESTRICTION_CRITERIA,Alternative does not meet formulary restriction criteria
+REQUIRES_PRIOR_AUTHORIZATION,Alternative requires prior authorization not yet filed
+MEDICATION_HISTORY_INCOMPLETE,Incomplete medication history prevents safe switch
+EXTERNAL_PHARMACY_RECORD_PENDING,External pharmacy records pending review
+CLINICAL_TRIAL_PROTOCOL_RESTRICTION,Clinical trial protocol restricts medication changes
+REGULATORY_REPORTING_HOLD,Regulatory reporting requirement holds medication change
+MONITORING_PARAMETERS_STABLE,Monitoring parameters stable on current regimen
+DOSE_TITRATION_IN_PROGRESS,Dose titration currently in progress
+STEADY_STATE_NOT_REACHED,Steady state not yet reached on current therapy
+WASHOUT_PERIOD_REQUIRED,Washout period required before starting alternative
+BRIDGING_THERAPY_IN_PLACE,Bridging therapy currently in place
+SEQUENTIAL_THERAPY_PLAN,Sequential therapy plan already established
+COMBINATION_THERAPY_REQUIRED,Combination therapy required per treatment plan
+MONOTHERAPY_PREFERRED,Monotherapy preferred to minimize interaction risk
+ANTIBIOTIC_STEWARDSHIP,Antibiotic stewardship guidance supports current agent
+CULTURE_SENSITIVITY_GUIDED,Culture and sensitivity results guide current choice
+RESISTANCE_PATTERN_CONCERN,Local resistance pattern limits alternative choice
+VACCINE_LIVE_ATTENUATED_CONFLICT,Live attenuated vaccine timing conflicts with alternative
+BONE_MARROW_SUPPRESSION_RISK,Alternative risks bone marrow suppression
+PHOTOSENSITIVITY_RISK,Alternative carries photosensitivity risk
+SKIN_REACTION_HISTORY,History of skin reaction to alternative class
+OCULAR_TOXICITY_RISK,Alternative carries ocular toxicity risk
+OTOTOXICITY_RISK,Alternative carries ototoxicity risk
+PERIPHERAL_NEUROPATHY_RISK,Alternative risks peripheral neuropathy
+PANCREATITIS_RISK,Alternative associated with pancreatitis risk
+GI_BLEED_RISK,Alternative increases gastrointestinal bleed risk
+CONSTIPATION_MANAGEMENT,Current agent better manages opioid-induced constipation
+APPETITE_STIMULATION_NEEDED,Current agent supports needed appetite stimulation
+SLEEP_DISTURBANCE_RISK,Alternative risks worsening sleep disturbance
+EXTRAPYRAMIDAL_SYMPTOM_RISK,Alternative carries extrapyramidal symptom risk
+TARDIVE_DYSKINESIA_HISTORY,History of tardive dyskinesia limits alternative
+SUICIDALITY_RISK_MONITORING,Suicidality risk monitoring favors current agent
+SUBSTANCE_USE_DISORDER_RISK,Alternative carries misuse potential given SUD history
+ABUSE_DETERRENT_FORMULATION,Current formulation offers abuse-deterrent properties
+OPIOID_SPARING_STRATEGY,Current regimen supports opioid-sparing strategy
+RESPIRATORY_FUNCTION_DECLINE,Declining respiratory function limits alternative
+PULMONARY_FIBROSIS_RISK,Alternative associated with pulmonary fibrosis risk
+BRONCHOSPASM_RISK,Alternative risks bronchospasm in reactive airway disease
+STEROID_SPARING_GOAL,Current regimen supports steroid-sparing treatment goal
+ADRENAL_SUPPRESSION_RISK,Alternative risks adrenal suppression with prolonged use
+THYROID_FUNCTION_IMPACT,Alternative may impact thyroid function tests
+BONE_MINERAL_DENSITY_RISK,Alternative associated with reduced bone mineral density
+VISUAL_FIELD_MONITORING,Current agent requires established visual field monitoring
+BLOOD_PRESSURE_DESTABILIZATION,Alternative risks blood pressure destabilization
+ORTHOSTATIC_HYPOTENSION_RISK,Alternative increases orthostatic hypotension risk
+DEHYDRATION_RISK,Alternative poses dehydration risk in current clinical state
+VOLUME_OVERLOAD_RISK,Alternative risks volume overload in heart failure patient
+ANEMIA_MANAGEMENT,Current agent supports anemia management plan
+IRON_OVERLOAD_RISK,Alternative contraindicated due to iron overload risk
+IMMUNIZATION_SCHEDULE_ALIGNMENT,Current regimen aligns with immunization schedule
+SURGICAL_PERIOPERATIVE_HOLD,Perioperative plan requires holding medication change
+ANESTHESIA_INTERACTION_RISK,Alternative risks interaction with planned anesthesia
+WOUND_HEALING_CONCERN,Alternative may impair wound healing
+SKIN_INTEGRITY_CONCERN,Alternative poses skin integrity concern
+PHOTOTHERAPY_INTERACTION,Alternative interacts with ongoing phototherapy
+BIOLOGIC_WASHOUT_REQUIRED,Biologic washout period required before switch
+INFECTION_RISK_ACTIVE,Active infection precludes initiating alternative
+LATENT_TB_SCREENING_PENDING,Latent TB screening pending before biologic switch
+HEPATITIS_REACTIVATION_RISK,Alternative risks hepatitis reactivation
+VACCINATION_STATUS_INCOMPLETE,Incomplete vaccination status delays alternative initiation
+DRUG_INDUCED_LUPUS_RISK,Alternative associated with drug-induced lupus risk
+MYOPATHY_RISK,Alternative carries myopathy risk given current regimen
+RHABDOMYOLYSIS_RISK,Combination risks rhabdomyolysis
+LACTIC_ACIDOSIS_RISK,Alternative carries lactic acidosis risk in renal impairment
+DKA_RISK_CONSIDERATION,Alternative carries diabetic ketoacidosis risk consideration
+HYPERKALEMIA_RISK,Alternative risks hyperkalemia given current regimen
+HYPONATREMIA_RISK,Alternative risks hyponatremia in current patient
+BONE_FRACTURE_RISK,Alternative associated with increased fracture risk
+COGNITIVE_DECLINE_CONCERN,Alternative raises concern for cognitive decline
+DELIRIUM_RISK,Alternative increases delirium risk in hospitalized patient
+SEDATION_LEVEL_TARGET,Current agent maintains appropriate sedation level target
+PAIN_CONTROL_ADEQUATE,Pain control adequate on current regimen
+BREAKTHROUGH_SYMPTOM_CONTROL,Current regimen better controls breakthrough symptoms
+TITRATION_SCHEDULE_LOCKED,Titration schedule locked per treatment protocol
+MEDICATION_ASSISTED_TREATMENT,Medication-assisted treatment plan requires continuity
+HARM_REDUCTION_STRATEGY,Harm reduction strategy supports current regimen
+CONTINUITY_OF_PRESCRIBER,Continuity with original prescribing specialist preferred
+REGIMEN_STABILITY_PRIORITY,Regimen stability prioritized over marginal benefit
+RECENT_DOSE_CHANGE,Recent dose change too soon for further switch
+THERAPEUTIC_INERTIA_AVOIDANCE,"Avoiding therapeutic inertia, escalate rather than switch"
+GENETIC_TESTING_PENDING,Genetic testing results pending before treatment change
+SECOND_OPINION_REQUESTED,Second opinion requested before medication change
+CLINICAL_TRIAL_ENROLLMENT,Patient enrolled in clinical trial restricting changes
+INSUFFICIENT_TRIAL_DURATION,Insufficient trial duration to assess current therapy
+SYMPTOM_DIARY_REVIEW_PENDING,Symptom diary review pending before switch decision
+REMOTE_MONITORING_DATA_PENDING,Remote monitoring data pending clinical review
+DEVICE_INTEGRATION_REQUIREMENT,Alternative lacks required device integration compatibility
+HOME_HEALTH_NURSE_TRAINING,Home health nurse training required before switching device
+ADMINISTRATION_SITE_ROTATION,Current regimen allows appropriate administration site rotation
+INJECTION_SITE_REACTION_HISTORY,History of injection site reaction to alternative
+INFUSION_REACTION_HISTORY,History of infusion reaction to alternative agent
+PREMEDICATION_PROTOCOL_ESTABLISHED,Premedication protocol already established for current agent
+NUTRITIONAL_STATUS_CONCERN,Nutritional status concern limits alternative tolerability
+ENTERAL_FEEDING_COMPATIBILITY,Current formulation compatible with enteral feeding tube
+CRUSHABLE_FORMULATION_NEEDED,"Crushable formulation needed, unavailable for alternative"
+SUBLINGUAL_ROUTE_PREFERRED,Sublingual route preferred for rapid symptom relief
+TRANSDERMAL_ROUTE_PREFERRED,Transdermal route preferred given GI limitations
+RECTAL_ROUTE_NOT_FEASIBLE,Rectal route not feasible for this patient
+IV_ACCESS_LIMITATION,Limited IV access favors oral or subcutaneous alternative
+SUBCUTANEOUS_PORT_IN_PLACE,Subcutaneous port already in place for current therapy
+HOME_INFUSION_LOGISTICS,Home infusion logistics support current regimen
+CLINICAL_STABILITY_PRIORITIZED,Clinical stability prioritized over cost-driven switch
+REGIMEN_RECENTLY_OPTIMIZED,Regimen was recently optimized after dose adjustment
+PATIENT_SATISFACTION_HIGH,High patient satisfaction reported with current regimen
+CAREGIVER_TRAINING_COMPLETED,Caregiver training already completed for current regimen
+LONG_TERM_SAFETY_DATA_LACKING,Alternative lacks sufficient long-term safety data
+NEWER_AGENT_LIMITED_EXPERIENCE,Limited real-world experience with newer alternative agent
+ESTABLISHED_SAFETY_RECORD,Current agent has long-established safety record
+REGIMEN_ALIGNED_WITH_LIFESTYLE,Current regimen aligns with patient's daily lifestyle
+SHIFT_WORK_SCHEDULE_FIT,Dosing schedule accommodates patient's shift-work pattern
+ATHLETIC_PERFORMANCE_CONSIDERATION,Athletic performance considerations favor current agent
+DRIVING_SAFETY_CONSIDERATION,Driving safety considerations favor current sedation profile
+OCCUPATIONAL_EXPOSURE_CONCERN,Occupational exposure concern limits alternative choice
+ANIMAL_DERIVED_INGREDIENT_CONCERN,Alternative contains animal-derived ingredient of concern
+RELIGIOUS_DIETARY_RESTRICTION,Alternative conflicts with patient's dietary restriction
+GLUTEN_FREE_FORMULATION_NEEDED,"Gluten-free formulation needed, unavailable for alternative"
+LACTOSE_INTOLERANCE_EXCIPIENT,Alternative contains lactose excipient of concern
+DYE_SENSITIVITY,Patient has documented sensitivity to formulation dye
+PRESERVATIVE_SENSITIVITY,Patient has documented sensitivity to formulation preservative
+LATEX_ALLERGY_DEVICE,Alternative device components contain latex allergen
+NEEDLE_PHOBIA,Documented needle phobia limits injectable alternative
+SELF_ADMINISTRATION_CAPABILITY,Current regimen supports patient's self-administration capability
+VISION_IMPAIRMENT_DEVICE_LIMIT,Vision impairment limits use of alternative device
+DEXTERITY_LIMITATION_DEVICE,Dexterity limitation restricts alternative device use
+COGNITIVE_IMPAIRMENT_REGIMEN_FIT,Simplified regimen better fits cognitive impairment level
+REMOTE_LOCATION_ACCESS_LIMIT,Remote patient location limits access to alternative
+SPECIALTY_PHARMACY_ENROLLMENT,Patient already enrolled with current specialty pharmacy
+REMS_PROGRAM_REQUIREMENT,REMS program enrollment already established for current agent
+BOXED_WARNING_MONITORING_IN_PLACE,Required boxed-warning monitoring already in place
+TREATMENT_DURATION_LIMIT_REACHED,"Treatment duration limit reached, discontinuation planned"
+MAX_DOSE_ALREADY_REACHED,Maximum dose of current agent already reached
+COMBINATION_CONTRAINDICATED,Combination of current and alternative agents contraindicated
+ALTERNATIVE_UNDER_INVESTIGATION,Alternative currently under safety investigation
+RECALL_AFFECTING_ALTERNATIVE,Product recall currently affecting alternative agent
+COMPOUNDING_REQUIRED_UNAVAILABLE,Compounded formulation required but currently unavailable
+BRAND_ONLY_AVAILABILITY,"Alternative only available as brand, cost prohibitive"
+THERAPEUTIC_EQUIVALENCE_UNCERTAIN,Therapeutic equivalence of alternative uncertain for narrow index drug
+PATIENT_TRAVELING_ABROAD,"Patient traveling abroad, formulation continuity preferred"
+MILITARY_DEPLOYMENT_CONSIDERATION,Deployment considerations favor current stable regimen
+INCARCERATION_FORMULARY_LIMIT,Correctional facility formulary limits alternative access
+LONG_TERM_CARE_FORMULARY_LIMIT,Long-term care facility formulary limits alternative access
+ASSISTED_LIVING_MED_PASS_FIT,Current regimen fits assisted living medication pass schedule
+SCHOOL_NURSE_ADMINISTRATION_FIT,Current dosing schedule fits school nurse administration
+EMS_PROTOCOL_ALIGNMENT,Current regimen aligns with EMS treatment protocol
+DISASTER_PREPAREDNESS_SUPPLY,Continuity of supply favored for disaster preparedness
+OTHER,Other (free text required)

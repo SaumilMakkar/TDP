@@ -1,0 +1,207 @@
+/* PBM review page tweaks to match page30 3 drawio layout. */
+
+.pbm-review-page .review-dual-row {
+  align-items: stretch;
+}
+
+.pbm-review-page .review-dual-row:has(.pbm-clinical-card) {
+  grid-template-columns: 1.03fr 0.98fr;
+}
+
+.pbm-review-page .pbm-force-open {
+  display: block;
+}
+
+.pbm-review-page .pbm-cost-card,
+.pbm-review-page .pbm-coverage-card,
+.pbm-review-page .pbm-policy-card,
+.pbm-review-page .pbm-past-card {
+  min-height: 300px;
+  padding: 14px 18px;
+}
+
+.pbm-review-page .pbm-clinical-card {
+  grid-template-columns: 1fr 1fr;
+  padding: 14px 18px;
+  gap: 12px;
+  position: relative;
+}
+
+.pbm-review-page .pbm-clinical-card #agent-badge-clinical {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+}
+
+.pbm-review-page .split-panel {
+  padding: 0;
+  min-height: 220px;
+}
+
+.pbm-review-page .section-head {
+  margin: 0 0 8px 0;
+}
+
+.pbm-review-page .pbm-subhead {
+  margin: 0 0 6px;
+  color: #333333;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.pbm-review-page .pbm-past-card {
+  min-height: 120px;
+}
+
+.pbm-review-page .pbm-past-card .section-head {
+  padding-right: 52px;
+}
+
+.pbm-review-page .pbm-past-card #agent-badge-past {
+  top: 14px;
+  right: 18px;
+}
+
+.pbm-review-page .pbm-past-card .decision-summary {
+  margin-top: 10px;
+  border: none;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.35;
+  font-weight: 700;
+  color: #12294b;
+}
+
+.pbm-review-page .financial-details {
+  margin-top: 8px;
+  padding-top: 0;
+  border-top: none;
+}
+
+.pbm-review-page .policy-details {
+  margin-top: 8px;
+  padding-top: 0;
+  border-top: none;
+}
+
+.pbm-review-page .policy-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pbm-review-page .review-button-ghost,
+.pbm-review-page #view-more-btn,
+.pbm-review-page #policy-view-more-btn,
+.pbm-review-page .decision-actions,
+.pbm-review-page .reject-panel {
+  display: none !important;
+}
+
+/* PBM PDF export: hide "View more" controls and final decision block. */
+#review-pdf-area.pdf-export-mode #view-more-btn,
+#review-pdf-area.pdf-export-mode #policy-view-more-btn,
+#review-pdf-area.pdf-export-mode #dual-view-toggle-btn {
+  display: none !important;
+}
+
+#review-pdf-area.pdf-export-mode .pbm-past-card,
+#review-pdf-area.pdf-export-mode .decision-card {
+  display: none !important;
+}
+
+/* PBM PDF export spacing tune: improve visual breathing room. */
+.pbm-review-page #review-pdf-area.pdf-export-mode {
+  padding: 12px 22px 20px;
+}
+
+.pbm-review-page #review-pdf-area.pdf-export-mode .review-main {
+  gap: 16px;
+}
+
+.pbm-review-page #review-pdf-area.pdf-export-mode .review-card {
+  box-shadow: 0 1px 6px rgba(61, 60, 56, 0.08);
+}
+
+.pbm-review-page #review-pdf-area.pdf-export-mode .report-card,
+.pbm-review-page #review-pdf-area.pdf-export-mode .summary-strip-card {
+  margin-bottom: 2px;
+}
+
+.pbm-review-page #review-pdf-area.pdf-export-mode .review-dual-row {
+  gap: 16px;
+}
+
+.pbm-review-page #review-pdf-area.pdf-export-mode .pbm-cost-card,
+.pbm-review-page #review-pdf-area.pdf-export-mode .pbm-coverage-card,
+.pbm-review-page #review-pdf-area.pdf-export-mode .pbm-policy-card,
+.pbm-review-page #review-pdf-area.pdf-export-mode .pbm-clinical-card {
+  padding: 16px 20px;
+}
+
+.pbm-review-page #review-pdf-area.pdf-export-mode .section-head {
+  margin-bottom: 10px;
+}
+
+.pbm-review-page #review-pdf-area.pdf-export-mode .policy-stack {
+  gap: 12px;
+}
+
+.pbm-review-page #review-pdf-area.pdf-export-mode .policy-row {
+  gap: 6px;
+}
+
+.pbm-review-page #review-pdf-area.pdf-export-mode .policy-note {
+  padding-top: 4px;
+}
+
+.pbm-review-page #review-pdf-area.pdf-export-mode .policy-note p {
+  margin-top: 7px;
+  line-height: 1.55;
+}
+
+.pbm-review-page #review-pdf-area.pdf-export-mode .coverage-details-section {
+  gap: 14px;
+}
+
+.pbm-review-page #review-pdf-area.pdf-export-mode .coverage-grid-3 {
+  gap: 12px;
+}
+
+.pbm-review-page #review-pdf-area.pdf-export-mode .coverage-item {
+  gap: 4px;
+}
+
+.pbm-review-page #review-pdf-area.pdf-export-mode .coverage-progress {
+  gap: 8px;
+}
+
+.pbm-review-page #review-pdf-area.pdf-export-mode .coverage-caps {
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.pbm-review-page #review-pdf-area.pdf-export-mode .financial-details {
+  margin-top: 10px;
+}
+
+.pbm-review-page #review-pdf-area.pdf-export-mode .cost-table-header,
+.pbm-review-page #review-pdf-area.pdf-export-mode .cost-table-row {
+  grid-template-columns: 1.05fr 1fr 1fr;
+}
+
+.pbm-review-page #review-pdf-area.pdf-export-mode .cost-table-cell {
+  padding: 10px 12px;
+  line-height: 1.35;
+}
+
+.pbm-review-page #review-pdf-area.pdf-export-mode .cost-header-col {
+  padding: 11px 12px;
+}
+
+.pbm-review-page #review-pdf-area.pdf-export-mode .cost-savings-highlight {
+  margin-top: 10px;
+  padding: 14px 14px;
+}

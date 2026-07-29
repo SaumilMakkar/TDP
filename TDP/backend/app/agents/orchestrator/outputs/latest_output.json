@@ -1,0 +1,680 @@
+{
+  "orchestrator": "pbm-orchestrator",
+  "request_id": "trace-1785311802637-5ippu6s0g",
+  "status": "success",
+  "final_outcome": "PROVIDER_REVIEW_SELECTION_PENDING",
+  "selected_alternative": null,
+  "provider_review_list": [
+    {
+      "rank": 2,
+      "alternative_id": 1007,
+      "alternative_name": "Glipizide 5mg",
+      "adjusted_score": null,
+      "final_band": null,
+      "final_status": "UNKNOWN",
+      "summary": {
+        "rank": 2,
+        "alternative_id": 1007,
+        "alternative_name": "Glipizide 5mg",
+        "final_band": 3,
+        "summary_cards": {
+          "financial_agent": {
+            "status": "COST_FAVORABLE",
+            "original_drug": "1009",
+            "alternative_drug": "1007",
+            "original_tier": "4",
+            "alternative_tier": "4",
+            "original_total_price": "4116.84",
+            "alternative_total_price": "200.38",
+            "original_copay": "4116.84",
+            "alternative_copay": "200.38",
+            "original_plan_paid": "0.0",
+            "alternative_plan_paid": "0.0",
+            "annual_savings": "3916.46",
+            "savings_percent": "95",
+            "summary": "Candidate 1007 saves $3916.46 annually compared to original drug 1009.",
+            "score": 0.95
+          },
+          "insurance_context": {
+            "insurance_phase": "DEDUCTIBLE",
+            "ytd_oop": "0.0",
+            "coinsurance": "1.0",
+            "deductible_limit": "1000.0",
+            "deductible_met": "0.0",
+            "deductible_remaining": "1000.0",
+            "oop_max": "6000.0",
+            "oop_used": "0.0",
+            "oop_remaining": "6000.0"
+          },
+          "clinical_agent": {
+            "status": "CLINICALLY_ACCEPTABLE",
+            "clinical_summary": [
+              "Different active ingredient",
+              "Same therapeutic class",
+              "Same oral route",
+              "Similar mechanism of action"
+            ],
+            "safety_summary": [
+              "No allergy concern identified",
+              "No age-related concern",
+              "Caution: renal impairment risk",
+              "Caution: potential BPH exacerbation"
+            ]
+          },
+          "policy_agent": {
+            "status": "POLICY_APPROVED",
+            "original_status": "Prior Authorization Required",
+            "alternative_status": "Covered",
+            "formulary_preference": "Covered",
+            "coverage_status": "covered",
+            "policy_checks_passed": true,
+            "policy_notes": "Covered under plan default (no specific formulary rule on file).",
+            "key_findings": [],
+            "score": 0.8
+          },
+          "past_decision_agent": {
+            "status": "RECOMMENDED",
+            "historical_confidence": "High",
+            "summary": "Historical evidence supports Glipizide 5mg for M81.6 with consistent positive outcomes.",
+            "recommendation_supported": true,
+            "score": 0.86
+          }
+        },
+        "summary_generation_fail_safe": null
+      }
+    },
+    {
+      "rank": 1,
+      "alternative_id": 1006,
+      "alternative_name": "Metformin 500mg",
+      "adjusted_score": null,
+      "final_band": null,
+      "final_status": "UNKNOWN",
+      "summary": {
+        "rank": 1,
+        "alternative_id": 1006,
+        "alternative_name": "Metformin 500mg",
+        "final_band": 3,
+        "summary_cards": {
+          "financial_agent": {
+            "status": "COST_FAVORABLE",
+            "original_drug": "Drug_1009",
+            "alternative_drug": "Metformin 500mg",
+            "original_tier": "4",
+            "alternative_tier": "2",
+            "original_total_price": "4116.84",
+            "alternative_total_price": "121.42",
+            "original_copay": "338.37",
+            "alternative_copay": "9.98",
+            "original_plan_paid": "0.0",
+            "alternative_plan_paid": "0.0",
+            "annual_savings": "3995.42",
+            "savings_percent": "97",
+            "summary": "Candidate 1006 ($121.42/year on tier 2) saves $3995.42/year (+97%) over original drug 1009 ($4116.84/year on tier 4).",
+            "score": 0.95
+          },
+          "insurance_context": {
+            "insurance_phase": "DEDUCTIBLE",
+            "ytd_oop": "0.0",
+            "coinsurance": "1.0",
+            "deductible_limit": "1000.0",
+            "deductible_met": "0.0",
+            "deductible_remaining": "1000.0",
+            "oop_max": "6000.0",
+            "oop_used": "0.0",
+            "oop_remaining": "6000.0"
+          },
+          "clinical_agent": {
+            "status": "CLINICALLY_ACCEPTABLE",
+            "clinical_summary": [
+              "Different active ingredient",
+              "Same therapeutic class",
+              "Same oral route",
+              "Similar mechanism of action"
+            ],
+            "safety_summary": [
+              "No allergy concern identified",
+              "No age-related concern",
+              "Renal caution: moderate impairment",
+              "No major interaction concern"
+            ]
+          },
+          "policy_agent": {
+            "status": "POLICY_APPROVED",
+            "original_status": "Prior Authorization Required",
+            "alternative_status": "Step Therapy Required",
+            "formulary_preference": "Exception Only",
+            "coverage_status": "covered",
+            "policy_checks_passed": true,
+            "policy_notes": "Step therapy required; no evidence the qualifying alternative was tried first.",
+            "key_findings": [
+              "Step therapy required; no evidence the qualifying alternative was tried first."
+            ],
+            "score": 0.32
+          },
+          "past_decision_agent": {
+            "status": "RECOMMENDED",
+            "historical_confidence": "High",
+            "summary": "Historical evidence supports Metformin 500mg for diagnosis M81.6 with consistent positive outcomes.",
+            "recommendation_supported": true,
+            "score": 0.91
+          }
+        },
+        "summary_generation_fail_safe": null
+      }
+    }
+  ],
+  "provider_packet": {
+    "required": true,
+    "alternatives": [
+      {
+        "rank": 2,
+        "alternative_id": 1007,
+        "alternative_name": "Glipizide 5mg",
+        "summary": {
+          "rank": 2,
+          "alternative_id": 1007,
+          "alternative_name": "Glipizide 5mg",
+          "final_band": 3,
+          "summary_cards": {
+            "financial_agent": {
+              "status": "COST_FAVORABLE",
+              "original_drug": "1009",
+              "alternative_drug": "1007",
+              "original_tier": "4",
+              "alternative_tier": "4",
+              "original_total_price": "4116.84",
+              "alternative_total_price": "200.38",
+              "original_copay": "4116.84",
+              "alternative_copay": "200.38",
+              "original_plan_paid": "0.0",
+              "alternative_plan_paid": "0.0",
+              "annual_savings": "3916.46",
+              "savings_percent": "95",
+              "summary": "Candidate 1007 saves $3916.46 annually compared to original drug 1009.",
+              "score": 0.95
+            },
+            "insurance_context": {
+              "insurance_phase": "DEDUCTIBLE",
+              "ytd_oop": "0.0",
+              "coinsurance": "1.0",
+              "deductible_limit": "1000.0",
+              "deductible_met": "0.0",
+              "deductible_remaining": "1000.0",
+              "oop_max": "6000.0",
+              "oop_used": "0.0",
+              "oop_remaining": "6000.0"
+            },
+            "clinical_agent": {
+              "status": "CLINICALLY_ACCEPTABLE",
+              "clinical_summary": [
+                "Different active ingredient",
+                "Same therapeutic class",
+                "Same oral route",
+                "Similar mechanism of action"
+              ],
+              "safety_summary": [
+                "No allergy concern identified",
+                "No age-related concern",
+                "Caution: renal impairment risk",
+                "Caution: potential BPH exacerbation"
+              ],
+              "agent_summary": [
+                "Alternative matches class and route.",
+                "Renal impairment increases hypoglycemia risk."
+              ],
+              "agent_reasoning": {
+                "stage_a": "",
+                "stage_b": "The patient's eGFR of 52 mL/min suggests moderate renal impairment, which increases the risk of hypoglycemia with Glipizide. Additionally, the condition match score of 0.5 reflects potential concerns with BPH, as sulfonylureas can exacerbate urinary retention. These risks warrant a conservative negative adjustment."
+              }
+            },
+            "policy_agent": {
+              "status": "POLICY_APPROVED",
+              "original_status": "Prior Authorization Required",
+              "alternative_status": "Covered",
+              "formulary_preference": "Covered",
+              "coverage_status": "covered",
+              "policy_checks_passed": true,
+              "policy_notes": "Covered under plan default (no specific formulary rule on file).",
+              "key_findings": [],
+              "score": 0.8
+            },
+            "past_decision_agent": {
+              "status": "RECOMMENDED",
+              "historical_confidence": "High",
+              "summary": "Historical evidence supports Glipizide 5mg for M81.6 with consistent positive outcomes.",
+              "recommendation_supported": true,
+              "score": 0.86
+            }
+          },
+          "summary_generation_fail_safe": null
+        }
+      },
+      {
+        "rank": 1,
+        "alternative_id": 1006,
+        "alternative_name": "Metformin 500mg",
+        "summary": {
+          "rank": 1,
+          "alternative_id": 1006,
+          "alternative_name": "Metformin 500mg",
+          "final_band": 3,
+          "summary_cards": {
+            "financial_agent": {
+              "status": "COST_FAVORABLE",
+              "original_drug": "Drug_1009",
+              "alternative_drug": "Metformin 500mg",
+              "original_tier": "4",
+              "alternative_tier": "2",
+              "original_total_price": "4116.84",
+              "alternative_total_price": "121.42",
+              "original_copay": "338.37",
+              "alternative_copay": "9.98",
+              "original_plan_paid": "0.0",
+              "alternative_plan_paid": "0.0",
+              "annual_savings": "3995.42",
+              "savings_percent": "97",
+              "summary": "Candidate 1006 ($121.42/year on tier 2) saves $3995.42/year (+97%) over original drug 1009 ($4116.84/year on tier 4).",
+              "score": 0.95
+            },
+            "insurance_context": {
+              "insurance_phase": "DEDUCTIBLE",
+              "ytd_oop": "0.0",
+              "coinsurance": "1.0",
+              "deductible_limit": "1000.0",
+              "deductible_met": "0.0",
+              "deductible_remaining": "1000.0",
+              "oop_max": "6000.0",
+              "oop_used": "0.0",
+              "oop_remaining": "6000.0"
+            },
+            "clinical_agent": {
+              "status": "CLINICALLY_ACCEPTABLE",
+              "clinical_summary": [
+                "Different active ingredient",
+                "Same therapeutic class",
+                "Same oral route",
+                "Similar mechanism of action"
+              ],
+              "safety_summary": [
+                "No allergy concern identified",
+                "No age-related concern",
+                "Renal caution: moderate impairment",
+                "No major interaction concern"
+              ],
+              "agent_summary": [
+                "Metformin clinically acceptable alternative.",
+                "Renal caution due to eGFR 52."
+              ],
+              "agent_reasoning": {
+                "stage_a": "",
+                "stage_b": "Renal function data indicates eGFR of 52, which suggests moderate renal impairment. Metformin carries a risk of lactic acidosis in such patients, warranting caution. No contraindications or interactions were detected, but the renal risk justifies a conservative score adjustment for patient safety."
+              }
+            },
+            "policy_agent": {
+              "status": "POLICY_APPROVED",
+              "original_status": "Prior Authorization Required",
+              "alternative_status": "Step Therapy Required",
+              "formulary_preference": "Exception Only",
+              "coverage_status": "covered",
+              "policy_checks_passed": true,
+              "policy_notes": "Step therapy required; no evidence the qualifying alternative was tried first.",
+              "key_findings": [
+                "Step therapy required; no evidence the qualifying alternative was tried first."
+              ],
+              "score": 0.32
+            },
+            "past_decision_agent": {
+              "status": "RECOMMENDED",
+              "historical_confidence": "High",
+              "summary": "Historical evidence supports Metformin 500mg for diagnosis M81.6 with consistent positive outcomes.",
+              "recommendation_supported": true,
+              "score": 0.91
+            }
+          },
+          "summary_generation_fail_safe": null
+        }
+      }
+    ]
+  },
+  "pbm_packet": {
+    "sent": true,
+    "selected_alternative": null,
+    "review_alternatives": [
+      {
+        "rank": 2,
+        "alternative_id": 1007,
+        "alternative_name": "Glipizide 5mg",
+        "summary": {
+          "rank": 2,
+          "alternative_id": 1007,
+          "alternative_name": "Glipizide 5mg",
+          "final_band": 3,
+          "summary_cards": {
+            "financial_agent": {
+              "status": "COST_FAVORABLE",
+              "original_drug": "1009",
+              "alternative_drug": "1007",
+              "original_tier": "4",
+              "alternative_tier": "4",
+              "original_total_price": "4116.84",
+              "alternative_total_price": "200.38",
+              "original_copay": "4116.84",
+              "alternative_copay": "200.38",
+              "original_plan_paid": "0.0",
+              "alternative_plan_paid": "0.0",
+              "annual_savings": "3916.46",
+              "savings_percent": "95",
+              "summary": "Candidate 1007 saves $3916.46 annually compared to original drug 1009.",
+              "score": 0.95
+            },
+            "insurance_context": {
+              "insurance_phase": "DEDUCTIBLE",
+              "ytd_oop": "0.0",
+              "coinsurance": "1.0",
+              "deductible_limit": "1000.0",
+              "deductible_met": "0.0",
+              "deductible_remaining": "1000.0",
+              "oop_max": "6000.0",
+              "oop_used": "0.0",
+              "oop_remaining": "6000.0"
+            },
+            "clinical_agent": {
+              "status": "CLINICALLY_ACCEPTABLE",
+              "clinical_summary": [
+                "Different active ingredient",
+                "Same therapeutic class",
+                "Same oral route",
+                "Similar mechanism of action"
+              ],
+              "safety_summary": [
+                "No allergy concern identified",
+                "No age-related concern",
+                "Caution: renal impairment risk",
+                "Caution: potential BPH exacerbation"
+              ]
+            },
+            "policy_agent": {
+              "status": "POLICY_APPROVED",
+              "original_status": "Prior Authorization Required",
+              "alternative_status": "Covered",
+              "formulary_preference": "Covered",
+              "coverage_status": "covered",
+              "policy_checks_passed": true,
+              "policy_notes": "Covered under plan default (no specific formulary rule on file).",
+              "key_findings": [],
+              "score": 0.8
+            },
+            "past_decision_agent": {
+              "status": "RECOMMENDED",
+              "historical_confidence": "High",
+              "summary": "Historical evidence supports Glipizide 5mg for M81.6 with consistent positive outcomes.",
+              "recommendation_supported": true,
+              "score": 0.86
+            }
+          },
+          "summary_generation_fail_safe": null
+        }
+      },
+      {
+        "rank": 1,
+        "alternative_id": 1006,
+        "alternative_name": "Metformin 500mg",
+        "summary": {
+          "rank": 1,
+          "alternative_id": 1006,
+          "alternative_name": "Metformin 500mg",
+          "final_band": 3,
+          "summary_cards": {
+            "financial_agent": {
+              "status": "COST_FAVORABLE",
+              "original_drug": "Drug_1009",
+              "alternative_drug": "Metformin 500mg",
+              "original_tier": "4",
+              "alternative_tier": "2",
+              "original_total_price": "4116.84",
+              "alternative_total_price": "121.42",
+              "original_copay": "338.37",
+              "alternative_copay": "9.98",
+              "original_plan_paid": "0.0",
+              "alternative_plan_paid": "0.0",
+              "annual_savings": "3995.42",
+              "savings_percent": "97",
+              "summary": "Candidate 1006 ($121.42/year on tier 2) saves $3995.42/year (+97%) over original drug 1009 ($4116.84/year on tier 4).",
+              "score": 0.95
+            },
+            "insurance_context": {
+              "insurance_phase": "DEDUCTIBLE",
+              "ytd_oop": "0.0",
+              "coinsurance": "1.0",
+              "deductible_limit": "1000.0",
+              "deductible_met": "0.0",
+              "deductible_remaining": "1000.0",
+              "oop_max": "6000.0",
+              "oop_used": "0.0",
+              "oop_remaining": "6000.0"
+            },
+            "clinical_agent": {
+              "status": "CLINICALLY_ACCEPTABLE",
+              "clinical_summary": [
+                "Different active ingredient",
+                "Same therapeutic class",
+                "Same oral route",
+                "Similar mechanism of action"
+              ],
+              "safety_summary": [
+                "No allergy concern identified",
+                "No age-related concern",
+                "Renal caution: moderate impairment",
+                "No major interaction concern"
+              ]
+            },
+            "policy_agent": {
+              "status": "POLICY_APPROVED",
+              "original_status": "Prior Authorization Required",
+              "alternative_status": "Step Therapy Required",
+              "formulary_preference": "Exception Only",
+              "coverage_status": "covered",
+              "policy_checks_passed": true,
+              "policy_notes": "Step therapy required; no evidence the qualifying alternative was tried first.",
+              "key_findings": [
+                "Step therapy required; no evidence the qualifying alternative was tried first."
+              ],
+              "score": 0.32
+            },
+            "past_decision_agent": {
+              "status": "RECOMMENDED",
+              "historical_confidence": "High",
+              "summary": "Historical evidence supports Metformin 500mg for diagnosis M81.6 with consistent positive outcomes.",
+              "recommendation_supported": true,
+              "score": 0.91
+            }
+          },
+          "summary_generation_fail_safe": null
+        }
+      }
+    ]
+  },
+  "pharmacist_packet": {
+    "sent": true,
+    "selected_alternative": null,
+    "review_alternatives": [
+      {
+        "rank": 2,
+        "alternative_id": 1007,
+        "alternative_name": "Glipizide 5mg",
+        "summary": {
+          "rank": 2,
+          "alternative_id": 1007,
+          "alternative_name": "Glipizide 5mg",
+          "final_band": 3,
+          "summary_cards": {
+            "financial_agent": {
+              "status": "COST_FAVORABLE",
+              "original_drug": "1009",
+              "alternative_drug": "1007",
+              "original_tier": "4",
+              "alternative_tier": "4",
+              "original_total_price": "4116.84",
+              "alternative_total_price": "200.38",
+              "original_copay": "4116.84",
+              "alternative_copay": "200.38",
+              "original_plan_paid": "0.0",
+              "alternative_plan_paid": "0.0",
+              "annual_savings": "3916.46",
+              "savings_percent": "95",
+              "summary": "Candidate 1007 saves $3916.46 annually compared to original drug 1009.",
+              "score": 0.95
+            },
+            "insurance_context": {
+              "insurance_phase": "DEDUCTIBLE",
+              "ytd_oop": "0.0",
+              "coinsurance": "1.0",
+              "deductible_limit": "1000.0",
+              "deductible_met": "0.0",
+              "deductible_remaining": "1000.0",
+              "oop_max": "6000.0",
+              "oop_used": "0.0",
+              "oop_remaining": "6000.0"
+            },
+            "clinical_agent": {
+              "status": "CLINICALLY_ACCEPTABLE",
+              "clinical_summary": [
+                "Different active ingredient",
+                "Same therapeutic class",
+                "Same oral route",
+                "Similar mechanism of action"
+              ],
+              "safety_summary": [
+                "No allergy concern identified",
+                "No age-related concern",
+                "Caution: renal impairment risk",
+                "Caution: potential BPH exacerbation"
+              ]
+            },
+            "policy_agent": {
+              "status": "POLICY_APPROVED",
+              "original_status": "Prior Authorization Required",
+              "alternative_status": "Covered",
+              "formulary_preference": "Covered",
+              "coverage_status": "covered",
+              "policy_checks_passed": true,
+              "policy_notes": "Covered under plan default (no specific formulary rule on file).",
+              "key_findings": [],
+              "score": 0.8
+            },
+            "past_decision_agent": {
+              "status": "RECOMMENDED",
+              "historical_confidence": "High",
+              "summary": "Historical evidence supports Glipizide 5mg for M81.6 with consistent positive outcomes.",
+              "recommendation_supported": true,
+              "score": 0.86
+            }
+          },
+          "summary_generation_fail_safe": null
+        }
+      },
+      {
+        "rank": 1,
+        "alternative_id": 1006,
+        "alternative_name": "Metformin 500mg",
+        "summary": {
+          "rank": 1,
+          "alternative_id": 1006,
+          "alternative_name": "Metformin 500mg",
+          "final_band": 3,
+          "summary_cards": {
+            "financial_agent": {
+              "status": "COST_FAVORABLE",
+              "original_drug": "Drug_1009",
+              "alternative_drug": "Metformin 500mg",
+              "original_tier": "4",
+              "alternative_tier": "2",
+              "original_total_price": "4116.84",
+              "alternative_total_price": "121.42",
+              "original_copay": "338.37",
+              "alternative_copay": "9.98",
+              "original_plan_paid": "0.0",
+              "alternative_plan_paid": "0.0",
+              "annual_savings": "3995.42",
+              "savings_percent": "97",
+              "summary": "Candidate 1006 ($121.42/year on tier 2) saves $3995.42/year (+97%) over original drug 1009 ($4116.84/year on tier 4).",
+              "score": 0.95
+            },
+            "insurance_context": {
+              "insurance_phase": "DEDUCTIBLE",
+              "ytd_oop": "0.0",
+              "coinsurance": "1.0",
+              "deductible_limit": "1000.0",
+              "deductible_met": "0.0",
+              "deductible_remaining": "1000.0",
+              "oop_max": "6000.0",
+              "oop_used": "0.0",
+              "oop_remaining": "6000.0"
+            },
+            "clinical_agent": {
+              "status": "CLINICALLY_ACCEPTABLE",
+              "clinical_summary": [
+                "Different active ingredient",
+                "Same therapeutic class",
+                "Same oral route",
+                "Similar mechanism of action"
+              ],
+              "safety_summary": [
+                "No allergy concern identified",
+                "No age-related concern",
+                "Renal caution: moderate impairment",
+                "No major interaction concern"
+              ]
+            },
+            "policy_agent": {
+              "status": "POLICY_APPROVED",
+              "original_status": "Prior Authorization Required",
+              "alternative_status": "Step Therapy Required",
+              "formulary_preference": "Exception Only",
+              "coverage_status": "covered",
+              "policy_checks_passed": true,
+              "policy_notes": "Step therapy required; no evidence the qualifying alternative was tried first.",
+              "key_findings": [
+                "Step therapy required; no evidence the qualifying alternative was tried first."
+              ],
+              "score": 0.32
+            },
+            "past_decision_agent": {
+              "status": "RECOMMENDED",
+              "historical_confidence": "High",
+              "summary": "Historical evidence supports Metformin 500mg for diagnosis M81.6 with consistent positive outcomes.",
+              "recommendation_supported": true,
+              "score": 0.91
+            }
+          },
+          "summary_generation_fail_safe": null
+        }
+      }
+    ]
+  },
+  "summary": {
+    "alternatives_evaluated": 2,
+    "alternatives_summarized": 2,
+    "llm_calls_made": 2,
+    "llm_fail_safe_count": 0
+  },
+  "evaluated_alternatives": [
+    {
+      "rank": 1,
+      "alternative_id": 1006,
+      "alternative_name": "Metformin 500mg",
+      "adjusted_score": 0.7509,
+      "final_band": 3,
+      "final_status": "PROVIDER_REVIEW"
+    },
+    {
+      "rank": 2,
+      "alternative_id": 1007,
+      "alternative_name": "Glipizide 5mg",
+      "adjusted_score": 0.5562,
+      "final_band": 3,
+      "final_status": "PROVIDER_REVIEW"
+    }
+  ]
+}

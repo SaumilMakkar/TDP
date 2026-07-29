@@ -1,0 +1,19 @@
+ingredient,egfr_min,adjustment_level
+metformin,30,Contraindicated Below Threshold
+empagliflozin,20,Dose Review
+canagliflozin,30,Dose Review
+sitagliptin,30,Reduce Dose
+linagliptin,0,No Adjustment
+glipizide,30,Use Caution
+lithium carbonate,30,Avoid/Monitor
+gabapentin,60,Reduce Dose
+pregabalin,60,Reduce Dose
+rivaroxaban,15,Reduce Dose
+apixaban,25,Clinical Review
+colchicine,30,Reduce Dose
+allopurinol,30,Reduce Dose
+furosemide,20,Monitor
+lisinopril,15,Monitor
+amlodipine,30,Monitor
+metoprolol,20,Reduce Dose
+hydrochlorothiazide,25,Monitor

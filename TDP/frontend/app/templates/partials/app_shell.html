@@ -1,0 +1,51 @@
+<div class="app-layout" id="app-layout">
+  <header class="top-navbar">
+    <div class="top-navbar-left">
+      <div class="top-brand" aria-label="NextGen PBM Automation System" role="img">
+        <span class="top-brand-mark">
+          <span class="top-brand-check">✓</span>
+          <span class="top-brand-star">✦</span>
+        </span>
+        <span class="top-brand-text-wrap">
+          <span class="top-brand-wordmark">
+            <span class="top-brand-nextgen">NextGen</span>
+            <span class="top-brand-pbm">PBM</span>
+          </span>
+          <span class="top-brand-sub">AUTOMATION SYSTEM</span>
+        </span>
+      </div>
+    </div>
+
+    <nav class="top-navbar-nav">
+      <a class="nav-item active" data-view="submit" id="nav-submit">Submit</a>
+      <a class="nav-item" data-view="dashboard" id="nav-dashboard">Overview</a>
+      <a class="nav-item" data-view="results" id="nav-results">Review &amp; Decision</a>
+    </nav>
+
+    <div class="top-navbar-right">
+      <div class="user-avatar-container">
+        <button class="user-role-pill" id="user-avatar-btn" type="button" aria-label="User profile and settings" aria-haspopup="true" aria-expanded="false">
+          <span id="navbar-role-badge">Role</span>
+          <svg class="pill-chevron" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="user-dropdown-menu" id="user-dropdown-menu">
+          <div class="user-dropdown-info">
+            <div id="dropdown-user-name" class="dropdown-user-name">User</div>
+            <div id="dropdown-user-identity" class="dropdown-user-identity">Role</div>
+          </div>
+          <div class="user-dropdown-divider"></div>
+          <button class="dropdown-logout-btn" id="dropdown-logout-btn" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; vertical-align: middle;"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+            <span>Logout</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    {% include 'partials/views/submit.html' %}
+    {% include 'partials/views/results.html' %}
+    {% include 'partials/views/dashboard.html' %}
+  </main>
+</div>

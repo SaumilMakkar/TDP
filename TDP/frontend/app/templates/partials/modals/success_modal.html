@@ -1,0 +1,14 @@
+<div class="modal-overlay" id="success-modal">
+  <div class="modal">
+    <h3>✓ Prescription Submitted</h3>
+    <p>Your prescription has been submitted to PBM for processing. Use this RX number to review and view results:</p>
+    <div class="rx-number-box">
+      <strong id="modal-rx-number"></strong>
+      <button class="btn" onclick="copyRxNumber()" style="padding: 6px 12px; font-size: 0.8rem;">Copy</button>
+    </div>
+    <div style="display: flex; gap: 10px; margin-top: 4px;">
+      <button class="btn btn-primary" onclick="goToResultsFromModal()">Review Decision</button>
+      <button class="btn" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+</div>

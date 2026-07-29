@@ -1,0 +1,53 @@
+<div class="modal-overlay" id="auth-modal">
+  <div class="modal auth-modal">
+    <button class="auth-close" id="auth-close-btn" type="button" aria-label="Close">&#10005;</button>
+
+    <!-- Login pane -->
+    <div class="auth-pane active" id="auth-pane-login">
+      <div class="auth-pane-header">
+        <h2 class="auth-pane-title">Welcome back</h2>
+        <p class="auth-pane-sub">Sign in to your account</p>
+      </div>
+      <div class="form-group" id="modal-login-id-group">
+        <label for="modal-login-role-id" id="modal-login-role-id-label">Login ID</label>
+        <input type="text" id="modal-login-role-id" placeholder="Pharmacist ID, Provider NPI, or PBM ID">
+      </div>
+      <div class="form-group">
+        <label for="modal-password">Password</label>
+        <input type="password" id="modal-password" placeholder="Enter your password">
+      </div>
+      <button class="btn btn-primary auth-submit-btn" id="modal-login-btn" type="button">Sign in</button>
+      <p class="auth-switch-text">Don't have an account? <button type="button" class="auth-switch-link" data-pane="register">Create one</button></p>
+    </div>
+
+    <!-- Register pane -->
+    <div class="auth-pane" id="auth-pane-register">
+      <div class="auth-pane-header">
+        <h2 class="auth-pane-title">Create account</h2>
+        <p class="auth-pane-sub">Get started in seconds</p>
+      </div>
+      <div class="form-group">
+        <label for="modal-register-name">Full Name</label>
+        <input type="text" id="modal-register-name" placeholder="Enter your full name">
+      </div>
+      <div class="form-group">
+        <label for="modal-register-role">Role</label>
+        <select id="modal-register-role">
+          <option value="pharmacist">Pharmacist</option>
+          <option value="provider">Provider</option>
+          <option value="pbm">PBM</option>
+        </select>
+      </div>
+      <div class="form-group" id="modal-register-id-group">
+        <label for="modal-register-role-id" id="modal-register-role-id-label">Pharmacist ID</label>
+        <input type="text" id="modal-register-role-id" placeholder="Enter pharmacist ID">
+      </div>
+      <div class="form-group">
+        <label for="modal-register-password">Password</label>
+        <input type="password" id="modal-register-password" placeholder="Minimum 6 characters">
+      </div>
+      <button class="btn btn-primary auth-submit-btn" id="modal-register-btn" type="button">Create account</button>
+      <p class="auth-switch-text">Already have an account? <button type="button" class="auth-switch-link" data-pane="login">Sign in</button></p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,212 @@
+{
+  "original_drug": {
+    "prod_id": 1013,
+    "prod_name": "Sertraline 50mg"
+  },
+  "ranked_alternatives": [
+    {
+      "rank": 1,
+      "candidate_id": 1014,
+      "candidate_name": "Escitalopram 10mg",
+      "overall_status": "PASS",
+      "stage_a": {
+        "prod_id": 1014,
+        "prod_name": "Escitalopram 10mg",
+        "evidence": {
+          "ingredient": 0.5,
+          "moiety": 0.5,
+          "class": 1.0,
+          "moa": 1.0,
+          "combo": 0.25,
+          "route": 1.0,
+          "form": 1.0,
+          "strength": 0.25
+        },
+        "score": 0.6298,
+        "status": "accepted",
+        "llm_required": false,
+        "reasoning": null
+      },
+      "stage_b": {
+        "prod_id": 1014,
+        "prod_name": "Escitalopram 10mg",
+        "evidence": {
+          "allergy": 0.25,
+          "condition": 0.5,
+          "age": 0.0,
+          "contraindication": 0.0,
+          "interaction": 0.0,
+          "renal_hepatic": 0.0,
+          "duplicate_therapy": 1.0
+        },
+        "score": 0.7125,
+        "status": "accept",
+        "llm_required": true,
+        "reasoning": "Escitalopram may exacerbate heart failure due to potential sodium imbalance and risk of QT prolongation. The condition match score reflects weak alignment, but the cardiovascular risk warrants caution. No direct contraindication exists, but conservative adjustment is prudent for patient safety given the underlying heart failure."
+      },
+      "stage_c": {
+        "composite_score": 0.6794,
+        "threshold_passed": true,
+        "safety_flags": {
+          "polypharmacy": false,
+          "missing_clinical_data": false,
+          "clinical_ambiguity": true,
+          "cumulative_risk": true
+        }
+      }
+    },
+    {
+      "rank": 2,
+      "candidate_id": 1042,
+      "candidate_name": "Bupropion 150mg",
+      "overall_status": "PASS",
+      "stage_a": {
+        "prod_id": 1042,
+        "prod_name": "Bupropion 150mg",
+        "evidence": {
+          "ingredient": 0.5,
+          "moiety": 0.5,
+          "class": 0.0,
+          "moa": 0.5,
+          "combo": 0.25,
+          "route": 1.0,
+          "form": 1.0,
+          "strength": 1.0
+        },
+        "score": 0.4882,
+        "status": "accepted",
+        "llm_required": true,
+        "reasoning": "Sertraline and Bupropion differ significantly in pharmacologic class (SSRI vs. NDRI), which impacts their mechanism of action and therapeutic use."
+      },
+      "stage_b": {
+        "prod_id": 1042,
+        "prod_name": "Bupropion 150mg",
+        "evidence": {
+          "allergy": 0.0,
+          "condition": 0.5,
+          "age": 0.0,
+          "contraindication": 0.0,
+          "interaction": 0.0,
+          "renal_hepatic": 0.0,
+          "duplicate_therapy": 1.0
+        },
+        "score": 0.765,
+        "status": "accept",
+        "llm_required": true,
+        "reasoning": "Bupropion may exacerbate heart failure due to its potential to increase heart rate and blood pressure, which is clinically relevant given the patient's condition. The condition match score of 0.5 reflects weak alignment but signals moderate risk. Conservative adjustment is warranted to prioritize patient safety in cardiovascular disease."
+      },
+      "stage_c": {
+        "composite_score": 0.6543,
+        "threshold_passed": true,
+        "safety_flags": {
+          "polypharmacy": false,
+          "missing_clinical_data": false,
+          "clinical_ambiguity": true,
+          "cumulative_risk": false
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "candidate_id": 1015,
+      "candidate_name": "Duloxetine 30mg",
+      "overall_status": "PASS",
+      "stage_a": {
+        "prod_id": 1015,
+        "prod_name": "Duloxetine 30mg",
+        "evidence": {
+          "ingredient": 0.5,
+          "moiety": 0.5,
+          "class": 0.0,
+          "moa": 0.5,
+          "combo": 0.25,
+          "route": 1.0,
+          "form": 0.5,
+          "strength": 1.0
+        },
+        "score": 0.4691,
+        "status": "accepted",
+        "llm_required": true,
+        "reasoning": "The candidate drug, Duloxetine 30mg, differs significantly from the original drug, Sertraline 50mg, in pharmacologic class (score: 0.0) and mechanism of action (score: 0.5). Sertraline is a selective serotonin reuptake inhibitor (SSRI), while Duloxetine is a serotonin-norepinephrine reuptake inhibitor (SNRI)."
+      },
+      "stage_b": {
+        "prod_id": 1015,
+        "prod_name": "Duloxetine 30mg",
+        "evidence": {
+          "allergy": 0.25,
+          "condition": 0.5,
+          "age": 0.0,
+          "contraindication": 0.0,
+          "interaction": 0.0,
+          "renal_hepatic": 0.0,
+          "duplicate_therapy": 1.0
+        },
+        "score": 0.7125,
+        "status": "accept",
+        "llm_required": true,
+        "reasoning": "Duloxetine may exacerbate heart failure due to its potential to increase blood pressure and heart rate, aligning with the condition risk score. Additionally, renal data is incomplete, which raises moderate concern for safety in this patient. Conservative adjustment reflects these risks without definitive contraindication."
+      },
+      "stage_c": {
+        "composite_score": 0.6151,
+        "threshold_passed": true,
+        "safety_flags": {
+          "polypharmacy": false,
+          "missing_clinical_data": false,
+          "clinical_ambiguity": true,
+          "cumulative_risk": true
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "candidate_id": 1041,
+      "candidate_name": "Venlafaxine 75mg",
+      "overall_status": "PASS",
+      "stage_a": {
+        "prod_id": 1041,
+        "prod_name": "Venlafaxine 75mg",
+        "evidence": {
+          "ingredient": 0.5,
+          "moiety": 0.5,
+          "class": 0.0,
+          "moa": 0.5,
+          "combo": 0.25,
+          "route": 1.0,
+          "form": 0.5,
+          "strength": 0.75
+        },
+        "score": 0.463,
+        "status": "accepted",
+        "llm_required": true,
+        "reasoning": "Sertraline and Venlafaxine differ significantly in pharmacologic class (SSRI vs SNRI), which impacts their mechanism of action and therapeutic indications. While both share oral route and similar dosage forms, the divergence in class and mechanism suggests they are not interchangeable for all patients, particularly those with specific responses to serotonin modulation versus dual serotonin-norepinephrine activity."
+      },
+      "stage_b": {
+        "prod_id": 1041,
+        "prod_name": "Venlafaxine 75mg",
+        "evidence": {
+          "allergy": 0.25,
+          "condition": 0.5,
+          "age": 0.0,
+          "contraindication": 0.0,
+          "interaction": 0.0,
+          "renal_hepatic": 0.0,
+          "duplicate_therapy": 1.0
+        },
+        "score": 0.7125,
+        "status": "accept",
+        "llm_required": true,
+        "reasoning": "Venlafaxine may exacerbate heart failure due to its potential to increase blood pressure and heart rate, which poses a moderate risk for this patient. Additionally, the renal data is incomplete, warranting a conservative adjustment to account for potential safety concerns."
+      },
+      "stage_c": {
+        "composite_score": 0.6127,
+        "threshold_passed": true,
+        "safety_flags": {
+          "polypharmacy": false,
+          "missing_clinical_data": false,
+          "clinical_ambiguity": true,
+          "cumulative_risk": true
+        }
+      }
+    }
+  ]
+}

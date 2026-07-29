@@ -1,0 +1,116 @@
+<div class="modal-overlay" id="submission-progress-modal">
+  <div class="modal submission-progress-modal" role="dialog" aria-modal="true" aria-labelledby="submission-progress-title">
+    <button class="auth-close submission-progress-close" id="submission-progress-close" type="button" aria-label="Close submission trace">×</button>
+    <h3 id="submission-progress-title">Submitting to NextGen PBM</h3>
+
+    <div class="spm-progress-content" id="spm-progress-content">
+    <div class="spm-flow-stepper" aria-label="Submission flow status">
+      <div class="spm-flow-step" id="spm-flow-1">
+        <div class="spm-flow-dot">✓</div>
+        <span class="spm-flow-label">Prescriber</span>
+      </div>
+      <div class="spm-flow-connector" id="spm-flow-c1"></div>
+
+      <div class="spm-flow-step" id="spm-flow-2">
+        <div class="spm-flow-dot">2</div>
+        <span class="spm-flow-label">Pharmacist</span>
+      </div>
+      <div class="spm-flow-connector" id="spm-flow-c2"></div>
+
+      <div class="spm-flow-step" id="spm-flow-3">
+        <div class="spm-flow-dot">3</div>
+        <span class="spm-flow-label">AI Processing</span>
+      </div>
+      <div class="spm-flow-connector" id="spm-flow-c3"></div>
+
+      <div class="spm-flow-step" id="spm-flow-4">
+        <div class="spm-flow-dot">4</div>
+        <span class="spm-flow-label">Overview</span>
+      </div>
+      <div class="spm-flow-connector" id="spm-flow-c4"></div>
+
+      <div class="spm-flow-step" id="spm-flow-5">
+        <div class="spm-flow-dot">5</div>
+        <span class="spm-flow-label">Review</span>
+      </div>
+    </div>
+
+    <div class="submission-progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="submission-progress-track">
+      <div class="submission-progress-fill" id="submission-progress-fill"></div>
+    </div>
+    <div class="submission-progress-value" id="submission-progress-value">Initialising&hellip;</div>
+
+    <!-- Stage 1 -->
+    <div class="spm-stage" id="spm-stage1">
+      <div class="spm-stage-header">
+        <span class="spm-stage-badge" id="spm-s1-badge">1</span>
+        <span class="spm-stage-title">Clinical Agent</span>
+        <span class="spm-stage-note">evaluates first &mdash; sequential</span>
+        <button class="spm-stage-toggle" id="spm-stage1-toggle" type="button" aria-expanded="true" aria-controls="spm-stage1-content">Hide</button>
+      </div>
+      <div class="spm-stage-content" id="spm-stage1-content">
+        <ul class="spm-steps" id="spm-clinical-steps">
+          <li class="spm-step" id="spm-c1">Generating &amp; Matching Alternatives</li>
+          <li class="spm-step" id="spm-c2">Evaluating Patient Safety</li>
+          <li class="spm-step" id="spm-c3">Composite Scoring &amp; Safety Flags</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Stage 2 -->
+    <div class="spm-stage" id="spm-stage2">
+      <div class="spm-stage-header">
+        <span class="spm-stage-badge" id="spm-s2-badge">2</span>
+        <span class="spm-stage-title">Policy &middot; Financial &middot; Past Agents</span>
+        <span class="spm-stage-note">run in parallel</span>
+        <button class="spm-stage-toggle" id="spm-stage2-toggle" type="button" aria-expanded="true" aria-controls="spm-stage2-content">Hide</button>
+      </div>
+      <div class="spm-stage-content" id="spm-stage2-content">
+      <div class="spm-parallel-grid">
+
+        <div class="spm-agent">
+          <div class="spm-agent-header" id="spm-policy-header">Policy Agent</div>
+          <ul class="spm-steps">
+            <li class="spm-step" id="spm-p1">Coverage Eligibility Validation</li>
+            <li class="spm-step" id="spm-p2">Policy Compliance Assessment</li>
+          </ul>
+        </div>
+
+        <div class="spm-agent">
+          <div class="spm-agent-header" id="spm-financial-header">Financial Agent</div>
+          <ul class="spm-steps">
+            <li class="spm-step" id="spm-f1">Coverage &amp; Pricing Validation</li>
+            <li class="spm-step" id="spm-f2">Cost Impact &amp; Savings Analysis</li>
+          </ul>
+        </div>
+
+        <div class="spm-agent">
+          <div class="spm-agent-header" id="spm-past-header">Past Decisions Agent</div>
+          <ul class="spm-steps">
+            <li class="spm-step" id="spm-d1">Case Similarity Check</li>
+            <li class="spm-step" id="spm-d2">Time Decay &amp; Weight Scoring</li>
+            <li class="spm-step" id="spm-d3">Patient Adjustment Layer</li>
+            <li class="spm-step" id="spm-d4">Final Explanation Layer</li>
+          </ul>
+        </div>
+
+      </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="spm-success-state" id="spm-success-state" hidden>
+      <div class="spm-success-icon">✓</div>
+      <h4 class="spm-success-title">Processes Completed</h4>
+      <p class="spm-success-description">All processing stages are complete. Use this RX number to continue to the next step.</p>
+      <div class="rx-number-box spm-success-rx-box">
+        <strong id="submission-success-rx-number"></strong>
+        <button class="btn spm-success-copy-btn" type="button" onclick="copyRxNumber()">Copy</button>
+      </div>
+      <div class="spm-success-actions">
+        <button class="btn btn-primary" type="button" onclick="goToResultsFromModal()">View Details</button>
+        <button class="btn" type="button" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

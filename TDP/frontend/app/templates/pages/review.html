@@ -1,0 +1,395 @@
+{% extends 'base.html' %}
+
+{% block head %}{% endblock %}
+
+{% block post_styles %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/provider.css') }}?v={{ css_version }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/review.css') }}?v={{ css_version }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/forms.css') }}?v={{ css_version }}">
+{% endblock %}
+
+{% block content %}
+<div class="review-page">
+  <header class="top-navbar">
+    <div class="top-navbar-left">
+      <div class="top-brand" aria-label="NextGen PBM Automation System" role="img">
+        <span class="top-brand-mark">
+          <span class="top-brand-check">✓</span>
+          <span class="top-brand-star">✦</span>
+        </span>
+        <span class="top-brand-text-wrap">
+          <span class="top-brand-wordmark">
+            <span class="top-brand-nextgen">NextGen</span>
+            <span class="top-brand-pbm">PBM</span>
+          </span>
+          <span class="top-brand-sub">AUTOMATION SYSTEM</span>
+        </span>
+      </div>
+    </div>
+
+    <nav class="top-navbar-nav provider-nav-tabs">
+      <a href="{{ url_for('provider.overview') }}" class="nav-item">Overview</a>
+      <a href="#" class="nav-item active">Review</a>
+    </nav>
+
+    <div class="top-navbar-right provider-account">
+      <button type="button" class="user-role-pill" id="provider-toggle-btn">Provider</button>
+      <div class="provider-card" id="provider-card">
+        <div class="provider-card-name">{{ provider.name }}</div>
+        <div class="provider-card-npi">NPI-ID :&nbsp;&nbsp;{{ provider.npi }}</div>
+        <button type="button" class="provider-logout-btn" id="provider-logout-btn">&#8677; Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="provider-stepper">
+    <div class="stepper-track">
+      <div class="step-node step-done">
+        <div class="step-circle step-circle-done">&#10003;</div>
+        <div class="step-label step-label-done">Prescription Creation</div>
+      </div>
+      <div class="step-connector"></div>
+      <div class="step-node step-done">
+        <div class="step-circle step-circle-done">&#10003;</div>
+        <div class="step-label step-label-done">Prescription Submission</div>
+      </div>
+      <div class="step-connector"></div>
+      <div class="step-node step-done">
+        <div class="step-circle step-circle-done">&#10003;</div>
+        <div class="step-label step-label-muted">AI Processing</div>
+      </div>
+      <div class="step-connector"></div>
+      <div class="step-node step-done">
+        <div class="step-circle step-circle-done">&#10003;</div>
+        <div class="step-label step-label-done">Overview</div>
+      </div>
+      <div class="step-connector"></div>
+      <div class="step-node step-active">
+        <div class="step-circle step-circle-active">5</div>
+        <div class="step-label step-label-active">Review</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="review-top-actions">
+    <div class="review-page-header">
+      <h1>Doctor Review &amp; Final Decision</h1>
+      <p>View AI analysis results and submit final portal decision</p>
+    </div>
+    <div class="review-searchbar">
+      <label class="review-search-input-wrap" for="review-rx-input">
+        <span class="review-search-icon" aria-hidden="true">&#128269;</span>
+        <input type="text" id="review-rx-input" value="{{ initial_rx_number }}" placeholder="Enter Rx Number to view results">
+      </label>
+      <button type="button" class="review-button review-button-primary" id="review-load-btn">View Results</button>
+      <button type="button" class="review-button review-button-outline" id="review-download-btn">Download PDF</button>
+    </div>
+  </div>
+
+  <main class="review-shell" id="review-pdf-area">
+    <aside class="review-sidebar">
+      <section class="review-card case-list-card">
+        <div class="side-card-heading">AI-Ranked Alternatives</div>
+        <div class="side-card-subheading">Ranked by combined agent score</div>
+        <div class="alternative-list" id="alternative-list">
+          <div class="loading-text">Load a prescription to view alternatives.</div>
+        </div>
+      </section>
+    </aside>
+
+    <section class="review-main">
+      <section class="review-card summary-strip-card" id="summary-strip-card">
+        <div class="summary-col summary-col-diagnosis">
+          <span>DIAGNOSIS</span>
+          <strong id="summary-diagnosis">—</strong>
+        </div>
+        <div class="summary-col summary-col-drug">
+          <span>PRESCRIBED DRUG</span>
+          <strong id="summary-prescribed-drug">—</strong>
+        </div>
+        <div class="summary-col summary-col-accept">
+          <span>WORKFLOW STATUS</span>
+          <strong id="decision-status-chip">Pending</strong>
+        </div>
+      </section>
+
+      <section class="review-card report-card">
+        <div class="report-header">
+          <div class="report-header-left">
+            <h2>NextGen PBM Analysis Report</h2>
+            <div class="report-strip">
+              <div class="report-strip-item">
+                <span>Tier</span>
+                <strong id="report-tier">-</strong>
+              </div>
+              <div class="report-strip-item">
+                <span>Selected Alternative</span>
+                <strong id="report-alt-name">-</strong>
+              </div>
+              <div class="report-strip-item">
+                <span>Patient / Member ID</span>
+                <strong id="report-member-id">-</strong>
+              </div>
+            </div>
+          </div>
+          <div class="report-score-box">
+            <div class="report-score-ring" id="confidence-ring">
+              <span id="confidence-text">0%</span>
+            </div>
+            <div class="report-score-label">AI Confidence</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="review-card split-insights-card" id="card-clinical">
+        <span class="review-agent-badge review-agent-badge--pending" id="agent-badge-clinical" aria-label="Clinical status">-</span>
+        <div class="split-panel">
+          <div class="section-head">
+            <h3>Clinical Summary</h3>
+            <span class="section-chip" id="clinical-status-chip">Clinical Review</span>
+          </div>
+          <ul class="bullet-list" id="clinical-list"></ul>
+        </div>
+        <div class="split-panel">
+          <div class="section-head">
+            <h3>Safety Summary</h3>
+            <span class="section-chip section-chip-green" id="safety-status-chip">Clinically Acceptable</span>
+          </div>
+          <ul class="bullet-list" id="safety-list"></ul>
+        </div>
+      </section>
+
+      <div class="review-dual-row">
+        <section class="review-card policy-card flip-card" id="policy-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-face flip-card-front">
+              <div class="section-head compact-head">
+                <h3>Policy Review</h3>
+                <span class="review-agent-badge review-agent-badge--pending" id="agent-badge-policy" aria-label="Policy status">-</span>
+              </div>
+                <div class="policy-stack">
+                  <div class="policy-row">
+                    <span class="policy-label">ORIGINAL DRUG STATUS</span>
+                    <strong class="policy-pill policy-pill-warn" id="policy-original">—</strong>
+                  </div>
+                  <div class="policy-row">
+                    <span class="policy-label">ALTERNATIVE STATUS</span>
+                    <strong class="policy-pill policy-pill-good" id="policy-alternative">—</strong>
+                  </div>
+                  <div class="policy-note">
+                    <span class="policy-label">POLICY NOTES</span>
+                    <p id="policy-state">—</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="flip-card-face flip-card-back">
+              <div class="policy-details" id="policy-details-block">
+                <div class="coverage-details-section">
+                  <h4 class="coverage-title">Coverage Details</h4>
+                  <div class="coverage-grid-3">
+                    <div class="coverage-item">
+                      <span class="coverage-label">INSURANCE PHASE</span>
+                      <strong id="policy-insurance-phase">—</strong>
+                    </div>
+                    <div class="coverage-item">
+                      <span class="coverage-label">YTD OOP</span>
+                      <strong id="policy-ytd-oop">—</strong>
+                    </div>
+                    <div class="coverage-item">
+                      <span class="coverage-label">COINSURANCE</span>
+                      <strong id="policy-coinsurance">—</strong>
+                    </div>
+                  </div>
+                  <div class="coverage-section-label">Deductible</div>
+                  <div class="coverage-progress">
+                    <div class="coverage-label-row">
+                      <span class="coverage-label-text">Deductible</span>
+                      <span class="coverage-value" id="policy-deductible-met">—</span>
+                    </div>
+                    <div class="coverage-bar-wrap">
+                      <div class="coverage-bar-bg">
+                        <div class="coverage-bar-fill" id="policy-deductible-bar" style="width: 9.6%"></div>
+                      </div>
+                      <div class="coverage-bar-remaining" id="policy-deductible-remaining">—</div>
+                    </div>
+                  </div>
+                  <div class="coverage-section-label">Out-of-Pocket Max</div>
+                  <div class="coverage-progress">
+                    <div class="coverage-label-row">
+                      <span class="coverage-label-text">Out-of-Pocket Max</span>
+                      <span class="coverage-value" id="policy-oop-met">—</span>
+                    </div>
+                    <div class="coverage-bar-wrap">
+                      <div class="coverage-bar-bg">
+                        <div class="coverage-bar-fill" id="policy-oop-bar" style="width: 2.4%; background: #FF612B;"></div>
+                      </div>
+                      <div class="coverage-bar-remaining" id="policy-oop-remaining">—</div>
+                    </div>
+                  </div>
+                  <div class="coverage-caps">
+                    <div class="coverage-cap-item">
+                      <span class="coverage-label">DEDUCTIBLE CAP</span>
+                      <strong id="policy-deductible-cap">—</strong>
+                    </div>
+                    <div class="coverage-cap-item">
+                      <span class="coverage-label">OOP MAX CAP</span>
+                      <strong id="policy-oop-max-cap">—</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="review-card financial-card flip-card" id="financial-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-face flip-card-front">
+              <div class="section-head compact-head">
+                <div>
+                  <h3>Financial Summary</h3>
+                  <p class="section-caption">Key figures only - full breakdown available on request</p>
+                </div>
+                <span class="review-agent-badge review-agent-badge--pending" id="agent-badge-financial" aria-label="Financial status">-</span>
+              </div>
+              <div class="financial-metrics-grid">
+                <div class="financial-metric-card">
+                  <span>TOTAL COST (PER FILL)</span>
+                  <strong id="total-cost">—</strong>
+                </div>
+                <div class="financial-metric-card">
+                  <span>PATIENT COPAY</span>
+                  <strong id="patient-copay">—</strong>
+                </div>
+              </div>
+
+              <div class="financial-highlight">
+                <div>
+                  <div class="metric-label">You save</div>
+                  <div class="metric-value" id="financial-save-annual">—</div>
+                </div>
+                <div class="metric-note" id="financial-save-note">Load a case to see savings.</div>
+              </div>
+
+            </div>
+
+            <div class="flip-card-face flip-card-back">
+              <div class="financial-details" id="expanded-block">
+                <div class="cost-analysis-section">
+                  <h4 class="cost-title">Cost Analysis</h4>
+                  <div class="cost-table">
+                    <div class="cost-table-header">
+                      <div class="cost-table-cell cost-header-col">Field</div>
+                      <div class="cost-table-cell cost-header-col">Original</div>
+                      <div class="cost-table-cell cost-header-col">Alternative</div>
+                    </div>
+                    <div class="cost-table-row">
+                      <div class="cost-table-cell">Drug</div>
+                      <div class="cost-table-cell"><strong id="financial-drug-original">—</strong></div>
+                      <div class="cost-table-cell"><strong id="financial-drug-alternative">—</strong></div>
+                    </div>
+                    <div class="cost-table-row">
+                      <div class="cost-table-cell">Tier</div>
+                      <div class="cost-table-cell"><strong id="financial-tier-original">—</strong></div>
+                      <div class="cost-table-cell"><strong id="financial-tier-alternative">—</strong></div>
+                    </div>
+                    <div class="cost-table-row">
+                      <div class="cost-table-cell">Total Price</div>
+                      <div class="cost-table-cell"><strong id="financial-price-original">—</strong></div>
+                      <div class="cost-table-cell"><strong id="financial-price-alternative">—</strong></div>
+                    </div>
+                    <div class="cost-table-row">
+                      <div class="cost-table-cell">Patient Copay</div>
+                      <div class="cost-table-cell"><strong id="financial-copay-original">—</strong></div>
+                      <div class="cost-table-cell"><strong id="financial-copay-alternative">—</strong></div>
+                    </div>
+                    <div class="cost-table-row">
+                      <div class="cost-table-cell">Plan Paid Amount</div>
+                      <div class="cost-table-cell"><strong id="financial-plan-original">—</strong></div>
+                      <div class="cost-table-cell"><strong id="financial-plan-alternative">—</strong></div>
+                    </div>
+                    <div class="cost-table-row">
+                      <div class="cost-table-cell">Total Cost</div>
+                      <div class="cost-table-cell"><strong id="financial-total-original">—</strong></div>
+                      <div class="cost-table-cell"><strong id="financial-total-alternative">—</strong></div>
+                    </div>
+                  </div>
+                  <div class="cost-savings-highlight">
+                    <div>
+                      <div class="cost-savings-label">You save</div>
+                      <div class="cost-savings-value" id="financial-detailed-savings">—</div>
+                    </div>
+                    <div class="cost-savings-note" id="financial-detailed-savings-note">—</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="review-dual-toggle-wrap">
+        <button type="button" class="review-button review-button-ghost" id="dual-view-toggle-btn" aria-expanded="false">View more</button>
+      </div>
+
+      <section class="review-card pbm-past-card" id="card-past">
+        <div class="section-head compact-head">
+          <h3>Past Decision Summary</h3>
+          <span class="review-agent-badge review-agent-badge--pending" id="agent-badge-past" aria-label="Past decision status">-</span>
+        </div>
+        <div class="decision-summary" id="past-decision-summary">
+          Historical evidence generally supports the recommendation because similar past cases were accepted by doctors.
+        </div>
+      </section>
+
+      <section class="review-card decision-card">
+        <div class="section-head compact-head">
+          <h3>Final Decision</h3>
+        </div>
+
+        <div class="decision-recorded" id="decision-recorded" hidden></div>
+
+        <div class="decision-auto-approved" id="decision-auto-approved" hidden>
+          <strong>Auto Approved by AI System</strong>
+          <div>AI confidence exceeded the auto-approval threshold. This prescription was automatically accepted — no manual provider review required.</div>
+        </div>
+
+        <div class="decision-actions" id="decision-actions">
+          <button type="button" class="review-button review-button-accept" id="accept-btn">&#10003; Accept</button>
+          <button type="button" class="review-button review-button-reject" id="reject-btn">&#10005; Reject</button>
+        </div>
+
+        <div class="reject-panel" id="reject-panel" hidden>
+          <div class="reject-panel-title">Rejection Reasons</div>
+          <input type="text" id="reason-search" placeholder="Search reasons...">
+          <div class="reason-list" id="reason-list">
+            <div class="loading-text">Open reject to load reasons.</div>
+          </div>
+          <textarea id="reject-comment" rows="4" placeholder="Optional note"></textarea>
+          <button type="button" class="review-button review-button-reject-fill" id="submit-reject-btn">Submit Reason</button>
+        </div>
+      </section>
+    </section>
+  </main>
+</div>
+
+<div class="review-confirm-modal" id="decision-confirm-modal" hidden>
+  <div class="review-confirm-backdrop" data-confirm-close></div>
+  <div class="review-confirm-dialog" role="dialog" aria-modal="true" aria-labelledby="decision-confirm-title" aria-describedby="decision-confirm-message">
+    <div class="review-confirm-header">
+      <h3 id="decision-confirm-title">Confirm Decision</h3>
+    </div>
+    <p class="review-confirm-message" id="decision-confirm-message">Are you sure you want to continue?</p>
+    <div class="review-confirm-actions">
+      <button type="button" class="review-button review-button-outline" id="decision-confirm-cancel">Cancel</button>
+      <button type="button" class="review-button" id="decision-confirm-proceed">Confirm</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  window.__INITIAL_RX__ = {{ initial_rx_number | tojson }};
+</script>
+<script src="{{ url_for('static', filename='js/review.js') }}?v={{ script_version }}"></script>
+{% endblock %}

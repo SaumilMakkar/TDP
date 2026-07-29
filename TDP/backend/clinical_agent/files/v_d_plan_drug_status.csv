@@ -1,0 +1,201 @@
+PLN_DRG_STAT_SK,PLN_SK,PROD_SK,PLN_DRG_STAT_CD,PLN_DRG_STAT_DESC,PLN_DRG_STAT_GRP_CD,PLN_DRG_STAT_GRP_DESC,FORMULARY_TIER,PA_REQUIRED_FLG,STEP_THERAPY_FLG,QUANTITY_LIMIT,EFF_DT,TERM_DT
+30101018,3010,1018,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30021016,3002,1016,ST,Step Therapy Required,RESTRICTED,Step therapy required,3,N,Y,,2023-01-01,2026-12-31
+30081033,3008,1033,NF,Non-Formulary,RESTRICTED,Non-formulary copay applies,1,N,N,,2023-01-01,2026-12-31
+30071023,3007,1023,EX,Excluded,INACTIVE,Excluded from formulary,3,N,N,,2023-01-01,2026-12-31
+30081045,3008,1045,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30011050,3001,1050,QL,Quantity Limit,RESTRICTED,Monthly quantity limit applies,3,N,N,30,2023-01-01,2026-12-31
+30091001,3009,1001,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30031013,3003,1013,ST,Step Therapy Required,RESTRICTED,Step therapy required,3,N,Y,,2023-01-01,2026-12-31
+30101033,3010,1033,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30031012,3003,1012,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30021037,3002,1037,NF,Non-Formulary,RESTRICTED,Non-formulary copay applies,1,N,N,,2023-01-01,2026-12-31
+30061042,3006,1042,NF,Non-Formulary,RESTRICTED,Non-formulary copay applies,5,N,N,,2023-01-01,2026-12-31
+30071025,3007,1025,NF,Non-Formulary,RESTRICTED,Non-formulary copay applies,2,N,N,,2023-01-01,2026-12-31
+30071007,3007,1007,COV,Covered,ACTIVE,Covered under plan formulary,4,N,N,,2023-01-01,2026-12-31
+30031023,3003,1023,SP,Specialty Drug,ACTIVE,Specialty — additional requirements,3,N,N,,2023-01-01,2026-12-31
+30021009,3002,1009,QL,Quantity Limit,RESTRICTED,Monthly quantity limit applies,3,N,N,30,2023-01-01,2026-12-31
+30081044,3008,1044,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31
+30061013,3006,1013,COV,Covered,ACTIVE,Covered under plan formulary,1,N,N,,2023-01-01,2026-12-31
+30101047,3010,1047,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31
+30041040,3004,1040,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31
+30101022,3010,1022,NC,Not Covered,INACTIVE,Not covered under this plan,2,N,N,,2023-01-01,2026-12-31
+30061047,3006,1047,NF,Non-Formulary,RESTRICTED,Non-formulary copay applies,4,N,N,,2023-01-01,2026-12-31
+30051038,3005,1038,QL,Quantity Limit,RESTRICTED,Monthly quantity limit applies,4,N,N,30,2023-01-01,2026-12-31
+30091033,3009,1033,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30051020,3005,1020,COV,Covered,ACTIVE,Covered under plan formulary,4,N,N,,2023-01-01,2026-12-31
+30051016,3005,1016,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30101045,3010,1045,COV,Covered,ACTIVE,Covered under plan formulary,1,N,N,,2023-01-01,2026-12-31
+30011011,3001,1011,ST,Step Therapy Required,RESTRICTED,Step therapy required,3,N,Y,,2023-01-01,2026-12-31
+30061009,3006,1009,PA,Prior Authorization Required,RESTRICTED,PA required,4,Y,N,,2023-01-01,2026-12-31
+30011006,3001,1006,COV,Covered,ACTIVE,Covered under plan formulary,1,N,N,,2023-01-01,2026-12-31
+30101042,3010,1042,COV,Covered,ACTIVE,Covered under plan formulary,1,N,N,,2023-01-01,2026-12-31
+30041003,3004,1003,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31
+30061021,3006,1021,ST,Step Therapy Required,RESTRICTED,Step therapy required,1,N,Y,,2023-01-01,2026-12-31
+30061024,3006,1024,QL,Quantity Limit,RESTRICTED,Quantity limit: 30 units/30 days,2,N,N,30,2023-01-01,2026-12-31
+30021050,3002,1050,QL,Quantity Limit,RESTRICTED,Monthly quantity limit applies,2,N,N,30,2023-01-01,2026-12-31
+30041047,3004,1047,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31
+30101026,3010,1026,COV,Covered,ACTIVE,Covered under plan formulary,1,N,N,,2023-01-01,2026-12-31
+30091004,3009,1004,COV,Covered,ACTIVE,Covered under plan formulary,1,N,N,,2023-01-01,2026-12-31
+30101008,3010,1008,PA,Prior Authorization Required,RESTRICTED,PA required,4,Y,N,,2023-01-01,2026-12-31
+30011033,3001,1033,COV,Covered,ACTIVE,Covered under plan formulary,4,N,N,,2023-01-01,2026-12-31
+30081009,3008,1009,PA,Prior Authorization Required,RESTRICTED,PA required,3,Y,N,,2023-01-01,2026-12-31
+30081013,3008,1013,COV,Covered,ACTIVE,Covered under plan formulary,5,N,N,,2023-01-01,2026-12-31
+30091017,3009,1017,COV,Covered,ACTIVE,Covered under plan formulary,4,N,N,,2023-01-01,2026-12-31
+30031038,3003,1038,SP,Specialty Drug,ACTIVE,Specialty — additional requirements,4,N,N,,2023-01-01,2026-12-31
+30011019,3001,1019,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30081037,3008,1037,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30031036,3003,1036,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31
+30091032,3009,1032,NF,Non-Formulary,RESTRICTED,Non-formulary copay applies,3,N,N,,2023-01-01,2026-12-31
+30021032,3002,1032,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30031010,3003,1010,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30071004,3007,1004,COV,Covered,ACTIVE,Covered under plan formulary,4,N,N,,2023-01-01,2026-12-31
+30091015,3009,1015,QL,Quantity Limit,RESTRICTED,Quantity limit: 30 units/30 days,4,N,N,30,2023-01-01,2026-12-31
+30051050,3005,1050,SP,Specialty Drug,ACTIVE,Specialty — additional requirements,3,N,N,,2023-01-01,2026-12-31
+30071026,3007,1026,NF,Non-Formulary,RESTRICTED,Non-formulary copay applies,4,N,N,,2023-01-01,2026-12-31
+30051005,3005,1005,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30011003,3001,1003,NF,Non-Formulary,RESTRICTED,Non-formulary copay applies,3,N,N,,2023-01-01,2026-12-31
+30021008,3002,1008,QL,Quantity Limit,RESTRICTED,Monthly quantity limit applies,3,N,N,30,2023-01-01,2026-12-31
+30081027,3008,1027,QL,Quantity Limit,RESTRICTED,Monthly quantity limit applies,1,N,N,30,2023-01-01,2026-12-31
+30011040,3001,1040,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30041024,3004,1024,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31
+30091026,3009,1026,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30071012,3007,1012,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30091003,3009,1003,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30101020,3010,1020,NF,Non-Formulary,RESTRICTED,Non-formulary copay applies,2,N,N,,2023-01-01,2026-12-31
+30021010,3002,1010,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31
+30101037,3010,1037,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31
+30071041,3007,1041,COV,Covered,ACTIVE,Covered under plan formulary,1,N,N,,2023-01-01,2026-12-31
+30041023,3004,1023,PA,Prior Authorization Required,RESTRICTED,PA required,3,Y,N,,2023-01-01,2026-12-31
+30011025,3001,1025,COV,Covered,ACTIVE,Covered under plan formulary,4,N,N,,2023-01-01,2026-12-31
+30031011,3003,1011,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31
+30061050,3006,1050,SP,Specialty Drug,ACTIVE,Specialty — additional requirements,3,N,N,,2023-01-01,2026-12-31
+30091047,3009,1047,COV,Covered,ACTIVE,Covered under plan formulary,5,N,N,,2023-01-01,2026-12-31
+30051018,3005,1018,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31
+30021026,3002,1026,NF,Non-Formulary,RESTRICTED,Non-formulary copay applies,2,N,N,,2023-01-01,2026-12-31
+30021017,3002,1017,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31
+30021014,3002,1014,COV,Covered,ACTIVE,Covered under plan formulary,4,N,N,,2023-01-01,2026-12-31
+30101002,3010,1002,COV,Covered,ACTIVE,Covered under plan formulary,1,N,N,,2023-01-01,2026-12-31
+30071001,3007,1001,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31
+30031030,3003,1030,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30051009,3005,1009,QL,Quantity Limit,RESTRICTED,Monthly quantity limit applies,4,N,N,30,2023-01-01,2026-12-31
+30071009,3007,1009,SP,Specialty Drug,ACTIVE,Specialty — additional requirements,4,N,N,,2023-01-01,2026-12-31
+30021042,3002,1042,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30081041,3008,1041,ST,Step Therapy Required,RESTRICTED,Step therapy required,5,N,Y,,2023-01-01,2026-12-31
+30091044,3009,1044,COV,Covered,ACTIVE,Covered under plan formulary,1,N,N,,2023-01-01,2026-12-31
+30101011,3010,1011,COV,Covered,ACTIVE,Covered under plan formulary,5,N,N,,2023-01-01,2026-12-31
+30051007,3005,1007,COV,Covered,ACTIVE,Covered under plan formulary,5,N,N,,2023-01-01,2026-12-31
+30091030,3009,1030,COV,Covered,ACTIVE,Covered under plan formulary,4,N,N,,2023-01-01,2026-12-31
+30071034,3007,1034,EX,Excluded,INACTIVE,Excluded from formulary,2,N,N,,2023-01-01,2026-12-31
+30031034,3003,1034,QL,Quantity Limit,RESTRICTED,Monthly quantity limit applies,3,N,N,30,2023-01-01,2026-12-31
+30021012,3002,1012,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31
+30031025,3003,1025,NF,Non-Formulary,RESTRICTED,Non-formulary copay applies,3,N,N,,2023-01-01,2026-12-31
+30091025,3009,1025,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30081012,3008,1012,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30021044,3002,1044,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31
+30061004,3006,1004,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31
+30081028,3008,1028,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31
+30101017,3010,1017,ST,Step Therapy Required,RESTRICTED,Step therapy required,4,N,Y,,2023-01-01,2026-12-31
+30101016,3010,1016,ST,Step Therapy Required,RESTRICTED,Step therapy required,3,N,Y,,2023-01-01,2026-12-31
+30051033,3005,1033,COV,Covered,ACTIVE,Covered under plan formulary,1,N,N,,2023-01-01,2026-12-31
+30031049,3003,1049,ST,Step Therapy Required,RESTRICTED,Step therapy required,4,N,Y,,2023-01-01,2026-12-31
+30011027,3001,1027,PA,Prior Authorization Required,RESTRICTED,PA required,2,Y,N,,2023-01-01,2026-12-31
+30061045,3006,1045,ST,Step Therapy Required,RESTRICTED,Step therapy required,1,N,Y,,2023-01-01,2026-12-31
+30021003,3002,1003,NF,Non-Formulary,RESTRICTED,Non-formulary copay applies,3,N,N,,2023-01-01,2026-12-31
+30071031,3007,1031,NF,Non-Formulary,RESTRICTED,Non-formulary copay applies,2,N,N,,2023-01-01,2026-12-31
+30011043,3001,1043,NF,Non-Formulary,RESTRICTED,Non-formulary copay applies,4,N,N,,2023-01-01,2026-12-31
+30011036,3001,1036,ST,Step Therapy Required,RESTRICTED,Step therapy required,5,N,Y,,2023-01-01,2026-12-31
+30021039,3002,1039,QL,Quantity Limit,RESTRICTED,Monthly quantity limit applies,3,N,N,30,2023-01-01,2026-12-31
+30071042,3007,1042,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31
+30011018,3001,1018,COV,Covered,ACTIVE,Covered under plan formulary,4,N,N,,2023-01-01,2026-12-31
+30091031,3009,1031,COV,Covered,ACTIVE,Covered under plan formulary,1,N,N,,2023-01-01,2026-12-31
+30041022,3004,1022,QL,Quantity Limit,RESTRICTED,Monthly quantity limit applies,1,N,N,30,2023-01-01,2026-12-31
+30101039,3010,1039,QL,Quantity Limit,RESTRICTED,Monthly quantity limit applies,1,N,N,30,2023-01-01,2026-12-31
+30071005,3007,1005,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31
+30081031,3008,1031,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30071032,3007,1032,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31
+30061033,3006,1033,COV,Covered,ACTIVE,Covered under plan formulary,5,N,N,,2023-01-01,2026-12-31
+30051046,3005,1046,COV,Covered,ACTIVE,Covered under plan formulary,1,N,N,,2023-01-01,2026-12-31
+30101030,3010,1030,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31
+30011049,3001,1049,COV,Covered,ACTIVE,Covered under plan formulary,4,N,N,,2023-01-01,2026-12-31
+30041030,3004,1030,ST,Step Therapy Required,RESTRICTED,Step therapy required,3,N,Y,,2023-01-01,2026-12-31
+30101009,3010,1009,SP,Specialty Drug,ACTIVE,Specialty — additional requirements,2,N,N,,2023-01-01,2026-12-31
+30081048,3008,1048,NF,Non-Formulary,RESTRICTED,Non-formulary copay applies,2,N,N,,2023-01-01,2026-12-31
+30041039,3004,1039,QL,Quantity Limit,RESTRICTED,Monthly quantity limit applies,5,N,N,30,2023-01-01,2026-12-31
+30101027,3010,1027,SP,Specialty Drug,ACTIVE,Specialty — additional requirements,2,N,N,,2023-01-01,2026-12-31
+30041044,3004,1044,COV,Covered,ACTIVE,Covered under plan formulary,5,N,N,,2023-01-01,2026-12-31
+30091050,3009,1050,SP,Specialty Drug,ACTIVE,Specialty — additional requirements,5,N,N,,2023-01-01,2026-12-31
+30031020,3003,1020,COV,Covered,ACTIVE,Covered under plan formulary,4,N,N,,2023-01-01,2026-12-31
+30051006,3005,1006,COV,Covered,ACTIVE,Covered under plan formulary,1,N,N,,2023-01-01,2026-12-31
+30041008,3004,1008,PA,Prior Authorization Required,RESTRICTED,PA required,3,Y,N,,2023-01-01,2026-12-31
+30081030,3008,1030,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31
+30101023,3010,1023,NC,Not Covered,INACTIVE,Not covered under this plan,2,N,N,,2023-01-01,2026-12-31
+30051047,3005,1047,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31
+30041036,3004,1036,COV,Covered,ACTIVE,Covered under plan formulary,5,N,N,,2023-01-01,2026-12-31
+30031007,3003,1007,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30101003,3010,1003,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31
+30061010,3006,1010,ST,Step Therapy Required,RESTRICTED,Step therapy required,3,N,Y,,2023-01-01,2026-12-31
+30101013,3010,1013,NF,Non-Formulary,RESTRICTED,Non-formulary copay applies,3,N,N,,2023-01-01,2026-12-31
+30021035,3002,1035,COV,Covered,ACTIVE,Covered under plan formulary,5,N,N,,2023-01-01,2026-12-31
+30021027,3002,1027,PA,Prior Authorization Required,RESTRICTED,PA required,3,Y,N,,2023-01-01,2026-12-31
+30011009,3001,1009,QL,Quantity Limit,RESTRICTED,Monthly quantity limit applies,1,N,N,30,2023-01-01,2026-12-31
+30041041,3004,1041,NF,Non-Formulary,RESTRICTED,Non-formulary copay applies,3,N,N,,2023-01-01,2026-12-31
+30091010,3009,1010,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30021040,3002,1040,QL,Quantity Limit,RESTRICTED,Quantity limit: 30 units/30 days,4,N,N,30,2023-01-01,2026-12-31
+30011015,3001,1015,QL,Quantity Limit,RESTRICTED,Quantity limit: 30 units/30 days,4,N,N,30,2023-01-01,2026-12-31
+30051001,3005,1001,QL,Quantity Limit,RESTRICTED,Quantity limit: 30 units/30 days,2,N,N,30,2023-01-01,2026-12-31
+30011048,3001,1048,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30011013,3001,1013,NF,Non-Formulary,RESTRICTED,Non-formulary copay applies,5,N,N,,2023-01-01,2026-12-31
+30021004,3002,1004,COV,Covered,ACTIVE,Covered under plan formulary,1,N,N,,2023-01-01,2026-12-31
+30031043,3003,1043,COV,Covered,ACTIVE,Covered under plan formulary,1,N,N,,2023-01-01,2026-12-31
+30021022,3002,1022,QL,Quantity Limit,RESTRICTED,Monthly quantity limit applies,1,N,N,30,2023-01-01,2026-12-31
+30101029,3010,1029,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30021013,3002,1013,COV,Covered,ACTIVE,Covered under plan formulary,4,N,N,,2023-01-01,2026-12-31
+30041015,3004,1015,COV,Covered,ACTIVE,Covered under plan formulary,5,N,N,,2023-01-01,2026-12-31
+30041004,3004,1004,NF,Non-Formulary,RESTRICTED,Non-formulary copay applies,5,N,N,,2023-01-01,2026-12-31
+30061029,3006,1029,QL,Quantity Limit,RESTRICTED,Quantity limit: 30 units/30 days,2,N,N,30,2023-01-01,2026-12-31
+30061046,3006,1046,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31
+30081026,3008,1026,COV,Covered,ACTIVE,Covered under plan formulary,5,N,N,,2023-01-01,2026-12-31
+30051023,3005,1023,SP,Specialty Drug,ACTIVE,Specialty — additional requirements,1,N,N,,2023-01-01,2026-12-31
+30031022,3003,1022,PA,Prior Authorization Required,RESTRICTED,PA required,3,Y,N,,2023-01-01,2026-12-31
+30061006,3006,1006,ST,Step Therapy Required,RESTRICTED,Step therapy required,2,N,Y,,2023-01-01,2026-12-31
+30101034,3010,1034,EX,Excluded,INACTIVE,Excluded from formulary,2,N,N,,2023-01-01,2026-12-31
+30071046,3007,1046,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31
+30061037,3006,1037,QL,Quantity Limit,RESTRICTED,Quantity limit: 30 units/30 days,1,N,N,30,2023-01-01,2026-12-31
+30091034,3009,1034,QL,Quantity Limit,RESTRICTED,Monthly quantity limit applies,5,N,N,30,2023-01-01,2026-12-31
+30011002,3001,1002,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30091022,3009,1022,PA,Prior Authorization Required,RESTRICTED,PA required,5,Y,N,,2023-01-01,2026-12-31
+30041018,3004,1018,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30031028,3003,1028,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30031018,3003,1018,COV,Covered,ACTIVE,Covered under plan formulary,1,N,N,,2023-01-01,2026-12-31
+30011004,3001,1004,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30081005,3008,1005,NF,Non-Formulary,RESTRICTED,Non-formulary copay applies,2,N,N,,2023-01-01,2026-12-31
+30081023,3008,1023,QL,Quantity Limit,RESTRICTED,Monthly quantity limit applies,2,N,N,30,2023-01-01,2026-12-31
+30011001,3001,1001,COV,Covered,ACTIVE,Covered under plan formulary,4,N,N,,2023-01-01,2026-12-31
+30051024,3005,1024,QL,Quantity Limit,RESTRICTED,Quantity limit: 30 units/30 days,3,N,N,30,2023-01-01,2026-12-31
+30061043,3006,1043,NF,Non-Formulary,RESTRICTED,Non-formulary copay applies,3,N,N,,2023-01-01,2026-12-31
+30101010,3010,1010,ST,Step Therapy Required,RESTRICTED,Step therapy required,3,N,Y,,2023-01-01,2026-12-31
+30051040,3005,1040,NF,Non-Formulary,RESTRICTED,Non-formulary copay applies,3,N,N,,2023-01-01,2026-12-31
+30061032,3006,1032,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30021024,3002,1024,ST,Step Therapy Required,RESTRICTED,Step therapy required,3,N,Y,,2023-01-01,2026-12-31
+30031015,3003,1015,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30021030,3002,1030,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31
+30081025,3008,1025,COV,Covered,ACTIVE,Covered under plan formulary,3,N,N,,2023-01-01,2026-12-31
+30101036,3010,1036,QL,Quantity Limit,RESTRICTED,Quantity limit: 30 units/30 days,3,N,N,30,2023-01-01,2026-12-31
+30061003,3006,1003,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31
+30091002,3009,1002,NF,Non-Formulary,RESTRICTED,Non-formulary copay applies,2,N,N,,2023-01-01,2026-12-31
+30051028,3005,1028,COV,Covered,ACTIVE,Covered under plan formulary,4,N,N,,2023-01-01,2026-12-31
+30011038,3001,1038,PA,Prior Authorization Required,RESTRICTED,PA required,3,Y,N,,2023-01-01,2026-12-31
+30051015,3005,1015,COV,Covered,ACTIVE,Covered under plan formulary,1,N,N,,2023-01-01,2026-12-31
+30011039,3001,1039,QL,Quantity Limit,RESTRICTED,Monthly quantity limit applies,1,N,N,30,2023-01-01,2026-12-31
+30081021,3008,1021,COV,Covered,ACTIVE,Covered under plan formulary,1,N,N,,2023-01-01,2026-12-31
+30031045,3003,1045,ST,Step Therapy Required,RESTRICTED,Step therapy required,4,N,Y,,2023-01-01,2026-12-31
+30071013,3007,1013,QL,Quantity Limit,RESTRICTED,Quantity limit: 30 units/30 days,3,N,N,30,2023-01-01,2026-12-31
+30011044,3001,1044,COV,Covered,ACTIVE,Covered under plan formulary,5,N,N,,2023-01-01,2026-12-31
+30101048,3010,1048,NF,Non-Formulary,RESTRICTED,Non-formulary copay applies,4,N,N,,2023-01-01,2026-12-31
+30061027,3006,1027,PA,Prior Authorization Required,RESTRICTED,PA required,3,Y,N,,2023-01-01,2026-12-31
+30081016,3008,1016,ST,Step Therapy Required,RESTRICTED,Step therapy required,4,N,Y,,2023-01-01,2026-12-31
+30091038,3009,1038,QL,Quantity Limit,RESTRICTED,Monthly quantity limit applies,3,N,N,30,2023-01-01,2026-12-31
+30101021,3010,1021,COV,Covered,ACTIVE,Covered under plan formulary,1,N,N,,2023-01-01,2026-12-31
+30061005,3006,1005,NF,Non-Formulary,RESTRICTED,Non-formulary copay applies,2,N,N,,2023-01-01,2026-12-31
+30101012,3010,1012,COV,Covered,ACTIVE,Covered under plan formulary,2,N,N,,2023-01-01,2026-12-31

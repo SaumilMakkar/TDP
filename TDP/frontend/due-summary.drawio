@@ -1,0 +1,304 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2">
+  <diagram name="Due Summary" id="dueSummary">
+    <mxGraphModel dx="2405" dy="894" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#F4F1EC" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-296" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAF8F2;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-160" y="859.5" width="1051" height="1220" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-311" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E3E6EC;" parent="1" vertex="1">
+          <mxGeometry x="-129" y="1170" width="956" height="132" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-312" value="NextGen PBM Analysis Report" style="text;html=1;align=left;verticalAlign=middle;fontColor=#12294B;fontSize=15;fontFamily=Georgia;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="-105" y="1186" width="400" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-313" value="RX-20260707-00015" style="text;html=1;align=left;verticalAlign=middle;fontColor=#9CA3AF;fontSize=10;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="-105" y="1212" width="300" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-314" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1E8449;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-105" y="1236" width="334" height="4" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-315" value="TIER" style="text;html=1;align=left;verticalAlign=middle;fontColor=#9CA3AF;fontSize=9;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="-105" y="1244" width="334" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-316" value="Tier 1" style="text;html=1;align=left;verticalAlign=middle;fontColor=#12294B;fontSize=14;fontFamily=Georgia;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="-105" y="1262" width="334" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-317" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1E8449;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="253" y="1236" width="334" height="4" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-318" value="ALTERNATIVE" style="text;html=1;align=left;verticalAlign=middle;fontColor=#9CA3AF;fontSize=9;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="253" y="1244" width="334" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-319" value="AminoAcid" style="text;html=1;align=left;verticalAlign=middle;fontColor=#12294B;fontSize=14;fontFamily=Georgia;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="253" y="1262" width="334" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-320" value="" style="shape=mxgraph.basic.partConcEllipse;html=1;fillColor=#E3EEE7;strokeColor=none;startAngle=0;endAngle=1;size=0.22;" parent="1" vertex="1">
+          <mxGeometry x="677" y="1192" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-321" value="" style="shape=mxgraph.basic.partConcEllipse;html=1;fillColor=#1E8449;strokeColor=none;startAngle=0;endAngle=0.9200;size=0.22;" parent="1" vertex="1">
+          <mxGeometry x="677" y="1192" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-322" value="92%" style="text;html=1;align=center;verticalAlign=middle;fontColor=#1E8449;fontSize=17;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="677" y="1192" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-323" value="AI Confidence" style="text;html=1;align=center;verticalAlign=middle;fontColor=#6B7280;fontSize=10;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="647" y="1276" width="138" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-324" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E3E6EC;" parent="1" vertex="1">
+          <mxGeometry x="361" y="1330" width="466" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-325" value="Cost Analysis" style="text;html=1;align=left;verticalAlign=middle;fontColor=#12294B;fontSize=14;fontFamily=Georgia;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="383" y="1342" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-326" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F4F1EC;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="383" y="1376" width="126.6" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-327" value="Field" style="text;html=1;align=left;verticalAlign=middle;fontColor=#6B7280;fontSize=9;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="391" y="1376" width="114.6" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-328" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F4F1EC;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="509.60000000000036" y="1376" width="143.48000000000002" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-329" value="Original" style="text;html=1;align=left;verticalAlign=middle;fontColor=#6B7280;fontSize=9;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="517.6000000000004" y="1376" width="131.48000000000002" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-330" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F4F1EC;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="653.0799999999999" y="1376" width="151.92" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-331" value="Alternative" style="text;html=1;align=left;verticalAlign=middle;fontColor=#6B7280;fontSize=9;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="661.0799999999999" y="1376" width="139.92" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-332" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="383" y="1402" width="422" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-333" value="Drug" style="text;html=1;align=left;verticalAlign=middle;fontColor=#374151;fontSize=10.5;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="391" y="1402" width="114.6" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-334" value="Drug 1021" style="text;html=1;align=left;verticalAlign=middle;fontColor=#6B7280;fontSize=10.5;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="517.6000000000004" y="1402" width="131.48000000000002" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-335" value="AminoAcid" style="text;html=1;align=left;verticalAlign=middle;fontColor=#1E8449;fontSize=10.5;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="661.0799999999999" y="1402" width="139.92" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-336" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FCFBF9;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="383" y="1429" width="422" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-337" value="Tier" style="text;html=1;align=left;verticalAlign=middle;fontColor=#374151;fontSize=10.5;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="391" y="1429" width="114.6" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-338" value="Tier 2" style="text;html=1;align=left;verticalAlign=middle;fontColor=#6B7280;fontSize=10.5;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="517.6000000000004" y="1429" width="131.48000000000002" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-339" value="Tier 1" style="text;html=1;align=left;verticalAlign=middle;fontColor=#1E8449;fontSize=10.5;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="661.0799999999999" y="1429" width="139.92" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-340" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="383" y="1456" width="422" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-341" value="Total Price" style="text;html=1;align=left;verticalAlign=middle;fontColor=#374151;fontSize=10.5;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="391" y="1456" width="114.6" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-342" value="$35.70" style="text;html=1;align=left;verticalAlign=middle;fontColor=#6B7280;fontSize=10.5;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="517.6000000000004" y="1456" width="131.48000000000002" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-343" value="$29.27" style="text;html=1;align=left;verticalAlign=middle;fontColor=#1E8449;fontSize=10.5;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="661.0799999999999" y="1456" width="139.92" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-344" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FCFBF9;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="383" y="1483" width="422" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-345" value="Patient Copay" style="text;html=1;align=left;verticalAlign=middle;fontColor=#374151;fontSize=10.5;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="391" y="1483" width="114.6" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-346" value="$10.00" style="text;html=1;align=left;verticalAlign=middle;fontColor=#6B7280;fontSize=10.5;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="517.6000000000004" y="1483" width="131.48000000000002" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-347" value="$7.50" style="text;html=1;align=left;verticalAlign=middle;fontColor=#1E8449;fontSize=10.5;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="661.0799999999999" y="1483" width="139.92" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-348" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="383" y="1510" width="422" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-349" value="Plan Paid Amount" style="text;html=1;align=left;verticalAlign=middle;fontColor=#374151;fontSize=10.5;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="391" y="1510" width="114.6" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-350" value="$26.70" style="text;html=1;align=left;verticalAlign=middle;fontColor=#6B7280;fontSize=10.5;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="517.6000000000004" y="1510" width="131.48000000000002" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-351" value="$21.77" style="text;html=1;align=left;verticalAlign=middle;fontColor=#1E8449;fontSize=10.5;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="661.0799999999999" y="1510" width="139.92" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-352" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FCFBF9;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="383" y="1537" width="422" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-353" value="Total Cost" style="text;html=1;align=left;verticalAlign=middle;fontColor=#374151;fontSize=10.5;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="391" y="1537" width="114.6" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-354" value="$35.70" style="text;html=1;align=left;verticalAlign=middle;fontColor=#6B7280;fontSize=10.5;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="517.6000000000004" y="1537" width="131.48000000000002" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-355" value="$29.27" style="text;html=1;align=left;verticalAlign=middle;fontColor=#1E8449;fontSize=10.5;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="661.0799999999999" y="1537" width="139.92" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-356" value="" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#DCF3E3;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="383" y="1578" width="422" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-357" value="You save $77.16 / year" style="text;html=1;align=left;verticalAlign=middle;fontColor=#1E8449;fontSize=12;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="399" y="1584" width="392" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-358" value="18.01% lower than original drug" style="text;html=1;align=left;verticalAlign=middle;fontColor=#1E8449;fontSize=9.5;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="399" y="1604" width="392" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-359" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E3E6EC;" parent="1" vertex="1">
+          <mxGeometry x="-129" y="1670" width="466" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-360" value="Coverage Details" style="text;html=1;align=left;verticalAlign=middle;fontColor=#12294B;fontSize=14;fontFamily=Georgia;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="-107" y="1682" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-361" value="INSURANCE PHASE" style="text;html=1;align=left;verticalAlign=middle;fontColor=#9CA3AF;fontSize=8.5;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="-107" y="1720" width="130.66666666666666" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-362" value="Standard Coverage" style="text;html=1;align=left;verticalAlign=middle;fontColor=#12294B;fontSize=12;fontFamily=Georgia;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="-107" y="1736" width="130.66666666666666" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-363" value="YTD OOP" style="text;html=1;align=left;verticalAlign=middle;fontColor=#9CA3AF;fontSize=8.5;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="33.66666666666697" y="1720" width="130.66666666666666" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-364" value="$72.00" style="text;html=1;align=left;verticalAlign=middle;fontColor=#12294B;fontSize=12;fontFamily=Georgia;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="33.66666666666697" y="1736" width="130.66666666666666" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-365" value="COINSURANCE" style="text;html=1;align=left;verticalAlign=middle;fontColor=#9CA3AF;fontSize=8.5;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="174.33333333333303" y="1720" width="130.66666666666666" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-366" value="20.00%" style="text;html=1;align=left;verticalAlign=middle;fontColor=#12294B;fontSize=12;fontFamily=Georgia;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="174.33333333333303" y="1736" width="130.66666666666666" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-367" value="Deductible" style="text;html=1;align=left;verticalAlign=middle;fontColor=#6B7280;fontSize=9.5;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="-107" y="1776" width="200" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-368" value="$72.00 met of $750.00" style="text;html=1;align=right;verticalAlign=middle;fontColor=#9CA3AF;fontSize=9;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="147" y="1776" width="168" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-369" value="" style="rounded=1;arcSize=100;whiteSpace=wrap;html=1;fillColor=#EDEFF3;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-107" y="1794" width="422" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-370" value="" style="rounded=1;arcSize=100;whiteSpace=wrap;html=1;fillColor=#12294B;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-107" y="1794" width="40.512" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-371" value="$678.00 remaining" style="text;html=1;align=left;verticalAlign=middle;fontColor=#9CA3AF;fontSize=8.5;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="-107" y="1808" width="422" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-372" value="Out-of-Pocket Max" style="text;html=1;align=left;verticalAlign=middle;fontColor=#6B7280;fontSize=9.5;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="-107" y="1838" width="200" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-373" value="$72.00 met of $3,000.00" style="text;html=1;align=right;verticalAlign=middle;fontColor=#9CA3AF;fontSize=9;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="147" y="1838" width="168" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-374" value="" style="rounded=1;arcSize=100;whiteSpace=wrap;html=1;fillColor=#EDEFF3;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-107" y="1856" width="422" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-375" value="$2,928.00 remaining" style="text;html=1;align=left;verticalAlign=middle;fontColor=#9CA3AF;fontSize=8.5;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="-107" y="1870" width="422" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-376" value="DEDUCTIBLE CAP" style="text;html=1;align=left;verticalAlign=middle;fontColor=#9CA3AF;fontSize=8.5;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="-107" y="1900" width="201" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-377" value="$750.00" style="text;html=1;align=left;verticalAlign=middle;fontColor=#12294B;fontSize=12;fontFamily=Georgia;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="-107" y="1916" width="201" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-378" value="OOP MAX CAP" style="text;html=1;align=left;verticalAlign=middle;fontColor=#9CA3AF;fontSize=8.5;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="104" y="1900" width="201" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-379" value="$3,000.00" style="text;html=1;align=left;verticalAlign=middle;fontColor=#12294B;fontSize=12;fontFamily=Georgia;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="104" y="1916" width="201" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-380" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E3E6EC;" parent="1" vertex="1">
+          <mxGeometry x="-129" y="1330" width="466" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-381" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E3E6EC;" parent="1" vertex="1">
+          <mxGeometry x="361" y="1670" width="466" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-382" value="Policy Review" style="text;html=1;align=left;verticalAlign=middle;fontColor=#12294B;fontSize=14;fontFamily=Georgia;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="383" y="1686" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-383" value="ORIGINAL STATUS" style="text;html=1;align=left;verticalAlign=middle;fontColor=#9CA3AF;fontSize=8.5;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="383" y="1720" width="300" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-384" value="Prior auth required" style="rounded=1;arcSize=100;whiteSpace=wrap;html=1;fillColor=#FDF1D3;strokeColor=none;fontColor=#C9880A;fontStyle=1;fontSize=9.5;align=center;verticalAlign=middle;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="383" y="1736" width="150" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-385" value="ALTERNATIVE STATUS" style="text;html=1;align=left;verticalAlign=middle;fontColor=#9CA3AF;fontSize=8.5;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="383" y="1776" width="422" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-386" value="Preferred formulary preference. All policy checks passed." style="text;html=1;align=left;verticalAlign=middle;fontColor=#374151;fontSize=10;fontFamily=Helvetica;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="383" y="1792" width="422" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-387" value="FORMULARY PREFERENCE" style="text;html=1;align=left;verticalAlign=middle;fontColor=#9CA3AF;fontSize=8.5;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="383" y="1832" width="300" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-388" value="Preferred" style="rounded=1;arcSize=100;whiteSpace=wrap;html=1;fillColor=#DCF3E3;strokeColor=none;fontColor=#1E8449;fontStyle=1;fontSize=9.5;align=center;verticalAlign=middle;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="383" y="1848" width="90" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-389" value="Covered" style="rounded=1;arcSize=100;whiteSpace=wrap;html=1;fillColor=#DCF3E3;strokeColor=none;fontColor=#1E8449;fontStyle=1;fontSize=9.5;align=center;verticalAlign=middle;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="481" y="1848" width="84" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-390" value="POLICY NOTES" style="text;html=1;align=left;verticalAlign=middle;fontColor=#9CA3AF;fontSize=8.5;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="383" y="1888" width="300" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-391" value="Preferred formulary preference. All policy checks passed." style="text;html=1;align=left;verticalAlign=middle;fontColor=#6B7280;fontSize=9.5;fontFamily=Helvetica;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="383" y="1904" width="422" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-422" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap-mode: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22CLINICALLY%20ACCEPTABLE%22%20style%3D%22rounded%3D1%3BarcSize%3D100%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BfillColor%3D%23DCF3E3%3BstrokeColor%3Dnone%3BfontColor%3D%231E8449%3BfontStyle%3D1%3BfontSize%3D9.5%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3BfontFamily%3DHelvetica%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%225433%22%20y%3D%22864%22%20width%3D%22168%22%20height%3D%2226%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#F8F8F8;fillColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="-122" y="1980" width="955" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-423" value="Past Agent Summary&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot; data-teams=&quot;true&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Historical evidence generally supports the recommendation because similar past cases were accepted by doctors.&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;fontColor=#12294B;fontSize=14;fontFamily=Georgia;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="-109" y="1999" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-424" value="PAST AGENT" style="rounded=1;arcSize=100;whiteSpace=wrap;html=1;fillColor=#DCF3E3;strokeColor=none;fontColor=#1E8449;fontStyle=1;fontSize=9.5;align=center;verticalAlign=middle;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="623" y="1990" width="168" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-432" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;font-weight: 700; text-align: left; background-color: transparent; font-family: Arial; color: rgb(255, 156, 168);&quot;&gt;&lt;font style=&quot;color: rgb(204, 0, 0);&quot;&gt;⚠&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 700; text-align: left; background-color: transparent; color: rgb(255, 156, 168); font-family: Arial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="768" y="1696" width="20" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-434" value="CLINICALLY ACCEPTABLE" style="rounded=1;arcSize=100;whiteSpace=wrap;html=1;fillColor=#DCF3E3;strokeColor=none;fontColor=#1E8449;fontStyle=1;fontSize=9.5;align=center;verticalAlign=middle;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="147" y="1354" width="168" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-435" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Clinical Review&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Georgia;fontSize=13.5;fontColor=#002677;fontStyle=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-116" y="1357" width="448" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-436" value="&lt;font style=&quot;color: rgb(51, 51, 51); font-size: 15px;&quot;&gt;Clinical Summary&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;fontColor=#9CA3AF;fontSize=8.5;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="-116" y="1438.5" width="167" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-437" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;✓&amp;nbsp;&lt;span style=&quot;&quot; data-teams=&quot;true&quot;&gt;Same dosage form&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;fontColor=#1E8449;fontSize=10;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="-116" y="1458.5" width="156" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-438" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;&quot;&gt;✓&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;&quot; data-teams=&quot;true&quot;&gt;Mechanism-of-action similarity&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;fontColor=#1E8449;fontSize=10;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="-116" y="1485.5" width="216" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-439" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;&quot;&gt;✓&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;&quot; data-teams=&quot;true&quot;&gt;Strength alignment&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;fontColor=#1E8449;fontSize=10;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="-117" y="1512.5" width="177" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-440" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;&quot;&gt;✓&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;&quot; data-teams=&quot;true&quot;&gt;Combination-therapy similarity&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;fontColor=#1E8449;fontSize=10;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="-116" y="1540.5" width="196" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-441" value="&lt;font style=&quot;color: rgb(51, 51, 51); font-size: 15px;&quot;&gt;Safety Summary&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;fontColor=#9CA3AF;fontSize=8.5;fontFamily=Helvetica;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="110" y="1440.5" width="167" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-442" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;&quot;&gt;✓&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;&quot; data-teams=&quot;true&quot;&gt;No allergy conflicts identified&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;fontColor=#1E8449;fontSize=10;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="111" y="1462.5" width="156" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-443" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;✓&amp;nbsp;&lt;/font&gt;&lt;/font&gt;&lt;span style=&quot;&quot; data-teams=&quot;true&quot;&gt;No contraindications identified&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;fontColor=#1E8449;fontSize=10;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="111" y="1490.5" width="216" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-444" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;✓&amp;nbsp;&lt;/font&gt;&lt;/font&gt;&lt;span style=&quot;&quot; data-teams=&quot;true&quot;&gt;No drug interaction identified&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;fontColor=#1E8449;fontSize=10;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="111" y="1518.5" width="177" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="QCnr9gaoI1pCZ6Nl_GHL-445" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;✓&amp;nbsp;&lt;/font&gt;&lt;/font&gt;&lt;span style=&quot;&quot; data-teams=&quot;true&quot;&gt;No duplicate therapy signal identified&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;fontColor=#1E8449;fontSize=10;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="110" y="1542.5" width="196" height="16" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,542 @@
+/* ============================================
+   SUBMIT PAGE STYLES
+   ============================================ */
+
+#view-submit {
+  max-width: 100%;
+}
+
+/* ---- Progress Stepper ---- */
+#view-submit .submit-stepper {
+  background: #ffffff;
+  padding: 22px 32px;
+  margin-left: calc(-1 * clamp(12px, 1.8vw, 24px));
+  margin-right: calc(-1 * clamp(12px, 1.8vw, 24px));
+  margin-bottom: 14px;
+  width: calc(100% + (2 * clamp(12px, 1.8vw, 24px)));
+  box-sizing: border-box;
+}
+
+#view-submit .submit-stepper-track {
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  background: #ffffff;
+  gap: 0;
+}
+
+#view-submit .submit-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+#view-submit .submit-step-dot {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #d8d5cc;
+  background: transparent;
+  color: #9ca3af;
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+#view-submit .submit-step-dot--done {
+  background: #006600;
+  border-color: #006600;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+#view-submit .submit-step-dot--current {
+  background: #b8a000;
+  border-color: #b8a000;
+  color: #ffffff;
+}
+
+#view-submit .submit-step-label {
+  font-size: 0.7rem;
+  color: #9ca3af;
+  white-space: nowrap;
+}
+
+#view-submit .submit-step-label--current {
+  color: #374151;
+  font-weight: 700;
+}
+
+#view-submit .submit-step-connector {
+  flex: 1;
+  height: 2px;
+  background: #d8d5cc;
+  margin: 0 6px;
+  margin-bottom: 22px;
+}
+
+#view-submit .submit-step-connector--done {
+  background: #1a1a1a;
+}
+
+/* ---- Two-column layout ---- */
+#view-submit .submit-two-col {
+  display: grid;
+  grid-template-columns: 1fr 276px;
+  gap: 14px;
+  align-items: start;
+}
+
+/* ---- Left main column ---- */
+#view-submit .submit-title-area {
+  margin-bottom: 18px;
+}
+
+#view-submit .submit-title-area h2 {
+  margin: 0;
+  font-family: 'Source Sans 3', 'Segoe UI', sans-serif;
+  font-size: 1.9rem;
+  color: #12294b;
+}
+
+#view-submit .submit-title-area p {
+  margin: 8px 0 0;
+  font-size: 0.86rem;
+  color: #6b7280;
+}
+
+#view-submit .submit-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+#view-submit .submit-title-row > p {
+  margin: 0;
+  flex: 1;
+  min-width: 0;
+}
+
+#view-submit .submit-form-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+#view-submit .submit-form-shell .form-group label {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+#view-submit .submit-form-shell .form-group input,
+#view-submit .submit-form-shell .form-group select,
+#view-submit .submit-form-shell .form-group textarea {
+  font-size: 1rem;
+}
+
+#view-submit .submit-form-shell .form-group input::placeholder,
+#view-submit .submit-form-shell .form-group textarea::placeholder {
+  font-size: 0.95rem;
+}
+
+#view-submit .submit-form-shell .form-group select option {
+  font-size: 0.95rem;
+}
+
+#view-submit .submit-card-kicker {
+  font-size: 0.86rem;
+}
+
+#view-submit .submit-security-note {
+  font-size: 0.9rem;
+}
+
+/* ---- Right aside panel ---- */
+#view-submit .submit-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 78px;
+  position: relative;
+}
+
+#view-submit .submit-upload-btn {
+  display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    min-width: 147px;
+    padding: 0 14px;
+    border-radius: 15px;
+    /* border: 1px solid #000000; */
+    background: #d74120;
+    color: #FFFFFF;
+    font-size: 0.85rem;
+    font-weight: 700;
+    white-space: nowrap;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#view-submit .submit-aside .submit-upload-btn {
+  position: absolute;
+  top: 34px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#view-submit .submit-upload-btn:hover {
+  background: #f9f9f7;
+}
+
+#view-submit .submit-clear-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  padding: 0 14px;
+  border-radius: 15px;
+  border: 1px solid #000000;
+  background: #ffffff;
+  color: #1a1a1a;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+#view-submit .submit-clear-btn:hover {
+  background: #f9f9f7;
+}
+
+#view-submit .submit-upload-icon {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+#view-submit .submit-search-wrap {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  width: 100%;
+  border: 1px solid #e3e6ec;
+  border-radius: 20px;
+  background: #f7f8fa;
+  padding: 0 10px;
+  gap: 6px;
+}
+
+#view-submit .submit-search-icon {
+  color: #6b7280;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+#view-submit #submit-quick-search {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  color: #6b7280;
+  font-size: 0.8rem;
+  font-family: inherit;
+}
+
+/* ---- Recent Rx Panel ---- */
+#view-submit .submit-rx-panel {
+  background: #ffffff;
+  border: 1px solid #e3e6ec;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(61, 60, 56, 0.09);
+  overflow: hidden;
+}
+
+#view-submit .submit-rx-footer {
+  display: flex;
+  justify-content: center;
+  padding: 10px 12px 12px;
+  border-top: 1px solid #eceff4;
+  background: #fbfcfe;
+}
+
+#view-submit .submit-rx-more-btn {
+  min-height: auto;
+  border-radius: 0;
+  border: none;
+  background: none;
+  color: #002677;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 14px 0 4px;
+}
+
+#view-submit .submit-rx-more-btn:hover {
+  background: none;
+  text-decoration: none;
+}
+
+#view-submit .submit-rx-head {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 0.8fr;
+  background: #f5f5f3;
+  padding: 9px 12px;
+  gap: 6px;
+  border-bottom: 1px solid #e3e6ec;
+}
+
+#view-submit .submit-rx-head span {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-transform: none;
+  letter-spacing: 0.01em;
+}
+
+#view-submit .submit-rx-body {
+  display: flex;
+  flex-direction: column;
+  max-height: 232px;
+  overflow-y: hidden;
+}
+
+#view-submit div#submit-rx-rows.submit-rx-body {
+  width: 100%;
+  height: auto;
+  max-height: 232px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+#view-submit .submit-rx-row {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 0.8fr;
+  padding: 9px 12px;
+  gap: 6px;
+  border-bottom: 1px solid #f0eeea;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+#view-submit .submit-rx-row:last-child {
+  border-bottom: none;
+}
+
+#view-submit .submit-rx-row:hover {
+  background: #f9f9f7;
+}
+
+#view-submit .submit-rx-row:nth-child(even) {
+  background: #fafaf8;
+}
+
+#view-submit .submit-rx-row:nth-child(even):hover {
+  background: #f9f9f7;
+}
+
+#view-submit .submit-rx-row span {
+  font-size: 0.74rem;
+  color: #1a1a1a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#view-submit .submit-rx-row span.rx-num {
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 0.68rem;
+}
+
+#view-submit .submit-rx-skeleton {
+  padding: 14px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#view-submit .submit-rx-sk-line {
+  height: 10px;
+  border-radius: 6px;
+  background: #e5e5e5;
+  animation: skeletonPulse 1.4s ease-in-out infinite;
+}
+
+#view-submit .submit-rx-empty {
+  padding: 22px 12px;
+  text-align: center;
+  font-size: 0.78rem;
+  color: #9ca3af;
+}
+
+@keyframes skeletonPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+#view-submit .submit-card {
+  border: 1px solid #e5e2da;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 14px 18px 18px;
+}
+
+#view-submit .submit-card-kicker {
+  font-size: 0.64rem;
+  font-weight: 700;
+  color: #6b7280;
+  letter-spacing: 0.12em;
+  margin-bottom: 10px;
+}
+
+#view-submit .submit-grid-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 18px;
+}
+
+#view-submit .submit-relative {
+  position: relative;
+}
+
+#view-submit .form-group label {
+  margin-bottom: 6px;
+  font-size: 0.72rem;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 700;
+  color: #374151;
+}
+
+#view-submit .form-group input,
+#view-submit .form-group select {
+  height: 32px;
+  line-height: 32px;
+  border-radius: 16px;
+  border: 1px solid #e0ded6;
+  background: #f9f9f7;
+  color: #374151;
+  font-size: 0.78rem;
+  padding: 0 12px;
+}
+
+#view-submit .form-group select {
+  min-height: 32px;
+  display: block;
+  width: 100%;
+  line-height: normal;
+  padding-right: 34px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, #8b8f98 50%), linear-gradient(135deg, #8b8f98 50%, transparent 50%);
+  background-position: calc(100% - 14px) calc(50% - 2px), calc(100% - 9px) calc(50% - 2px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+
+#view-submit .form-group input::placeholder,
+#view-submit .form-group select,
+#view-submit .form-group select:invalid {
+  color: #9ca3af;
+}
+
+#view-submit .form-group input:focus,
+#view-submit .form-group select:focus {
+  border-color: #d5b7a3;
+  box-shadow: 0 0 0 3px rgba(216, 170, 141, 0.2);
+}
+
+#view-submit .autocomplete-list {
+  max-width: 100%;
+  border-radius: 10px;
+  border: 1px solid #e0ded6;
+}
+
+#view-submit .submit-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+#view-submit #submit-btn {
+  min-width: 172px;
+  border-radius: 14px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 9px 14px;
+}
+
+#view-submit .submit-actions .btn:not(#submit-btn) {
+  border-radius: 14px;
+  font-size: 0.78rem;
+  padding: 9px 14px;
+}
+
+#view-submit .submit-security-note {
+  margin-left: auto;
+  color: #9ca3af;
+  font-size: 0.66rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 980px) {
+  #view-submit .submit-two-col {
+    grid-template-columns: 1fr;
+  }
+
+  #view-submit .submit-aside {
+    order: -1;
+    padding-top: 46px;
+  }
+
+  #view-submit .submit-aside .submit-upload-btn {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #view-submit .submit-aside-tools {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #view-submit .submit-search-wrap {
+    margin-top: 0;
+    flex: 1;
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  #view-submit .submit-stepper {
+    padding: 10px 12px;
+    gap: 0;
+  }
+
+  #view-submit .submit-step-label {
+    display: none;
+  }
+
+  #view-submit .submit-grid-two {
+    grid-template-columns: 1fr;
+  }
+
+  #view-submit .submit-security-note {
+    margin-left: 0;
+    width: 100%;
+  }
+}

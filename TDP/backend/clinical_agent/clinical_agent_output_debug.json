@@ -1,0 +1,1258 @@
+{
+  "eligible_candidates": [
+    {
+      "prod_id": 1014,
+      "prod_name": "Escitalopram 10mg",
+      "evidence": {
+        "ingredient": 0.5,
+        "moiety": 0.5,
+        "class": 1.0,
+        "moa": 1.0,
+        "combo": 0.25,
+        "route": 1.0,
+        "form": 1.0,
+        "strength": 0.25
+      },
+      "score": 0.6298,
+      "status": "accepted",
+      "llm_required": false,
+      "candidate_id": 1014,
+      "stage_a": {
+        "prod_id": 1014,
+        "prod_name": "Escitalopram 10mg",
+        "evidence": {
+          "ingredient": 0.5,
+          "moiety": 0.5,
+          "class": 1.0,
+          "moa": 1.0,
+          "combo": 0.25,
+          "route": 1.0,
+          "form": 1.0,
+          "strength": 0.25
+        },
+        "score": 0.6298,
+        "status": "accepted",
+        "llm_required": false
+      },
+      "stage_b": {
+        "evidence": {
+          "allergy": 0.25,
+          "condition": 0.5,
+          "age": 0.0,
+          "contraindication": 0.0,
+          "interaction": 0.0,
+          "renal_hepatic": 0.0,
+          "duplicate_therapy": 1.0
+        },
+        "score": 0.7125,
+        "status": "accepted",
+        "llm_required": true,
+        "reasoning": "Escitalopram may exacerbate heart failure due to potential sodium imbalance and risk of QT prolongation. The condition match score reflects weak alignment, but the cardiovascular risk warrants caution. No direct contraindication exists, but conservative adjustment is prudent for patient safety given the underlying heart failure."
+      },
+      "stage_b_decision": "accept"
+    },
+    {
+      "prod_id": 1015,
+      "prod_name": "Duloxetine 30mg",
+      "evidence": {
+        "ingredient": 0.5,
+        "moiety": 0.5,
+        "class": 0.0,
+        "moa": 0.5,
+        "combo": 0.25,
+        "route": 1.0,
+        "form": 0.5,
+        "strength": 1.0
+      },
+      "score": 0.4691,
+      "status": "accepted",
+      "llm_required": true,
+      "reasoning": "The candidate drug, Duloxetine 30mg, differs significantly from the original drug, Sertraline 50mg, in pharmacologic class (score: 0.0) and mechanism of action (score: 0.5). Sertraline is a selective serotonin reuptake inhibitor (SSRI), while Duloxetine is a serotonin-norepinephrine reuptake inhibitor (SNRI).",
+      "candidate_id": 1015,
+      "stage_a": {
+        "prod_id": 1015,
+        "prod_name": "Duloxetine 30mg",
+        "evidence": {
+          "ingredient": 0.5,
+          "moiety": 0.5,
+          "class": 0.0,
+          "moa": 0.5,
+          "combo": 0.25,
+          "route": 1.0,
+          "form": 0.5,
+          "strength": 1.0
+        },
+        "score": 0.4691,
+        "status": "accepted",
+        "llm_required": true,
+        "reasoning": "The candidate drug, Duloxetine 30mg, differs significantly from the original drug, Sertraline 50mg, in pharmacologic class (score: 0.0) and mechanism of action (score: 0.5). Sertraline is a selective serotonin reuptake inhibitor (SSRI), while Duloxetine is a serotonin-norepinephrine reuptake inhibitor (SNRI)."
+      },
+      "stage_b": {
+        "evidence": {
+          "allergy": 0.25,
+          "condition": 0.5,
+          "age": 0.0,
+          "contraindication": 0.0,
+          "interaction": 0.0,
+          "renal_hepatic": 0.0,
+          "duplicate_therapy": 1.0
+        },
+        "score": 0.7125,
+        "status": "accepted",
+        "llm_required": true,
+        "reasoning": "Duloxetine may exacerbate heart failure due to its potential to increase blood pressure and heart rate, aligning with the condition risk score. Additionally, renal data is incomplete, which raises moderate concern for safety in this patient. Conservative adjustment reflects these risks without definitive contraindication."
+      },
+      "stage_b_decision": "accept"
+    },
+    {
+      "prod_id": 1041,
+      "prod_name": "Venlafaxine 75mg",
+      "evidence": {
+        "ingredient": 0.5,
+        "moiety": 0.5,
+        "class": 0.0,
+        "moa": 0.5,
+        "combo": 0.25,
+        "route": 1.0,
+        "form": 0.5,
+        "strength": 0.75
+      },
+      "score": 0.463,
+      "status": "accepted",
+      "llm_required": true,
+      "reasoning": "Sertraline and Venlafaxine differ significantly in pharmacologic class (SSRI vs SNRI), which impacts their mechanism of action and therapeutic indications. While both share oral route and similar dosage forms, the divergence in class and mechanism suggests they are not interchangeable for all patients, particularly those with specific responses to serotonin modulation versus dual serotonin-norepinephrine activity.",
+      "candidate_id": 1041,
+      "stage_a": {
+        "prod_id": 1041,
+        "prod_name": "Venlafaxine 75mg",
+        "evidence": {
+          "ingredient": 0.5,
+          "moiety": 0.5,
+          "class": 0.0,
+          "moa": 0.5,
+          "combo": 0.25,
+          "route": 1.0,
+          "form": 0.5,
+          "strength": 0.75
+        },
+        "score": 0.463,
+        "status": "accepted",
+        "llm_required": true,
+        "reasoning": "Sertraline and Venlafaxine differ significantly in pharmacologic class (SSRI vs SNRI), which impacts their mechanism of action and therapeutic indications. While both share oral route and similar dosage forms, the divergence in class and mechanism suggests they are not interchangeable for all patients, particularly those with specific responses to serotonin modulation versus dual serotonin-norepinephrine activity."
+      },
+      "stage_b": {
+        "evidence": {
+          "allergy": 0.25,
+          "condition": 0.5,
+          "age": 0.0,
+          "contraindication": 0.0,
+          "interaction": 0.0,
+          "renal_hepatic": 0.0,
+          "duplicate_therapy": 1.0
+        },
+        "score": 0.7125,
+        "status": "accepted",
+        "llm_required": true,
+        "reasoning": "Venlafaxine may exacerbate heart failure due to its potential to increase blood pressure and heart rate, which poses a moderate risk for this patient. Additionally, the renal data is incomplete, warranting a conservative adjustment to account for potential safety concerns."
+      },
+      "stage_b_decision": "accept"
+    },
+    {
+      "prod_id": 1042,
+      "prod_name": "Bupropion 150mg",
+      "evidence": {
+        "ingredient": 0.5,
+        "moiety": 0.5,
+        "class": 0.0,
+        "moa": 0.5,
+        "combo": 0.25,
+        "route": 1.0,
+        "form": 1.0,
+        "strength": 1.0
+      },
+      "score": 0.4882,
+      "status": "accepted",
+      "llm_required": true,
+      "reasoning": "Sertraline and Bupropion differ significantly in pharmacologic class (SSRI vs. NDRI), which impacts their mechanism of action and therapeutic use.",
+      "candidate_id": 1042,
+      "stage_a": {
+        "prod_id": 1042,
+        "prod_name": "Bupropion 150mg",
+        "evidence": {
+          "ingredient": 0.5,
+          "moiety": 0.5,
+          "class": 0.0,
+          "moa": 0.5,
+          "combo": 0.25,
+          "route": 1.0,
+          "form": 1.0,
+          "strength": 1.0
+        },
+        "score": 0.4882,
+        "status": "accepted",
+        "llm_required": true,
+        "reasoning": "Sertraline and Bupropion differ significantly in pharmacologic class (SSRI vs. NDRI), which impacts their mechanism of action and therapeutic use."
+      },
+      "stage_b": {
+        "evidence": {
+          "allergy": 0.0,
+          "condition": 0.5,
+          "age": 0.0,
+          "contraindication": 0.0,
+          "interaction": 0.0,
+          "renal_hepatic": 0.0,
+          "duplicate_therapy": 1.0
+        },
+        "score": 0.765,
+        "status": "accepted",
+        "llm_required": true,
+        "reasoning": "Bupropion may exacerbate heart failure due to its potential to increase heart rate and blood pressure, which is clinically relevant given the patient's condition. The condition match score of 0.5 reflects weak alignment but signals moderate risk. Conservative adjustment is warranted to prioritize patient safety in cardiovascular disease."
+      },
+      "stage_b_decision": "accept"
+    }
+  ],
+  "packaged_candidates": [
+    {
+      "candidate_id": 1014,
+      "stage_a_score": 0.6298,
+      "stage_a_evidence": {
+        "ingredient": 0.5,
+        "moiety": 0.5,
+        "class": 1.0,
+        "moa": 1.0,
+        "combo": 0.25,
+        "route": 1.0,
+        "form": 1.0,
+        "strength": 0.25
+      },
+      "stage_a_llm_required": false,
+      "stage_a_reasoning": "",
+      "stage_b_score": 0.7125,
+      "stage_b_evidence": {
+        "normalized_patient_profile": {
+          "mbr_sk": 2004,
+          "mbr_id": "MBR0002004",
+          "plan_sk": 3010,
+          "age": 37,
+          "conditions": [
+            "heart failure",
+            "bipolar disorder"
+          ],
+          "allergies": [
+            "aspirin"
+          ],
+          "current_medications": [
+            "pantoprazole 40mg",
+            "sitagliptin 100mg",
+            "rosuvastatin 10mg",
+            "risedronate 35mg"
+          ]
+        },
+        "normalized_candidate": {
+          "prod_id": 1014,
+          "prod_name": "Escitalopram 10mg",
+          "generic_name": "escitalopram",
+          "therapeutic_class": "ssri",
+          "ingredients": [
+            "escitalopram"
+          ],
+          "tokens": [
+            "10mg",
+            "escitalopram",
+            "escitalopram 10mg",
+            "ssri",
+            "tablet"
+          ]
+        },
+        "scores": {
+          "allergy": 0.25,
+          "condition": 0.5,
+          "age": 0.0,
+          "contraindication": 0.0,
+          "interaction": 0.0,
+          "renal_hepatic": 0.0,
+          "duplicate_therapy": 1.0
+        },
+        "allergy": {
+          "allergy_risk": 0.25,
+          "matched_allergen": "aspirin",
+          "matched_cross_reactivity": null,
+          "severity": "LOW",
+          "gate_triggered": false,
+          "gate_type": null
+        },
+        "condition": {
+          "condition_match": 0.5,
+          "matched_condition": "heart failure",
+          "matched_reference_condition": null,
+          "severity": null,
+          "reason": "condition_weak_class_alignment"
+        },
+        "age": {
+          "age_risk": 0.0,
+          "risk_band": "low",
+          "reason": "low_age_related_risk"
+        },
+        "contraindication": {
+          "contraindication": false,
+          "contraindication_score": 0.0,
+          "matched_condition": null,
+          "matched_reference_condition": null,
+          "matched_ingredient": null,
+          "severity": null,
+          "rule_source": null
+        },
+        "interaction": {
+          "interaction_detected": false,
+          "interaction_severity": "none",
+          "interaction_score": 0.0,
+          "matches": []
+        },
+        "renal_hepatic": {
+          "status": "PASS",
+          "severity": "MODERATE",
+          "score": 0.0,
+          "reason": "renal_or_hepatic_adjustment_recommended",
+          "data_complete": true,
+          "renal": {
+            "status": "UNKNOWN",
+            "severity": "NONE",
+            "score": 0.0,
+            "matched_ingredient": null,
+            "adjustment_level": null,
+            "egfr": 82.0,
+            "reason": "renal_data_not_found_conservative"
+          },
+          "hepatic": {
+            "status": "UNKNOWN",
+            "severity": "NONE",
+            "score": 0.0,
+            "matched_ingredient": null,
+            "adjustment_level": null,
+            "child_pugh": "A",
+            "reason": "hepatic_data_not_found_conservative"
+          }
+        },
+        "duplicate_therapy": {
+          "status": "PASS",
+          "severity": "NONE",
+          "score": 1.0,
+          "reason": "no_duplicate_therapy_signal",
+          "match_type": null,
+          "matched_medication": null
+        },
+        "soft_risks": {
+          "interaction_severity": "none",
+          "age_risk": 0.0,
+          "condition_match": 0.5,
+          "renal_hepatic_score": 0.0,
+          "duplicate_therapy_score": 1.0
+        },
+        "evidence_quality": {
+          "has_conditions": true,
+          "has_allergies": true,
+          "has_current_medications": true,
+          "renal_hepatic_data_complete": true,
+          "conflict_detected": false
+        },
+        "risk_aggregation": {
+          "stage_b_score": 0.7625,
+          "patient_safety_score": 0.7625,
+          "weights": {
+            "contraindication": 0.27000000000000013,
+            "allergy": 0.20999999999999994,
+            "interaction": 0.19000000000000003,
+            "renal_hepatic": 0.15000000000000005,
+            "duplicate_therapy": 0.08,
+            "condition": 0.07,
+            "age": 0.03
+          },
+          "weight_percent": {
+            "contraindication": 27,
+            "allergy": 21,
+            "interaction": 19,
+            "renal_hepatic": 15,
+            "duplicate_therapy": 8,
+            "condition": 7,
+            "age": 3
+          },
+          "normalized_components": {
+            "contraindication": 1.0,
+            "allergy": 0.75,
+            "interaction": 1.0,
+            "renal_hepatic": 0.0,
+            "duplicate_therapy": 1.0,
+            "condition": 0.5,
+            "age": 1.0
+          }
+        },
+        "confidence": {
+          "decision": "review",
+          "llm_required": true,
+          "confidence_level": "low",
+          "confidence_score": 0.7625,
+          "reason_code": "llm_review",
+          "routing_decision": "llm_review"
+        },
+        "llm_review": {
+          "adjustment": -0.05,
+          "confidence": 0.7,
+          "reasoning": "Escitalopram may exacerbate heart failure due to potential sodium imbalance and risk of QT prolongation. The condition match score reflects weak alignment, but the cardiovascular risk warrants caution. No direct contraindication exists, but conservative adjustment is prudent for patient safety given the underlying heart failure."
+        }
+      },
+      "stage_b_llm_required": true,
+      "stage_b_decision": "accept",
+      "candidate_name": "Escitalopram 10mg",
+      "stage_b_reasoning": "Escitalopram may exacerbate heart failure due to potential sodium imbalance and risk of QT prolongation. The condition match score reflects weak alignment, but the cardiovascular risk warrants caution. No direct contraindication exists, but conservative adjustment is prudent for patient safety given the underlying heart failure.",
+      "composite_score": 0.6794,
+      "threshold_passed": true,
+      "rank": 1,
+      "clinical_rationale": [
+        "Mechanism-of-action similarity",
+        "Same dosage form",
+        "Same route of administration",
+        "Therapeutic class similarity",
+        "Ingredient similarity",
+        "Moiety similarity",
+        "Combination-therapy similarity",
+        "Strength alignment",
+        "No contraindications identified",
+        "No drug interaction identified",
+        "No duplicate therapy signal identified",
+        "Weak condition alignment noted",
+        "Allergy risk identified (low)",
+        "Renal/hepatic consideration identified (moderate)",
+        "Clinical ambiguity required LLM review",
+        "Cumulative mild-to-moderate risk signal identified"
+      ]
+    },
+    {
+      "candidate_id": 1015,
+      "stage_a_score": 0.4691,
+      "stage_a_evidence": {
+        "ingredient": 0.5,
+        "moiety": 0.5,
+        "class": 0.0,
+        "moa": 0.5,
+        "combo": 0.25,
+        "route": 1.0,
+        "form": 0.5,
+        "strength": 1.0
+      },
+      "stage_a_llm_required": true,
+      "stage_a_reasoning": "The candidate drug, Duloxetine 30mg, differs significantly from the original drug, Sertraline 50mg, in pharmacologic class (score: 0.0) and mechanism of action (score: 0.5). Sertraline is a selective serotonin reuptake inhibitor (SSRI), while Duloxetine is a serotonin-norepinephrine reuptake inhibitor (SNRI).",
+      "stage_b_score": 0.7125,
+      "stage_b_evidence": {
+        "normalized_patient_profile": {
+          "mbr_sk": 2004,
+          "mbr_id": "MBR0002004",
+          "plan_sk": 3010,
+          "age": 37,
+          "conditions": [
+            "heart failure",
+            "bipolar disorder"
+          ],
+          "allergies": [
+            "aspirin"
+          ],
+          "current_medications": [
+            "pantoprazole 40mg",
+            "sitagliptin 100mg",
+            "rosuvastatin 10mg",
+            "risedronate 35mg"
+          ]
+        },
+        "normalized_candidate": {
+          "prod_id": 1015,
+          "prod_name": "Duloxetine 30mg",
+          "generic_name": "duloxetine",
+          "therapeutic_class": "snri",
+          "ingredients": [
+            "duloxetine"
+          ],
+          "tokens": [
+            "30mg",
+            "capsule",
+            "duloxetine",
+            "duloxetine 30mg",
+            "snri"
+          ]
+        },
+        "scores": {
+          "allergy": 0.25,
+          "condition": 0.5,
+          "age": 0.0,
+          "contraindication": 0.0,
+          "interaction": 0.0,
+          "renal_hepatic": 0.0,
+          "duplicate_therapy": 1.0
+        },
+        "allergy": {
+          "allergy_risk": 0.25,
+          "matched_allergen": "aspirin",
+          "matched_cross_reactivity": null,
+          "severity": "LOW",
+          "gate_triggered": false,
+          "gate_type": null
+        },
+        "condition": {
+          "condition_match": 0.5,
+          "matched_condition": "heart failure",
+          "matched_reference_condition": null,
+          "severity": null,
+          "reason": "condition_weak_class_alignment"
+        },
+        "age": {
+          "age_risk": 0.0,
+          "risk_band": "low",
+          "reason": "low_age_related_risk"
+        },
+        "contraindication": {
+          "contraindication": false,
+          "contraindication_score": 0.0,
+          "matched_condition": null,
+          "matched_reference_condition": null,
+          "matched_ingredient": null,
+          "severity": null,
+          "rule_source": null
+        },
+        "interaction": {
+          "interaction_detected": false,
+          "interaction_severity": "none",
+          "interaction_score": 0.0,
+          "matches": []
+        },
+        "renal_hepatic": {
+          "status": "PASS",
+          "severity": "MODERATE",
+          "score": 0.0,
+          "reason": "renal_or_hepatic_adjustment_recommended",
+          "data_complete": true,
+          "renal": {
+            "status": "UNKNOWN",
+            "severity": "NONE",
+            "score": 0.0,
+            "matched_ingredient": null,
+            "adjustment_level": null,
+            "egfr": 82.0,
+            "reason": "renal_data_not_found_conservative"
+          },
+          "hepatic": {
+            "status": "PASS",
+            "severity": "NONE",
+            "score": 1.0,
+            "matched_ingredient": null,
+            "adjustment_level": null,
+            "child_pugh": "A",
+            "reason": "hepatic_data_found_no_adjustment"
+          }
+        },
+        "duplicate_therapy": {
+          "status": "PASS",
+          "severity": "NONE",
+          "score": 1.0,
+          "reason": "no_duplicate_therapy_signal",
+          "match_type": null,
+          "matched_medication": null
+        },
+        "soft_risks": {
+          "interaction_severity": "none",
+          "age_risk": 0.0,
+          "condition_match": 0.5,
+          "renal_hepatic_score": 0.0,
+          "duplicate_therapy_score": 1.0
+        },
+        "evidence_quality": {
+          "has_conditions": true,
+          "has_allergies": true,
+          "has_current_medications": true,
+          "renal_hepatic_data_complete": true,
+          "conflict_detected": false
+        },
+        "risk_aggregation": {
+          "stage_b_score": 0.7625,
+          "patient_safety_score": 0.7625,
+          "weights": {
+            "contraindication": 0.27000000000000013,
+            "allergy": 0.20999999999999994,
+            "interaction": 0.19000000000000003,
+            "renal_hepatic": 0.15000000000000005,
+            "duplicate_therapy": 0.08,
+            "condition": 0.07,
+            "age": 0.03
+          },
+          "weight_percent": {
+            "contraindication": 27,
+            "allergy": 21,
+            "interaction": 19,
+            "renal_hepatic": 15,
+            "duplicate_therapy": 8,
+            "condition": 7,
+            "age": 3
+          },
+          "normalized_components": {
+            "contraindication": 1.0,
+            "allergy": 0.75,
+            "interaction": 1.0,
+            "renal_hepatic": 0.0,
+            "duplicate_therapy": 1.0,
+            "condition": 0.5,
+            "age": 1.0
+          }
+        },
+        "confidence": {
+          "decision": "review",
+          "llm_required": true,
+          "confidence_level": "low",
+          "confidence_score": 0.7625,
+          "reason_code": "llm_review",
+          "routing_decision": "llm_review"
+        },
+        "llm_review": {
+          "adjustment": -0.05,
+          "confidence": 0.7,
+          "reasoning": "Duloxetine may exacerbate heart failure due to its potential to increase blood pressure and heart rate, aligning with the condition risk score. Additionally, renal data is incomplete, which raises moderate concern for safety in this patient. Conservative adjustment reflects these risks without definitive contraindication."
+        }
+      },
+      "stage_b_llm_required": true,
+      "stage_b_decision": "accept",
+      "candidate_name": "Duloxetine 30mg",
+      "stage_b_reasoning": "Duloxetine may exacerbate heart failure due to its potential to increase blood pressure and heart rate, aligning with the condition risk score. Additionally, renal data is incomplete, which raises moderate concern for safety in this patient. Conservative adjustment reflects these risks without definitive contraindication.",
+      "composite_score": 0.6151,
+      "threshold_passed": true,
+      "rank": 3,
+      "clinical_rationale": [
+        "Same route of administration",
+        "Strength alignment",
+        "Ingredient similarity",
+        "Mechanism-of-action similarity",
+        "Moiety similarity",
+        "Same dosage form",
+        "Combination-therapy similarity",
+        "No contraindications identified",
+        "No drug interaction identified",
+        "No duplicate therapy signal identified",
+        "Weak condition alignment noted",
+        "Allergy risk identified (low)",
+        "Renal/hepatic consideration identified (moderate)",
+        "Clinical ambiguity required LLM review",
+        "Cumulative mild-to-moderate risk signal identified"
+      ]
+    },
+    {
+      "candidate_id": 1041,
+      "stage_a_score": 0.463,
+      "stage_a_evidence": {
+        "ingredient": 0.5,
+        "moiety": 0.5,
+        "class": 0.0,
+        "moa": 0.5,
+        "combo": 0.25,
+        "route": 1.0,
+        "form": 0.5,
+        "strength": 0.75
+      },
+      "stage_a_llm_required": true,
+      "stage_a_reasoning": "Sertraline and Venlafaxine differ significantly in pharmacologic class (SSRI vs SNRI), which impacts their mechanism of action and therapeutic indications. While both share oral route and similar dosage forms, the divergence in class and mechanism suggests they are not interchangeable for all patients, particularly those with specific responses to serotonin modulation versus dual serotonin-norepinephrine activity.",
+      "stage_b_score": 0.7125,
+      "stage_b_evidence": {
+        "normalized_patient_profile": {
+          "mbr_sk": 2004,
+          "mbr_id": "MBR0002004",
+          "plan_sk": 3010,
+          "age": 37,
+          "conditions": [
+            "heart failure",
+            "bipolar disorder"
+          ],
+          "allergies": [
+            "aspirin"
+          ],
+          "current_medications": [
+            "pantoprazole 40mg",
+            "sitagliptin 100mg",
+            "rosuvastatin 10mg",
+            "risedronate 35mg"
+          ]
+        },
+        "normalized_candidate": {
+          "prod_id": 1041,
+          "prod_name": "Venlafaxine 75mg",
+          "generic_name": "venlafaxine",
+          "therapeutic_class": "snri",
+          "ingredients": [
+            "venlafaxine"
+          ],
+          "tokens": [
+            "75mg",
+            "capsule",
+            "snri",
+            "venlafaxine",
+            "venlafaxine 75mg"
+          ]
+        },
+        "scores": {
+          "allergy": 0.25,
+          "condition": 0.5,
+          "age": 0.0,
+          "contraindication": 0.0,
+          "interaction": 0.0,
+          "renal_hepatic": 0.0,
+          "duplicate_therapy": 1.0
+        },
+        "allergy": {
+          "allergy_risk": 0.25,
+          "matched_allergen": "aspirin",
+          "matched_cross_reactivity": null,
+          "severity": "LOW",
+          "gate_triggered": false,
+          "gate_type": null
+        },
+        "condition": {
+          "condition_match": 0.5,
+          "matched_condition": "heart failure",
+          "matched_reference_condition": null,
+          "severity": null,
+          "reason": "condition_weak_class_alignment"
+        },
+        "age": {
+          "age_risk": 0.0,
+          "risk_band": "low",
+          "reason": "low_age_related_risk"
+        },
+        "contraindication": {
+          "contraindication": false,
+          "contraindication_score": 0.0,
+          "matched_condition": null,
+          "matched_reference_condition": null,
+          "matched_ingredient": null,
+          "severity": null,
+          "rule_source": null
+        },
+        "interaction": {
+          "interaction_detected": false,
+          "interaction_severity": "none",
+          "interaction_score": 0.0,
+          "matches": []
+        },
+        "renal_hepatic": {
+          "status": "PASS",
+          "severity": "MODERATE",
+          "score": 0.0,
+          "reason": "renal_or_hepatic_adjustment_recommended",
+          "data_complete": true,
+          "renal": {
+            "status": "UNKNOWN",
+            "severity": "NONE",
+            "score": 0.0,
+            "matched_ingredient": null,
+            "adjustment_level": null,
+            "egfr": 82.0,
+            "reason": "renal_data_not_found_conservative"
+          },
+          "hepatic": {
+            "status": "PASS",
+            "severity": "NONE",
+            "score": 1.0,
+            "matched_ingredient": null,
+            "adjustment_level": null,
+            "child_pugh": "A",
+            "reason": "hepatic_data_found_no_adjustment"
+          }
+        },
+        "duplicate_therapy": {
+          "status": "PASS",
+          "severity": "NONE",
+          "score": 1.0,
+          "reason": "no_duplicate_therapy_signal",
+          "match_type": null,
+          "matched_medication": null
+        },
+        "soft_risks": {
+          "interaction_severity": "none",
+          "age_risk": 0.0,
+          "condition_match": 0.5,
+          "renal_hepatic_score": 0.0,
+          "duplicate_therapy_score": 1.0
+        },
+        "evidence_quality": {
+          "has_conditions": true,
+          "has_allergies": true,
+          "has_current_medications": true,
+          "renal_hepatic_data_complete": true,
+          "conflict_detected": false
+        },
+        "risk_aggregation": {
+          "stage_b_score": 0.7625,
+          "patient_safety_score": 0.7625,
+          "weights": {
+            "contraindication": 0.27000000000000013,
+            "allergy": 0.20999999999999994,
+            "interaction": 0.19000000000000003,
+            "renal_hepatic": 0.15000000000000005,
+            "duplicate_therapy": 0.08,
+            "condition": 0.07,
+            "age": 0.03
+          },
+          "weight_percent": {
+            "contraindication": 27,
+            "allergy": 21,
+            "interaction": 19,
+            "renal_hepatic": 15,
+            "duplicate_therapy": 8,
+            "condition": 7,
+            "age": 3
+          },
+          "normalized_components": {
+            "contraindication": 1.0,
+            "allergy": 0.75,
+            "interaction": 1.0,
+            "renal_hepatic": 0.0,
+            "duplicate_therapy": 1.0,
+            "condition": 0.5,
+            "age": 1.0
+          }
+        },
+        "confidence": {
+          "decision": "review",
+          "llm_required": true,
+          "confidence_level": "low",
+          "confidence_score": 0.7625,
+          "reason_code": "llm_review",
+          "routing_decision": "llm_review"
+        },
+        "llm_review": {
+          "adjustment": -0.05,
+          "confidence": 0.7,
+          "reasoning": "Venlafaxine may exacerbate heart failure due to its potential to increase blood pressure and heart rate, which poses a moderate risk for this patient. Additionally, the renal data is incomplete, warranting a conservative adjustment to account for potential safety concerns."
+        }
+      },
+      "stage_b_llm_required": true,
+      "stage_b_decision": "accept",
+      "candidate_name": "Venlafaxine 75mg",
+      "stage_b_reasoning": "Venlafaxine may exacerbate heart failure due to its potential to increase blood pressure and heart rate, which poses a moderate risk for this patient. Additionally, the renal data is incomplete, warranting a conservative adjustment to account for potential safety concerns.",
+      "composite_score": 0.6127,
+      "threshold_passed": true,
+      "rank": 4,
+      "clinical_rationale": [
+        "Same route of administration",
+        "Strength alignment",
+        "Ingredient similarity",
+        "Mechanism-of-action similarity",
+        "Moiety similarity",
+        "Same dosage form",
+        "Combination-therapy similarity",
+        "No contraindications identified",
+        "No drug interaction identified",
+        "No duplicate therapy signal identified",
+        "Weak condition alignment noted",
+        "Allergy risk identified (low)",
+        "Renal/hepatic consideration identified (moderate)",
+        "Clinical ambiguity required LLM review",
+        "Cumulative mild-to-moderate risk signal identified"
+      ]
+    },
+    {
+      "candidate_id": 1042,
+      "stage_a_score": 0.4882,
+      "stage_a_evidence": {
+        "ingredient": 0.5,
+        "moiety": 0.5,
+        "class": 0.0,
+        "moa": 0.5,
+        "combo": 0.25,
+        "route": 1.0,
+        "form": 1.0,
+        "strength": 1.0
+      },
+      "stage_a_llm_required": true,
+      "stage_a_reasoning": "Sertraline and Bupropion differ significantly in pharmacologic class (SSRI vs. NDRI), which impacts their mechanism of action and therapeutic use.",
+      "stage_b_score": 0.765,
+      "stage_b_evidence": {
+        "normalized_patient_profile": {
+          "mbr_sk": 2004,
+          "mbr_id": "MBR0002004",
+          "plan_sk": 3010,
+          "age": 37,
+          "conditions": [
+            "heart failure",
+            "bipolar disorder"
+          ],
+          "allergies": [
+            "aspirin"
+          ],
+          "current_medications": [
+            "pantoprazole 40mg",
+            "sitagliptin 100mg",
+            "rosuvastatin 10mg",
+            "risedronate 35mg"
+          ]
+        },
+        "normalized_candidate": {
+          "prod_id": 1042,
+          "prod_name": "Bupropion 150mg",
+          "generic_name": "bupropion",
+          "therapeutic_class": "ndri",
+          "ingredients": [
+            "bupropion"
+          ],
+          "tokens": [
+            "150mg",
+            "bupropion",
+            "bupropion 150mg",
+            "ndri",
+            "tablet"
+          ]
+        },
+        "scores": {
+          "allergy": 0.0,
+          "condition": 0.5,
+          "age": 0.0,
+          "contraindication": 0.0,
+          "interaction": 0.0,
+          "renal_hepatic": 0.0,
+          "duplicate_therapy": 1.0
+        },
+        "allergy": {
+          "allergy_risk": 0,
+          "matched_allergen": null,
+          "matched_cross_reactivity": null,
+          "severity": null,
+          "gate_triggered": false,
+          "gate_type": null
+        },
+        "condition": {
+          "condition_match": 0.5,
+          "matched_condition": "heart failure",
+          "matched_reference_condition": null,
+          "severity": null,
+          "reason": "condition_weak_class_alignment"
+        },
+        "age": {
+          "age_risk": 0.0,
+          "risk_band": "low",
+          "reason": "low_age_related_risk"
+        },
+        "contraindication": {
+          "contraindication": false,
+          "contraindication_score": 0.0,
+          "matched_condition": null,
+          "matched_reference_condition": null,
+          "matched_ingredient": null,
+          "severity": null,
+          "rule_source": null
+        },
+        "interaction": {
+          "interaction_detected": false,
+          "interaction_severity": "none",
+          "interaction_score": 0.0,
+          "matches": []
+        },
+        "renal_hepatic": {
+          "status": "PASS",
+          "severity": "MODERATE",
+          "score": 0.0,
+          "reason": "renal_or_hepatic_adjustment_recommended",
+          "data_complete": true,
+          "renal": {
+            "status": "UNKNOWN",
+            "severity": "NONE",
+            "score": 0.0,
+            "matched_ingredient": null,
+            "adjustment_level": null,
+            "egfr": 82.0,
+            "reason": "renal_data_not_found_conservative"
+          },
+          "hepatic": {
+            "status": "UNKNOWN",
+            "severity": "NONE",
+            "score": 0.0,
+            "matched_ingredient": null,
+            "adjustment_level": null,
+            "child_pugh": "A",
+            "reason": "hepatic_data_not_found_conservative"
+          }
+        },
+        "duplicate_therapy": {
+          "status": "PASS",
+          "severity": "NONE",
+          "score": 1.0,
+          "reason": "no_duplicate_therapy_signal",
+          "match_type": null,
+          "matched_medication": null
+        },
+        "soft_risks": {
+          "interaction_severity": "none",
+          "age_risk": 0.0,
+          "condition_match": 0.5,
+          "renal_hepatic_score": 0.0,
+          "duplicate_therapy_score": 1.0
+        },
+        "evidence_quality": {
+          "has_conditions": true,
+          "has_allergies": true,
+          "has_current_medications": true,
+          "renal_hepatic_data_complete": true,
+          "conflict_detected": false
+        },
+        "risk_aggregation": {
+          "stage_b_score": 0.815,
+          "patient_safety_score": 0.815,
+          "weights": {
+            "contraindication": 0.27000000000000013,
+            "allergy": 0.20999999999999994,
+            "interaction": 0.19000000000000003,
+            "renal_hepatic": 0.15000000000000005,
+            "duplicate_therapy": 0.08,
+            "condition": 0.07,
+            "age": 0.03
+          },
+          "weight_percent": {
+            "contraindication": 27,
+            "allergy": 21,
+            "interaction": 19,
+            "renal_hepatic": 15,
+            "duplicate_therapy": 8,
+            "condition": 7,
+            "age": 3
+          },
+          "normalized_components": {
+            "contraindication": 1.0,
+            "allergy": 1.0,
+            "interaction": 1.0,
+            "renal_hepatic": 0.0,
+            "duplicate_therapy": 1.0,
+            "condition": 0.5,
+            "age": 1.0
+          }
+        },
+        "confidence": {
+          "decision": "review",
+          "llm_required": true,
+          "confidence_level": "low",
+          "confidence_score": 0.815,
+          "reason_code": "llm_review",
+          "routing_decision": "llm_review"
+        },
+        "llm_review": {
+          "adjustment": -0.05,
+          "confidence": 0.75,
+          "reasoning": "Bupropion may exacerbate heart failure due to its potential to increase heart rate and blood pressure, which is clinically relevant given the patient's condition. The condition match score of 0.5 reflects weak alignment but signals moderate risk. Conservative adjustment is warranted to prioritize patient safety in cardiovascular disease."
+        }
+      },
+      "stage_b_llm_required": true,
+      "stage_b_decision": "accept",
+      "candidate_name": "Bupropion 150mg",
+      "stage_b_reasoning": "Bupropion may exacerbate heart failure due to its potential to increase heart rate and blood pressure, which is clinically relevant given the patient's condition. The condition match score of 0.5 reflects weak alignment but signals moderate risk. Conservative adjustment is warranted to prioritize patient safety in cardiovascular disease.",
+      "composite_score": 0.6543,
+      "threshold_passed": true,
+      "rank": 2,
+      "clinical_rationale": [
+        "Same dosage form",
+        "Same route of administration",
+        "Strength alignment",
+        "Ingredient similarity",
+        "Mechanism-of-action similarity",
+        "Moiety similarity",
+        "Combination-therapy similarity",
+        "No allergy conflicts identified",
+        "No contraindications identified",
+        "No drug interaction identified",
+        "No duplicate therapy signal identified",
+        "Weak condition alignment noted",
+        "Renal/hepatic consideration identified (moderate)",
+        "Clinical ambiguity required LLM review"
+      ]
+    }
+  ],
+  "safety_flags": [
+    {
+      "candidate_id": 1014,
+      "flags": {
+        "polypharmacy": false,
+        "missing_clinical_data": false,
+        "clinical_ambiguity": true,
+        "cumulative_risk": true
+      }
+    },
+    {
+      "candidate_id": 1015,
+      "flags": {
+        "polypharmacy": false,
+        "missing_clinical_data": false,
+        "clinical_ambiguity": true,
+        "cumulative_risk": true
+      }
+    },
+    {
+      "candidate_id": 1041,
+      "flags": {
+        "polypharmacy": false,
+        "missing_clinical_data": false,
+        "clinical_ambiguity": true,
+        "cumulative_risk": true
+      }
+    },
+    {
+      "candidate_id": 1042,
+      "flags": {
+        "polypharmacy": false,
+        "missing_clinical_data": false,
+        "clinical_ambiguity": true,
+        "cumulative_risk": false
+      }
+    }
+  ],
+  "passing_candidate_ids": [
+    1014,
+    1042,
+    1015,
+    1041
+  ],
+  "per_alternative": [
+    {
+      "prod_id": 1014,
+      "prod_name": "Escitalopram 10mg",
+      "stage_a": {
+        "evidence": {
+          "ingredient": 0.5,
+          "moiety": 0.5,
+          "class": 1.0,
+          "moa": 1.0,
+          "combo": 0.25,
+          "route": 1.0,
+          "form": 1.0,
+          "strength": 0.25
+        },
+        "score": 0.6298,
+        "status": "accepted",
+        "llm_required": false,
+        "reasoning": ""
+      },
+      "stage_b": {
+        "evidence": {
+          "allergy": 0.25,
+          "condition": 0.5,
+          "age": 0.0,
+          "contraindication": 0.0,
+          "interaction": 0.0,
+          "renal_hepatic": 0.0,
+          "duplicate_therapy": 1.0
+        },
+        "score": 0.7125,
+        "status": "accepted",
+        "llm_required": true,
+        "reasoning": "Escitalopram may exacerbate heart failure due to potential sodium imbalance and risk of QT prolongation. The condition match score reflects weak alignment, but the cardiovascular risk warrants caution. No direct contraindication exists, but conservative adjustment is prudent for patient safety given the underlying heart failure."
+      }
+    },
+    {
+      "prod_id": 1015,
+      "prod_name": "Duloxetine 30mg",
+      "stage_a": {
+        "evidence": {
+          "ingredient": 0.5,
+          "moiety": 0.5,
+          "class": 0.0,
+          "moa": 0.5,
+          "combo": 0.25,
+          "route": 1.0,
+          "form": 0.5,
+          "strength": 1.0
+        },
+        "score": 0.4691,
+        "status": "accepted",
+        "llm_required": true,
+        "reasoning": "The candidate drug, Duloxetine 30mg, differs significantly from the original drug, Sertraline 50mg, in pharmacologic class (score: 0.0) and mechanism of action (score: 0.5). Sertraline is a selective serotonin reuptake inhibitor (SSRI), while Duloxetine is a serotonin-norepinephrine reuptake inhibitor (SNRI)."
+      },
+      "stage_b": {
+        "evidence": {
+          "allergy": 0.25,
+          "condition": 0.5,
+          "age": 0.0,
+          "contraindication": 0.0,
+          "interaction": 0.0,
+          "renal_hepatic": 0.0,
+          "duplicate_therapy": 1.0
+        },
+        "score": 0.7125,
+        "status": "accepted",
+        "llm_required": true,
+        "reasoning": "Duloxetine may exacerbate heart failure due to its potential to increase blood pressure and heart rate, aligning with the condition risk score. Additionally, renal data is incomplete, which raises moderate concern for safety in this patient. Conservative adjustment reflects these risks without definitive contraindication."
+      }
+    },
+    {
+      "prod_id": 1041,
+      "prod_name": "Venlafaxine 75mg",
+      "stage_a": {
+        "evidence": {
+          "ingredient": 0.5,
+          "moiety": 0.5,
+          "class": 0.0,
+          "moa": 0.5,
+          "combo": 0.25,
+          "route": 1.0,
+          "form": 0.5,
+          "strength": 0.75
+        },
+        "score": 0.463,
+        "status": "accepted",
+        "llm_required": true,
+        "reasoning": "Sertraline and Venlafaxine differ significantly in pharmacologic class (SSRI vs SNRI), which impacts their mechanism of action and therapeutic indications. While both share oral route and similar dosage forms, the divergence in class and mechanism suggests they are not interchangeable for all patients, particularly those with specific responses to serotonin modulation versus dual serotonin-norepinephrine activity."
+      },
+      "stage_b": {
+        "evidence": {
+          "allergy": 0.25,
+          "condition": 0.5,
+          "age": 0.0,
+          "contraindication": 0.0,
+          "interaction": 0.0,
+          "renal_hepatic": 0.0,
+          "duplicate_therapy": 1.0
+        },
+        "score": 0.7125,
+        "status": "accepted",
+        "llm_required": true,
+        "reasoning": "Venlafaxine may exacerbate heart failure due to its potential to increase blood pressure and heart rate, which poses a moderate risk for this patient. Additionally, the renal data is incomplete, warranting a conservative adjustment to account for potential safety concerns."
+      }
+    },
+    {
+      "prod_id": 1042,
+      "prod_name": "Bupropion 150mg",
+      "stage_a": {
+        "evidence": {
+          "ingredient": 0.5,
+          "moiety": 0.5,
+          "class": 0.0,
+          "moa": 0.5,
+          "combo": 0.25,
+          "route": 1.0,
+          "form": 1.0,
+          "strength": 1.0
+        },
+        "score": 0.4882,
+        "status": "accepted",
+        "llm_required": true,
+        "reasoning": "Sertraline and Bupropion differ significantly in pharmacologic class (SSRI vs. NDRI), which impacts their mechanism of action and therapeutic use."
+      },
+      "stage_b": {
+        "evidence": {
+          "allergy": 0.0,
+          "condition": 0.5,
+          "age": 0.0,
+          "contraindication": 0.0,
+          "interaction": 0.0,
+          "renal_hepatic": 0.0,
+          "duplicate_therapy": 1.0
+        },
+        "score": 0.765,
+        "status": "accepted",
+        "llm_required": true,
+        "reasoning": "Bupropion may exacerbate heart failure due to its potential to increase heart rate and blood pressure, which is clinically relevant given the patient's condition. The condition match score of 0.5 reflects weak alignment but signals moderate risk. Conservative adjustment is warranted to prioritize patient safety in cardiovascular disease."
+      }
+    }
+  ],
+  "stage_b_summary": {
+    "accepted": 4,
+    "rejected": 0
+  }
+}

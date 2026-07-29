@@ -1,0 +1,25 @@
+<div class="modal-overlay" id="upload-excel-modal">
+  <div class="modal upload-excel-modal">
+    <div class="upload-excel-head">
+      <h3>Upload Prescription Excel</h3>
+      <button class="auth-close" id="upload-excel-close" type="button" aria-label="Close upload modal">×</button>
+    </div>
+
+    <p class="upload-excel-help">Upload one Excel file (.xlsx or .xls). Use the two-column template format: Field and Value.</p>
+
+    <div class="upload-excel-body">
+      <label for="upload-excel-file" class="upload-excel-label">Choose File</label>
+      <input id="upload-excel-file" type="file" accept=".xlsx,.xls" />
+      <div id="upload-excel-file-status" class="upload-excel-file-status">No file selected.</div>
+
+      <a class="btn" href="{{ url_for('static', filename='templates/prescription_upload_template.xlsx') }}" download>
+        Download Template
+      </a>
+    </div>
+
+    <div class="upload-excel-actions">
+      <button class="btn" id="upload-excel-cancel" type="button">Cancel</button>
+      <button class="btn btn-primary" id="upload-excel-apply" type="button">Load Into Form</button>
+    </div>
+  </div>
+</div>

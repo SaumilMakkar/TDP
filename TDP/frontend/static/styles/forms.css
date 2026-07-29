@@ -1,0 +1,173 @@
+/* ============================================
+   FORMS & INPUT STYLES
+   ============================================ */
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.form-group-wide {
+  grid-column: span 2;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea,
+.search-bar input {
+  width: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: 9px;
+  background: var(--white);
+  padding: 0 12px;
+  height: 42px;
+  line-height: 42px;
+  font-family: inherit;
+  font-size: 0.88rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  color: var(--text-primary);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus,
+.search-bar input:focus {
+  outline: none;
+  border-color: var(--dark-orange);
+  box-shadow: 0 0 0 3px rgba(215, 65, 32, 0.1);
+}
+
+.form-group textarea {
+  height: auto;
+  min-height: 80px;
+  padding: 10px 12px;
+  resize: vertical;
+}
+
+.autocomplete-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 9px;
+  margin-top: 4px;
+  padding: 0;
+  list-style: none;
+  max-height: 220px;
+  overflow-y: auto;
+  overflow-x: auto;
+  box-shadow: var(--shadow-md);
+  display: none;
+}
+
+.autocomplete-list.open {
+  display: block;
+}
+
+.autocomplete-list li {
+  padding: 0 12px;
+  height: 38px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  border-bottom: 1px solid var(--horizon);
+  display: grid;
+  grid-template-columns: 120px auto;
+  align-items: center;
+  column-gap: 0;
+  min-width: 100%;
+  width: max-content;
+}
+
+.autocomplete-list li:last-child {
+  border-bottom: none;
+}
+
+.autocomplete-col-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 120px auto;
+  align-items: center;
+  column-gap: 0;
+  padding: 0 12px;
+  height: 34px;
+  background: var(--sky-blue, #e8f0fe);
+  border-bottom: 2px solid var(--border-color);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--warm-gray, #6b7280);
+  cursor: default;
+  pointer-events: none;
+  user-select: none;
+  min-width: 100%;
+  width: max-content;
+}
+
+.autocomplete-col-header span:first-child {
+  white-space: nowrap;
+}
+
+.autocomplete-list li:hover,
+.autocomplete-list li.active {
+  background: var(--sky-blue);
+}
+
+.autocomplete-list li .diag-code {
+  font-weight: 700;
+  color: var(--dark-orange);
+  white-space: nowrap;
+  font-size: 0.8rem;
+}
+
+.autocomplete-list li .diag-desc {
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.autocomplete-list li .drug-rxcui {
+  font-weight: 700;
+  color: var(--dark-orange);
+  white-space: nowrap;
+  font-size: 0.8rem;
+}
+
+.autocomplete-list li .drug-name {
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.search-bar input {
+  flex: 1;
+  height: 44px;
+  padding: 0 16px;
+}

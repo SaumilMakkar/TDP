@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page_title }}</title>
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon_o.png') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/global.css') }}?v={{ css_version }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/app-shell.css') }}?v={{ css_version }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/provider.css') }}?v={{ css_version }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/modals.css') }}?v={{ css_version }}">
+</head>
+<body>
+  <div class="provider-page">
+
+    <!-- Top navbar -->
+    <header class="top-navbar">
+      <div class="top-navbar-left">
+        <div class="top-brand" aria-label="NextGen PBM Automation System" role="img">
+          <span class="top-brand-mark">
+            <span class="top-brand-check">✓</span>
+            <span class="top-brand-star">✦</span>
+          </span>
+          <span class="top-brand-text-wrap">
+            <span class="top-brand-wordmark">
+              <span class="top-brand-nextgen">NextGen</span>
+              <span class="top-brand-pbm">PBM</span>
+            </span>
+            <span class="top-brand-sub">AUTOMATION SYSTEM</span>
+          </span>
+        </div>
+      </div>
+
+      <nav class="top-navbar-nav provider-nav-tabs">
+        <a href="#" class="nav-item active" id="tab-overview">Overview</a>
+        <a href="{{ url_for('review.review') }}" class="nav-item" id="tab-review">Review</a>
+      </nav>
+
+      <div class="top-navbar-right provider-account">
+        <button type="button" class="user-role-pill" id="provider-toggle-btn">Provider</button>
+        <div class="provider-card" id="provider-card">
+          <div class="provider-card-name">{{ provider.name }}</div>
+          <div class="provider-card-npi">NPI-ID :&nbsp;&nbsp;{{ provider.npi }}</div>
+          <button type="button" class="provider-logout-btn" id="provider-logout-btn">&#8677; Logout</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Step tracker -->
+    <div class="provider-stepper">
+      <div class="stepper-track">
+        <div class="step-node step-done">
+          <div class="step-circle step-circle-done">&#10003;</div>
+          <div class="step-label step-label-done">Prescriber</div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step-node step-done">
+          <div class="step-circle step-circle-done">&#10003;</div>
+          <div class="step-label step-label-done">Pharmacist</div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step-node step-done">
+          <div class="step-circle step-circle-done">&#10003;</div>
+          <div class="step-label step-label-muted">AI Processing</div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step-node step-active">
+          <div class="step-circle step-circle-active">4</div>
+          <div class="step-label step-label-active">Overview</div>
+        </div>
+        <div class="step-connector step-connector-light"></div>
+        <div class="step-node">
+          <div class="step-circle step-circle-upcoming">5</div>
+          <div class="step-label step-label-muted">Review</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page header -->
+    <div class="provider-page-header">
+      <div>
+        <h1>Prescription Overview</h1>
+        <p>Complete overview of all submitted prescriptions</p>
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <main class="provider-main" id="dashboard-content">
+      <section class="records-card">
+        <h2 class="records-title">Prescription Records</h2>
+
+        <div class="records-toolbar">
+          <div class="records-tabs">
+            <button type="button" class="records-tab records-tab-pending" data-filter="pending"><span id="pending-count">Pending ({{ pending_count }})</span></button>
+            <button type="button" class="records-tab" data-filter="completed"><span id="completed-count">Completed ({{ completed_count }})</span></button>
+            <button type="button" class="records-tab is-active" data-filter="all"><span id="all-count">All ({{ all_count }})</span></button>
+          </div>
+          <div class="records-search">
+            <span class="search-icon">&#128269;</span>
+            <input type="text" id="records-search-input" placeholder="Rx, Member ID, Med...">
+          </div>
+        </div>
+
+        <div class="records-table-wrap">
+          <table class="records-table">
+            <thead>
+              <tr>
+                <th>Rx Number</th>
+                <th>Member ID</th>
+                <th>Medication</th>
+                <th>Date Written</th>
+                <th>Insurance Phase</th>
+                <th>YTD OOP</th>
+                <th>Due Date</th>
+                <th>Workflow Status</th>
+              </tr>
+            </thead>
+            <tbody id="records-table-body">
+              {% for rx in prescriptions %}
+                <tr class="records-row {{ 'row-extra' if loop.index > 9 else '' }}"
+                  data-rx-number="{{ rx.rx_number }}"
+                  data-status="{{ 'completed' if rx.is_completed else 'pending' }}"
+                  data-search="{{ (rx.rx_number ~ ' ' ~ rx.member_id ~ ' ' ~ rx.medication) | lower }}">
+                <td>{{ rx.rx_number }}</td>
+                <td>{{ rx.member_id }}</td>
+                <td>{{ rx.medication }}</td>
+                <td>{{ rx.date_written }}</td>
+                <td>{{ rx.insurance_phase }}</td>
+                <td>{{ rx.ytd_oop }}</td>
+                <td>{{ rx.due_date }}</td>
+                <td>
+                  <button type="button" class="status-pill-trigger" aria-label="View workflow status for {{ rx.rx_number }}">
+                    <span class="status-pill {{ rx.status_css }}">{{ rx.status_label }}</span>
+                  </button>
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+
+        <button type="button" class="view-all-link" id="view-all-btn" data-remaining="{{ all_count - 9 }}">
+          View all {{ all_count }} prescriptions &rarr;
+        </button>
+      </section>
+
+      <aside class="side-column">
+        <section class="due-summary-card">
+          <h2 class="side-card-title">Due Summary</h2>
+
+          <div class="due-summary-row">
+            <span class="due-dot due-dot-today"></span>
+            <div style="flex: 1;">
+              <span class="due-summary-label due-summary-label-strong">Due Today</span>
+              <span class="due-summary-date">{{ today_date }}</span>
+            </div>
+            <span class="due-summary-count">{{ due_today_count }}</span>
+          </div>
+          <div class="due-summary-row">
+            <span class="due-dot due-dot-week"></span>
+            <span class="due-summary-label due-summary-label-strong">Due This Week</span>
+            <span class="due-summary-count">{{ due_this_week_count }}</span>
+          </div>
+
+          <div class="due-summary-divider"></div>
+
+          <div class="day-tabs" id="day-tabs">
+            {% for day in ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'] %}
+            <button type="button" class="day-tab {{ 'is-active' if day == active_day else '' }}" data-day="{{ day }}" title="{{ day_dates[day] }}">
+              <span class="day-tab-name">{{ day }}</span>
+              <span class="day-tab-date">{{ day_dates[day] }}</span>
+            </button>
+            {% endfor %}
+          </div>
+
+          {% set active_day_full = {'Mon': 'Monday', 'Tue': 'Tuesday', 'Wed': 'Wednesday', 'Thu': 'Thursday', 'Fri': 'Friday'}.get(active_day, active_day) %}
+
+          <div class="due-day-header">
+            <span id="due-day-label">Prescriptions due {{ active_day_full }}</span>
+            <span class="due-day-count" id="due-day-count">{{ due_by_day[active_day] | length }}</span>
+          </div>
+
+          <div class="due-day-list" id="due-day-list">
+            {% for day, items in due_by_day.items() %}
+              {% for rx in items %}
+              <div class="due-day-item" data-day="{{ day }}" style="{{ '' if day == active_day else 'display:none;' }}">
+                <div class="due-day-item-rx">{{ rx.rx_number }}</div>
+                <div class="due-day-item-member">{{ rx.member_id }}</div>
+              </div>
+              {% endfor %}
+            {% endfor %}
+          </div>
+        </section>
+
+        <section class="legend-card">
+          <h2 class="side-card-title">Legend</h2>
+          <div class="legend-list">
+            {% for item in legend %}
+            <div class="legend-item">
+              <span class="legend-dot {{ item.css }}"></span>
+              <span class="legend-label">{{ item.description }}</span>
+            </div>
+            {% endfor %}
+          </div>
+        </section>
+      </aside>
+    </main>
+  </div>
+
+  {% include 'partials/modals/submission_progress_modal.html' %}
+
+  <script>
+    window.__PROVIDER_DATA__ = {{ due_by_day | tojson }};
+    window.__TODAY_DATE__ = {{ today_date | tojson }};
+    window.__DAY_DATES__ = {{ day_dates | tojson }};
+    window.__PRESCRIPTIONS__ = {{ prescriptions | tojson }};
+  </script>
+  <script src="{{ url_for('static', filename='js/workflow_status_modal.js') }}?v={{ script_version }}"></script>
+  <script src="{{ url_for('static', filename='js/provider.js') }}?v={{ script_version }}"></script>
+</body>
+</html>

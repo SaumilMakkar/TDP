@@ -1,0 +1,251 @@
+{
+  "by_rxcui": {
+    "1114195": {
+      "active_moiety": null,
+      "dose_form": "Oral Suspension",
+      "ingredient": "rivaroxaban",
+      "route": "Oral"
+    },
+    "1364445": {
+      "active_moiety": null,
+      "dose_form": "Oral Tablet",
+      "ingredient": "apixaban",
+      "route": "Oral"
+    },
+    "141962": {
+      "active_moiety": null,
+      "dose_form": "Oral Capsule",
+      "ingredient": "azithromycin",
+      "route": "Oral"
+    },
+    "1545653": {
+      "active_moiety": null,
+      "dose_form": null,
+      "ingredient": "empagliflozin",
+      "route": null
+    },
+    "197320": {
+      "active_moiety": null,
+      "dose_form": "Oral Tablet",
+      "ingredient": "allopurinol",
+      "route": "Oral"
+    },
+    "197361": {
+      "active_moiety": null,
+      "dose_form": null,
+      "ingredient": "amlodipine",
+      "route": null
+    },
+    "198013": {
+      "active_moiety": null,
+      "dose_form": "Oral Tablet",
+      "ingredient": "naproxen",
+      "route": "Oral"
+    },
+    "239981": {
+      "active_moiety": null,
+      "dose_form": null,
+      "ingredient": null,
+      "route": null
+    },
+    "243670": {
+      "active_moiety": null,
+      "dose_form": "Oral Tablet",
+      "ingredient": "aspirin",
+      "route": "Oral"
+    },
+    "259255": {
+      "active_moiety": null,
+      "dose_form": null,
+      "ingredient": "atorvastatin",
+      "route": null
+    },
+    "261102": {
+      "active_moiety": null,
+      "dose_form": null,
+      "ingredient": null,
+      "route": null
+    },
+    "308191": {
+      "active_moiety": null,
+      "dose_form": "Oral Capsule",
+      "ingredient": "amoxicillin",
+      "route": "Oral"
+    },
+    "309362": {
+      "active_moiety": null,
+      "dose_form": "Oral Tablet",
+      "ingredient": "clopidogrel",
+      "route": "Oral"
+    },
+    "310385": {
+      "active_moiety": null,
+      "dose_form": "Oral Capsule",
+      "ingredient": "fluoxetine",
+      "route": "Oral"
+    },
+    "310429": {
+      "active_moiety": null,
+      "dose_form": "Oral Tablet",
+      "ingredient": "furosemide",
+      "route": "Oral"
+    },
+    "310431": {
+      "active_moiety": null,
+      "dose_form": "Oral Capsule",
+      "ingredient": "gabapentin",
+      "route": "Oral"
+    },
+    "310490": {
+      "active_moiety": null,
+      "dose_form": null,
+      "ingredient": "glipizide",
+      "route": null
+    },
+    "310798": {
+      "active_moiety": null,
+      "dose_form": "Oral Tablet",
+      "ingredient": "hydrochlorothiazide",
+      "route": "Oral"
+    },
+    "310965": {
+      "active_moiety": null,
+      "dose_form": "Oral Tablet",
+      "ingredient": "ibuprofen",
+      "route": "Oral"
+    },
+    "312940": {
+      "active_moiety": null,
+      "dose_form": "Oral Tablet",
+      "ingredient": "sertraline",
+      "route": "Oral"
+    },
+    "313096": {
+      "active_moiety": null,
+      "dose_form": "Oral Tablet",
+      "ingredient": "spironolactone",
+      "route": "Oral"
+    },
+    "313782": {
+      "active_moiety": null,
+      "dose_form": "Oral Tablet",
+      "ingredient": "acetaminophen",
+      "route": "Oral"
+    },
+    "314076": {
+      "active_moiety": null,
+      "dose_form": "Oral Tablet",
+      "ingredient": "lisinopril",
+      "route": "Oral"
+    },
+    "351249": {
+      "active_moiety": null,
+      "dose_form": "Oral Tablet",
+      "ingredient": "escitalopram",
+      "route": "Oral"
+    },
+    "358263": {
+      "active_moiety": "finasteride / tadalafil",
+      "dose_form": "Oral Capsule",
+      "ingredient": "tadalafil",
+      "route": "Oral"
+    },
+    "372568": {
+      "active_moiety": null,
+      "dose_form": null,
+      "ingredient": null,
+      "route": null
+    },
+    "402873": {
+      "active_moiety": null,
+      "dose_form": null,
+      "ingredient": null,
+      "route": null
+    },
+    "574137": {
+      "active_moiety": null,
+      "dose_form": null,
+      "ingredient": null,
+      "route": null
+    },
+    "597966": {
+      "active_moiety": "atorvastatin / ezetimibe",
+      "dose_form": "Oral Tablet",
+      "ingredient": "atorvastatin",
+      "route": "Oral"
+    },
+    "617318": {
+      "active_moiety": null,
+      "dose_form": null,
+      "ingredient": "atorvastatin",
+      "route": null
+    },
+    "665058": {
+      "active_moiety": null,
+      "dose_form": null,
+      "ingredient": null,
+      "route": null
+    },
+    "745679": {
+      "active_moiety": null,
+      "dose_form": null,
+      "ingredient": null,
+      "route": null
+    },
+    "83367": {
+      "active_moiety": "atorvastatin / ezetimibe",
+      "dose_form": "Oral Suspension",
+      "ingredient": "atorvastatin",
+      "route": "Oral"
+    },
+    "854873": {
+      "active_moiety": "zolpidem tartrate",
+      "dose_form": "Oral Tablet",
+      "ingredient": "zolpidem",
+      "route": "Oral"
+    },
+    "855332": {
+      "active_moiety": "warfarin sodium",
+      "dose_form": "Oral Tablet",
+      "ingredient": "warfarin",
+      "route": "Oral"
+    },
+    "859749": {
+      "active_moiety": null,
+      "dose_form": null,
+      "ingredient": "rosuvastatin",
+      "route": null
+    },
+    "861007": {
+      "active_moiety": null,
+      "dose_form": null,
+      "ingredient": "metformin",
+      "route": null
+    },
+    "866427": {
+      "active_moiety": null,
+      "dose_form": null,
+      "ingredient": "metoprolol",
+      "route": null
+    },
+    "904455": {
+      "active_moiety": null,
+      "dose_form": "Injectable Solution",
+      "ingredient": "spinach allergenic extract",
+      "route": "Injectable"
+    }
+  },
+  "meta": {
+    "schema_version": 2
+  },
+  "ndc_to_rxcui": {
+    "00006028258": null,
+    "00006046254": null,
+    "00006071754": "979470",
+    "00069153041": "212549",
+    "00071015623": "617318",
+    "00074669024": null,
+    "00093315305": null,
+    "00536416301": null
+  }
+}

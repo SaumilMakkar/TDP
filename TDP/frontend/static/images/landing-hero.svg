@@ -1,0 +1,43 @@
+<svg width="760" height="590" viewBox="0 0 760 590" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="760" height="590" rx="28" fill="#EDE8E0"/>
+  <circle cx="620" cy="96" r="54" fill="#FFD1AB"/>
+  <circle cx="120" cy="480" r="72" fill="#D9F6FA"/>
+  <rect x="70" y="72" width="620" height="446" rx="22" fill="#FAF8F2"/>
+  <rect x="96" y="106" width="290" height="386" rx="14" fill="#FFFFFF" stroke="#E1DCCF"/>
+  <text x="116" y="138" fill="#3D3C38" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">Prescription Intake</text>
+  <rect x="116" y="154" width="250" height="12" rx="6" fill="#EDE8E0"/>
+  <rect x="116" y="176" width="225" height="12" rx="6" fill="#EDE8E0"/>
+  <rect x="116" y="198" width="246" height="12" rx="6" fill="#EDE8E0"/>
+  <rect x="116" y="236" width="250" height="76" rx="12" fill="#D9F6FA"/>
+  <text x="132" y="266" fill="#3D3C38" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">Automated PBM Rules</text>
+  <text x="132" y="286" fill="#3D3C38" font-family="Inter, Arial, sans-serif" font-size="11">Copay, formulary, and safety checks</text>
+  <rect x="116" y="332" width="168" height="34" rx="10" fill="#D74120"/>
+  <text x="144" y="354" fill="#FAF8F2" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">Submit for Review</text>
+
+  <rect x="408" y="106" width="256" height="218" rx="14" fill="#FFFFFF" stroke="#E1DCCF"/>
+  <text x="428" y="136" fill="#3D3C38" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700">Real-time Status</text>
+  <rect x="428" y="154" width="216" height="9" rx="4.5" fill="#EDE8E0"/>
+  <rect x="428" y="171" width="190" height="9" rx="4.5" fill="#EDE8E0"/>
+  <rect x="428" y="188" width="210" height="9" rx="4.5" fill="#EDE8E0"/>
+
+  <circle cx="438" cy="222" r="7" fill="#D74120"/>
+  <text x="454" y="226" fill="#3D3C38" font-family="Inter, Arial, sans-serif" font-size="11">Clinical agent complete</text>
+
+  <circle cx="438" cy="244" r="7" fill="#F9A667"/>
+  <text x="454" y="248" fill="#3D3C38" font-family="Inter, Arial, sans-serif" font-size="11">Financial agent in progress</text>
+
+  <circle cx="438" cy="266" r="7" fill="#5B8DEF"/>
+  <text x="454" y="270" fill="#3D3C38" font-family="Inter, Arial, sans-serif" font-size="11">Policy agent in progress</text>
+
+  <circle cx="438" cy="288" r="7" fill="#1A7A4A"/>
+  <text x="454" y="292" fill="#3D3C38" font-family="Inter, Arial, sans-serif" font-size="11">Past decision agent complete</text>
+
+  <rect x="408" y="344" width="256" height="148" rx="14" fill="#FFFFFF" stroke="#E1DCCF"/>
+  <text x="428" y="374" fill="#3D3C38" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700">Decision Insights</text>
+  <rect x="428" y="393" width="92" height="28" rx="14" fill="#1A7A4A"/>
+  <text x="448" y="412" fill="#FAF8F2" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700">Approved</text>
+  <rect x="528" y="393" width="108" height="28" rx="14" fill="#FFF4E0"/>
+  <text x="547" y="412" fill="#B06800" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700">Needs Review</text>
+  <rect x="428" y="434" width="216" height="8" rx="4" fill="#EDE8E0"/>
+  <rect x="428" y="450" width="184" height="8" rx="4" fill="#EDE8E0"/>
+</svg>

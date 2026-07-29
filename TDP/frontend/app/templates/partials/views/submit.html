@@ -1,0 +1,136 @@
+<div class="view active" id="view-submit">
+
+  <!-- Progress Stepper -->
+  <div class="submit-stepper">
+    <div class="submit-stepper-track">
+      <div class="submit-step submit-step--done">
+        <div class="submit-step-dot submit-step-dot--done">✓</div>
+        <span class="submit-step-label">Prescriber</span>
+      </div>
+      <div class="submit-step-connector submit-step-connector--done"></div>
+      <div class="submit-step submit-step--current">
+        <div class="submit-step-dot submit-step-dot--current">2</div>
+        <span class="submit-step-label submit-step-label--current">Pharmacist</span>
+      </div>
+      <div class="submit-step-connector"></div>
+      <div class="submit-step">
+        <div class="submit-step-dot">3</div>
+        <span class="submit-step-label submit-step-label--muted">AI Processing</span>
+      </div>
+      <div class="submit-step-connector"></div>
+      <div class="submit-step">
+        <div class="submit-step-dot">4</div>
+        <span class="submit-step-label submit-step-label--muted">Overview</span>
+      </div>
+      <div class="submit-step-connector"></div>
+      <div class="submit-step">
+        <div class="submit-step-dot">5</div>
+        <span class="submit-step-label submit-step-label--muted">Review</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Two-column layout -->
+  <div class="submit-two-col">
+
+    <!-- Left: Title + Form -->
+    <div class="submit-main">
+      <div class="submit-title-area">
+        <h2>Submit Prescription</h2>
+
+        <div class="submit-title-row">
+          <p>Enter the claim details below. Routes it straight to the PBM for adjudication.</p>
+        </div>
+      </div>
+
+      <form id="prescription-form" class="submit-form-shell">
+        <section class="submit-card">
+          <div class="submit-card-kicker">MEMBER</div>
+          <div class="submit-grid-two">
+            <div class="form-group">
+              <label for="patient_id">Member ID</label>
+              <input type="text" id="patient_id" placeholder="M00123456" required>
+            </div>
+            <div class="form-group">
+              <label for="npi_number">Prescriber NPI</label>
+              <input type="text" id="npi_number" placeholder="1234567890" required>
+            </div>
+            <div class="form-group">
+              <label for="phr_id">Pharmacy ID</label>
+              <input type="text" id="phr_id" placeholder="PHARMA001" required>
+            </div>
+            <div class="form-group submit-relative">
+              <label for="diagnosis">Diagnosis / ICD-10</label>
+              <input type="text" id="diagnosis" placeholder="I10 - Essential hypertension" autocomplete="off" required>
+              <ul id="diagnosis-suggestions" class="autocomplete-list"></ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="submit-card">
+          <div class="submit-card-kicker">MEDICATION</div>
+          <div class="submit-grid-two">
+            <div class="form-group submit-relative">
+              <label for="prod_nm">Medication</label>
+              <input type="text" id="prod_nm" placeholder="Apazone" autocomplete="off" required>
+              <input type="hidden" id="prod_rxcui" value="">
+              <ul id="drug-suggestions" class="autocomplete-list"></ul>
+            </div>
+            <div class="form-group">
+              <label for="dosage_size">Strength</label>
+              <input type="text" id="dosage_size" placeholder="500 mg" required>
+            </div>
+            <div class="form-group">
+              <label for="frequency">Frequency</label>
+              <select id="frequency" required>
+                <option value="">Select frequency</option>
+                <option value="QD">QD - Once daily</option>
+                <option value="BID">BID - Twice daily</option>
+                <option value="TID">TID - Three times daily</option>
+                <option value="QID">QID - Four times daily</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="days_supply">Days supply</label>
+              <input type="number" id="days_supply" placeholder="30" min="1" required>
+            </div>
+          </div>
+
+          <div class="submit-actions">
+            <button type="submit" class="btn btn-primary" id="submit-btn">Submit to NextGen PBM &nbsp;→</button>
+            <button type="reset" class="btn submit-clear-btn">Clear form</button>
+            <div class="submit-security-note">● Encrypted &amp; routed under HIPAA controls</div>
+          </div>
+        </section>
+      </form>
+    </div>
+
+    <!-- Right: Search + Recent Prescriptions Panel -->
+    <aside class="submit-aside">
+      <button type="button" class="btn submit-upload-btn" id="submit-upload-btn">Upload</button>
+
+      <label class="submit-search-wrap" for="submit-quick-search">
+        <span class="submit-search-icon" aria-hidden="true">🔍</span>
+        <input type="text" id="submit-quick-search" placeholder="RX, Member ID, Med, Date...">
+      </label>
+
+      <div class="submit-rx-panel" id="submit-rx-panel">
+        <div class="submit-rx-head">
+          <span>RX Number</span>
+          <span>Medication</span>
+          <span>Date</span>
+        </div>
+        <div id="submit-rx-rows" class="submit-rx-body">
+          <div class="submit-rx-skeleton">
+            <div class="submit-rx-sk-line" style="width:68%"></div>
+            <div class="submit-rx-sk-line" style="width:48%"></div>
+          </div>
+        </div>
+        <div class="submit-rx-footer" id="submit-rx-footer" hidden>
+          <button type="button" class="btn submit-rx-more-btn" id="submit-rx-more-btn">View more details -></button>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</div>

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% include 'partials/landing_page.html' %}
+  {% include 'partials/app_shell.html' %}
+  {% include 'partials/modals/auth_modal.html' %}
+  {% include 'partials/modals/upload_excel_modal.html' %}
+  {% include 'partials/modals/submission_progress_modal.html' %}
+  <div class="toast-container" id="toast-container"></div>
+  <script src="{{ url_for('static', filename='js/workflow_status_modal.js') }}?v={{ script_version }}"></script>
+{% endblock %}

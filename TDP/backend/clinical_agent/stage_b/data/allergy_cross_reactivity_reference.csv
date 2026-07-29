@@ -1,0 +1,11 @@
+allergen_group,cross_reactive_group,severity
+penicillin,aminopenicillin,HIGH
+sulfa,sulfonamide,HIGH
+nsaid,aspirin,HIGH
+aspirin,nsaid,HIGH
+ace_inhibitor,ace_inhibitor,HIGH
+codeine,opioid,MODERATE
+amlodipine,dihydropyridine,MODERATE
+metoprolol,beta_blocker,MODERATE
+lisinopril,ace_inhibitor,MODERATE
+hydrochlorothiazide,thiazide_diuretic,MODERATE

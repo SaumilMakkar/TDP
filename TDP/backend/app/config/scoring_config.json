@@ -1,0 +1,24 @@
+{
+  "weights": {
+    "policy": 0.30,
+    "clinical": 0.30,
+    "financial": 0.20,
+    "past": 0.20
+  },
+  "agent_thresholds": {
+    "policy": 0.70,
+    "financial": 0.60,
+    "clinical": 0.60,
+    "past": 0.68
+  },
+  "overall_threshold": 0.80,
+  "past_decisions": {
+    "enabled": true
+  },
+  "plan_overrides": {
+    "3004": {
+      "overall_threshold": 0.80
+    }
+  }
+}
+

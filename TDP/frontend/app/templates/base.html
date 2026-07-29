@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page_title }}</title>
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon_o.png') }}">
+  {% block head %}{% endblock %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/global.css') }}?v={{ css_version }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/buttons.css') }}?v={{ css_version }}">
+  <!-- Page-Specific Styles -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/landing.css') }}?v={{ css_version }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/app-shell.css') }}?v={{ css_version }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/forms.css') }}?v={{ css_version }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/cards.css') }}?v={{ css_version }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/views.css') }}?v={{ css_version }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/submit.css') }}?v={{ css_version }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/results.css') }}?v={{ css_version }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/dashboard.css') }}?v={{ css_version }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/modals.css') }}?v={{ css_version }}">
+  <!-- Responsive Styles -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/responsive.css') }}?v={{ css_version }}">
+  {% block post_styles %}{% endblock %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" defer></script>
+</head>
+<body>
+  {% block content %}{% endblock %}
+  {% if load_app_script is not defined or load_app_script %}
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script src="{{ url_for('static', filename='app.js') }}?v={{ script_version }}"></script>
+  {% endif %}
+</body>
+</html>

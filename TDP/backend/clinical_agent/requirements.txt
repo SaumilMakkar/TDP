@@ -1,0 +1,6 @@
+pandas
+numpy
+requests
+httpx
+openai
+python-dotenv

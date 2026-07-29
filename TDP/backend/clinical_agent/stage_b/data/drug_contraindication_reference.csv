@@ -1,0 +1,17 @@
+ingredient,condition,severity,rule_source
+celecoxib,Heart Failure,MAJOR,Dummy
+naproxen,Heart Failure,MAJOR,Dummy
+carvedilol,Asthma,MAJOR,Dummy
+amoxicillin,Penicillin Allergy,CONTRAINDICATED,Dummy
+lithium carbonate,Severe Renal Impairment,CONTRAINDICATED,Dummy
+pioglitazone,Heart Failure,MAJOR,Dummy
+warfarin,Active Bleeding,CONTRAINDICATED,Dummy
+apixaban,Active Bleeding,CONTRAINDICATED,Dummy
+rivaroxaban,Active Bleeding,CONTRAINDICATED,Dummy
+zolpidem,Sleep Apnea,MAJOR,Dummy
+metformin,Severe Renal Impairment,CONTRAINDICATED,Dummy
+finasteride,Pregnancy,CONTRAINDICATED,Dummy
+lisinopril,Pregnancy,CONTRAINDICATED,Dummy
+amlodipine,Combination with certain beta blockers,MODERATE,Dummy
+metoprolol,Severe Bradycardia,CONTRAINDICATED,Dummy
+hydrochlorothiazide,Type 1 Diabetes,MODERATE,Dummy

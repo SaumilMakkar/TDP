@@ -1,0 +1,334 @@
+/* ============================================
+   APP SHELL STYLES - Layout, Navbar, Navigation
+   ============================================ */
+
+.app-layout {
+  display: none;
+  min-height: 100vh;
+  background: #F4F1EC;
+  flex-direction: column;
+}
+
+.top-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(180deg, #3d3c38 0%, #514f49 100%);
+  color: var(--white);
+  padding: 12px 24px;
+  border-bottom: 3px solid var(--dark-orange);
+  box-shadow: var(--shadow-sm);
+  z-index: 100;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.top-navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.top-brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.top-brand-mark {
+  position: relative;
+  width: 34px;
+  height: 30px;
+  border-radius: 11px;
+  background: linear-gradient(180deg, #ff6a35 0%, #d8420f 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-brand-check {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.top-brand-star {
+  position: absolute;
+  right: -4px;
+  top: -4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #12294b;
+  border: 1px solid #222222;
+  color: #ffffff;
+  font-size: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-brand-text-wrap {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.top-brand-wordmark {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.top-brand-nextgen {
+  font-family: 'Source Sans 3', 'Segoe UI', sans-serif;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.top-brand-pbm {
+  font-family: 'Source Sans 3', 'Segoe UI', sans-serif;
+  color: #ff7a47;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.top-brand-sub {
+  margin-top: 1px;
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  color: #e6e6e6;
+}
+
+.top-navbar-logo {
+  height: 36px;
+  width: auto;
+}
+
+.top-navbar-title {
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--dawn-orange);
+  font-weight: 600;
+}
+
+.top-navbar-nav {
+  display: flex;
+  gap: 10px;
+  width: min(100%, 720px);
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 8px;
+  padding: 8px 16px;
+  color: rgba(255, 255, 255, 0.75);
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  transition: 0.2s ease;
+  border-radius: 6px 6px 0 0;
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--white);
+}
+
+.nav-item.active {
+  background: rgba(249, 166, 103, 0.18);
+  border-bottom-color: var(--sunset-orange);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.nav-item.disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: auto;
+}
+
+.nav-item.disabled:hover {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.top-navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-avatar-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Role pill button in navbar — matches draw.io spec */
+.user-role-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 11px 28px;
+  border-radius: 24px;
+  background: #FFEEF5;
+  border: none;
+  color: #1A1A1A;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.18s ease, box-shadow 0.18s ease;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+  outline: none;
+  line-height: 1;
+  text-align: center;
+}
+
+.user-role-pill:hover {
+  background: #ffd6eb;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.14);
+}
+
+.user-role-pill:focus-visible {
+  box-shadow: 0 0 0 3px rgba(255, 120, 180, 0.35);
+}
+
+.pill-chevron {
+  color: #6b2240;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.user-dropdown-menu.show + .user-role-pill .pill-chevron,
+#user-dropdown-menu.show ~ * .pill-chevron {
+  transform: rotate(180deg);
+}
+
+.user-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 240px;
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  padding: 18px 16px 14px;
+  z-index: 100;
+  transform-origin: top right;
+  animation: dropdownFadeIn 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.user-dropdown-menu.show {
+  display: block;
+}
+
+.user-dropdown-info {
+  margin-bottom: 12px;
+}
+
+.dropdown-user-name {
+  font-family: 'Source Sans 3', 'Segoe UI', sans-serif;
+  font-weight: 700;
+  color: #3d3c38;
+  font-size: 1.15rem;
+  margin-bottom: 3px;
+  word-break: break-word;
+  line-height: 1.3;
+}
+
+.dropdown-user-identity {
+  font-family: 'Source Sans 3', 'Segoe UI', sans-serif;
+  font-size: 0.78rem;
+  color: #726f68;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.user-dropdown-divider {
+  height: 1px;
+  background-color: var(--horizon);
+  margin: 12px 0;
+}
+
+.dropdown-logout-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #e6b5aa;
+  background: #fbe8e4;
+  color: #8f2a17;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dropdown-logout-btn:hover {
+  background: var(--dark-orange);
+  color: var(--white);
+  border-color: var(--dark-orange);
+  transform: translateY(-1px);
+}
+
+.main-content {
+  flex: 1;
+  background: #F4F1EC;
+  margin-top: 68px;
+  padding: 0 clamp(12px, 1.8vw, 24px) 20px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.view {
+  display: none;
+}
+
+.view.active {
+  display: block;
+  animation: fadeIn 0.2s ease;
+}
+
+.page-header {
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+}
+
+.page-header h2 {
+  margin: 0;
+}
+
+.page-header p {
+  margin: 6px 0 0;
+  color: var(--text-muted);
+}
+
+.page-header-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}

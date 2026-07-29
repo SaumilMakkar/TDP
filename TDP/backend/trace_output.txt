@@ -1,0 +1,43 @@
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 1) Input payload received: drug=1009 plan=3006 member=2022
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] Payload normalized: 11 fields
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 2) Building clinical input: drug_id=1009 member_id=2022
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 2) Sending request to clinical agent...
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] Pipeline start: prod_sk=1009, member_id=2022
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] Stage A: matching clinical alternatives...
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] Stage A complete: original_prod_id=1009, alternatives=3, elapsed=0.018s
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] Stage B: evaluating patient safety...
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] Stage B complete: reviewed=3, accepted=2, rejected=1, elapsed=11.53s
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] Stage C: combining scores, applying threshold, and ranking candidates...
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] Stage C scores: 1006 composite_score=0.689 stage_a=0.5749 stage_b=0.765 threshold=0.6 passed=None | 1007 composite_score=0.6619 stage_a=0.5072 stage_b=0.765 threshold=0.6 passed=None
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] Stage C complete: eligible_candidates=2, passing_candidates=2, ranked_alternatives=2, flagged_candidates=2, elapsed=0.005s
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] Pipeline complete: ranked_alternatives=2, total_elapsed=11.57s
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 3) Clinical output received: 2 alternatives
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] Live runtime options built
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 4) Running downstream orchestration layers...
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 4) Sending ranked alternatives to Policy, Financial, and Past Decision agents
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 4.a) Alternative [1006] Metformin 500mg: dispatching agent calls
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 5.b) Alternative [1006] Financial received: score=0.95 cost=9.98
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 5.c) Alternative [1006] Past Decision received: score=0.91
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 5.a) Alternative [1006] Policy received: state=pending score=0.32
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 4.a) Alternative [1007] Glipizide 5mg: dispatching agent calls
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 5.a) Alternative [1007] Policy received: state=pass score=0.80
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 5.b) Alternative [1007] Financial received: score=0.95 cost=16.47
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 5.c) Alternative [1007] Past Decision received: score=0.86
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 5) Downstream agent outputs received: alternatives=2 elapsed=0.018s
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 6) Applying hard rules and static weights
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 6) Hard gate TRIGGERED [1006] Metformin 500mg: flag=policy_state_pending → escalated to provider review (policy marked pending)
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 6) Hard gate TRIGGERED [1006] Metformin 500mg: flag=step_therapy_required → escalated to provider review (step therapy criteria unmet)
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 7) Layer 4: weighted score fusion + weighted Borda consensus
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 7) Layer 5: risk adjustment
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 7) Layer 5 [1006] Metformin 500mg: adjusted_score=0.7509 (aggregate=0.8009, risk_penalty=-0.0500)
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 7) Layer 5 [1007] Glipizide 5mg: adjusted_score=0.5562 (aggregate=0.6062, risk_penalty=-0.0500)
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 7) Layer 6: final ranking and decision band assignment
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 7) Layer 6 rank=1 [1006] Metformin 500mg: adjusted_score=0.7509 → band=3 (Provider Review)
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 7) Layer 6 rank=2 [1007] Glipizide 5mg: adjusted_score=0.5562 → band=3 (Provider Review)
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 8) Layer 7 governance review: checking Band 2 candidates
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 9) Layer 8 summary generation
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 9.a) Calling Layer 8 summary for alternative [1007]
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 9.b) Layer 8 summary received for alternative [1007]
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 9.a) Calling Layer 8 summary for alternative [1006]
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] 9.b) Layer 8 summary received for alternative [1006]
+[TRACE] [TRC-trace-1785311802637-5ippu6s0g] Orchestration complete: final_outcome=PROVIDER_REVIEW_SELECTION_PENDING
